@@ -5,6 +5,11 @@ un tutor de IA. Gratis. Por Camilo Merino.
 
 **Léelo en la web:** https://camiloalonsomerino-spec.github.io/base-abierta-ingenieria/
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23423082.svg)](https://doi.org/10.5281/zenodo.23423082)
+
+**Cómo citarla:** Merino, C. (2026). *Base abierta de ingeniería: ramos de Ingeniería Civil Industrial
+reescritos de cero* (v0.1). Zenodo. https://doi.org/10.5281/zenodo.23423082
+
 ## Qué trae cada ramo
 
 ```
