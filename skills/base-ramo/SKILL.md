@@ -60,6 +60,16 @@ Cada informe trae problemas. Clasifícalos:
 4. Actualiza el `README.md` del ramo (estado y enlaces) y el de la base (tabla de ramos).
 5. Registra el avance en el tablero de proyectos y en la memoria del proyecto.
 
+## 7. Publicar (la base es pública desde el 16-10-2026)
+
+1. Pasa el escáner antes de subir (secretos, datos privados, nombres de la lista privada):
+   `py -3 -P ../ingeniero-agentico/security/scan.py --root . --all-files --denylist ../ingeniero-agentico-datos/security/denylist.txt`.
+   Los HIGH de `private-denylist` se corrigen; PDF, `exec()` de verificadores y RUT inventados son esperables.
+2. Regenera el sitio: `py -3 -P herramientas/sitio.py` (deja `docs/`, que GitHub Pages publica).
+3. Commit con el correo noreply del estudiante y `git push`.
+4. Deja relleno un release nuevo (`v0.N`) en GitHub con sus notas; lo publica el estudiante y Zenodo
+   le asigna el DOI solo. El README cita el DOI general, que siempre apunta a la última versión.
+
 ## Lo que se aprendió (y por qué existe cada regla)
 
 - **El caso antes que las unidades.** En Operaciones, el plan agregado partía con 400 unidades y el
