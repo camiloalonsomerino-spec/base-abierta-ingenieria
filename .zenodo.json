@@ -1,0 +1,10 @@
+{
+  "title": "Base abierta de ingeniería: ramos de Ingeniería Civil Industrial reescritos de cero",
+  "upload_type": "lesson",
+  "description": "Ramos de Ingeniería Civil Industrial reescritos de cero para entender, practicar y estudiar con un tutor de IA. Cada unidad trae teoría, un ejemplo resuelto, diez ejercicios con pauta, un verificador que recalcula cada cifra y un PDF. Versión 0.1: Gestión de Operaciones, Finanzas, Optimización, Tópicos de Optimización, Análisis de Datos, Contabilidad y Costos y Bases de Datos (84 unidades). Sitio: https://camiloalonsomerino-spec.github.io/base-abierta-ingenieria/",
+  "creators": [{ "name": "Merino, Camilo" }],
+  "license": "cc-by-4.0",
+  "language": "spa",
+  "access_right": "open",
+  "keywords": ["ingeniería civil industrial", "recursos educativos abiertos", "investigación de operaciones", "finanzas", "optimización", "bases de datos", "contabilidad", "análisis de datos"]
+}
