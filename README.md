@@ -3,6 +3,8 @@
 Los ramos de Ingeniería Civil Industrial reescritos de cero para entender, practicar y estudiar con
 un tutor de IA. Gratis. Por Camilo Merino.
 
+**Léelo en la web:** https://camiloalonsomerino-spec.github.io/base-abierta-ingenieria/
+
 ## Qué trae cada ramo
 
 ```
@@ -55,6 +57,12 @@ python herramientas/md_a_pdf.py ramos/gestion-de-operaciones/unidades/10-program
 ```
 
 Necesita Chrome, Edge o Chromium.
+
+Para regenerar el sitio web (queda en `docs/`, que GitHub Pages publica):
+
+```
+python herramientas/sitio.py
+```
 
 Para revisar todas las cifras de un ramo:
 

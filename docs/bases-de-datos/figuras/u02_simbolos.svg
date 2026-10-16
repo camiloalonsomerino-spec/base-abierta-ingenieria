@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="250" viewBox="0 0 960 250" font-family="Segoe UI, Arial, sans-serif" role="img" aria-label="Notación de Chen: entidad, atributos y relación">
+<rect width="960" height="250" fill="white"/>
+<g transform="translate(0,0)">
+<line x1="90" y1="70" x2="250" y2="40" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="90" y1="70" x2="250" y2="100" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="90" y1="70" x2="90" y2="170" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="90" y1="170" x2="40" y2="225" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="90" y1="170" x2="145" y2="225" stroke="#8A8F94" stroke-width="1.2"/>
+<ellipse cx="250" cy="40" rx="42.0" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="250" y="44.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">atributo</text>
+<ellipse cx="250" cy="100" rx="30.4" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="250" y="104.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">clave</text>
+<line x1="232.6" y1="107" x2="267.4" y2="107" stroke="#2B2F33" stroke-width="1"/>
+<ellipse cx="90" cy="170" rx="47.9" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="90" y="174.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">compuesto</text>
+<ellipse cx="40" cy="225" rx="40.1" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="40" y="229.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">parte_1</text>
+<ellipse cx="145" cy="225" rx="40.1" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="145" y="229.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">parte_2</text>
+<rect x="48.9" y="53.0" width="82.3" height="34" fill="white" stroke="#2B2F33" stroke-width="1.8"/>
+<text x="90" y="74.8" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#2B2F33">entidad</text>
+<ellipse cx="620" cy="40" rx="52" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<ellipse cx="620" cy="40" rx="48" ry="11" fill="none" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="620" y="44.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">multivaluado</text>
+<ellipse cx="620" cy="100" rx="44" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2" stroke-dasharray="5 3"/>
+<text x="620" y="104.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">derivado</text>
+<polygon points="568,180 620,156 672,180 620,204" fill="#FBEDE6" stroke="#2B2F33" stroke-width="1.5"/>
+<text x="620" y="184.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">relación</text>
+<text x="315" y="44" font-size="11.5" fill="#5F656B">simple: un solo valor</text>
+<text x="315" y="104" font-size="11.5" fill="#5F656B">clave: identifica (subrayada)</text>
+<text x="210" y="175" font-size="11.5" fill="#5F656B">compuesto: se divide en partes</text>
+<text x="690" y="44" font-size="11.5" fill="#5F656B">varios valores (doble óvalo)</text>
+<text x="690" y="104" font-size="11.5" fill="#5F656B">se calcula, no se guarda (punteado)</text>
+<text x="690" y="184" font-size="11.5" fill="#5F656B">rombo con un verbo; une entidades</text>
+<text x="30" y="35" font-size="11.5" fill="#5F656B">entidad (rectángulo)</text>
+</g>
+</svg>

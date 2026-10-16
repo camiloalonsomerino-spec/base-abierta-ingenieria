@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620" font-family="Segoe UI, Arial, sans-serif" role="img" aria-label="Diagrama entidad-relación de la escuela de música">
+<rect width="1000" height="620" fill="white"/>
+<g transform="translate(0,0)">
+<line x1="330" y1="300" x2="175" y2="235" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="330" y1="300" x2="160" y2="320" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="160" y1="320" x2="60" y2="275" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="160" y1="320" x2="70" y2="370" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="330" y1="300" x2="195" y2="405" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="330" y1="300" x2="285" y2="430" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="330" y1="300" x2="460" y2="345" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="330" y1="300" x2="400" y2="455" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="400" y1="455" x2="305" y2="530" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="400" y1="455" x2="405" y2="555" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="400" y1="455" x2="505" y2="530" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="760" y1="270" x2="905" y2="225" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="760" y1="270" x2="915" y2="270" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="760" y1="270" x2="905" y2="315" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="760" y1="270" x2="845" y2="350" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="760" y1="75" x2="615" y2="45" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="760" y1="75" x2="905" y2="45" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="760" y1="75" x2="905" y2="100" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="575" y1="270" x2="495" y2="195" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="575" y1="270" x2="655" y2="195" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="760" y1="440" x2="905" y2="400" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="760" y1="440" x2="915" y2="445" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="760" y1="440" x2="900" y2="490" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="760" y1="570" x2="600" y2="580" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="760" y1="570" x2="905" y2="550" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="760" y1="570" x2="900" y2="597" stroke="#8A8F94" stroke-width="1.2"/>
+<polyline points="760,75 760,172" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<polyline points="760,270 760,172" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<polyline points="330,300 575,270" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<polyline points="760,270 575,270" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<polyline points="330,300 575,440" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<polyline points="760,440 575,440" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<polyline points="760,440 760,505" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<polyline points="760,570 760,505" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<polyline points="330,300 285,300 285,130 330,130" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<polyline points="330,300 375,300 375,130 330,130" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<ellipse cx="175" cy="235" rx="43.9" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="175" y="239.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">matricula</text>
+<line x1="144.1" y1="242" x2="205.9" y2="242" stroke="#2B2F33" stroke-width="1"/>
+<ellipse cx="160" cy="320" rx="36.2" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="160" y="324.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">nombre</text>
+<ellipse cx="60" cy="275" rx="40.1" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="60" y="279.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">nombres</text>
+<ellipse cx="70" cy="370" rx="41.9" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="70" y="374.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">apellidos</text>
+<ellipse cx="195" cy="405" rx="47.9" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="195" y="409.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">fecha_nac</text>
+<ellipse cx="285" cy="430" rx="30.0" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2" stroke-dasharray="5 3"/>
+<text x="285" y="434.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">edad</text>
+<ellipse cx="460" cy="345" rx="42.0" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<ellipse cx="460" cy="345" rx="38.0" ry="11" fill="none" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="460" y="349.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">telefono</text>
+<ellipse cx="400" cy="455" rx="43.9" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="400" y="459.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">direccion</text>
+<ellipse cx="305" cy="530" rx="30.0" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="305" y="534.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">calle</text>
+<ellipse cx="405" cy="555" rx="36.2" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="405" y="559.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">numero</text>
+<ellipse cx="505" cy="530" rx="36.2" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="505" y="534.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">comuna</text>
+<ellipse cx="905" cy="225" rx="57.5" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="905" y="229.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">codigo_curso</text>
+<line x1="860.5" y1="232" x2="949.5" y2="232" stroke="#2B2F33" stroke-width="1"/>
+<ellipse cx="915" cy="270" rx="36.2" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="915" y="274.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">nombre</text>
+<ellipse cx="905" cy="315" rx="30.0" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="905" y="319.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">dia</text>
+<ellipse cx="845" cy="350" rx="30.0" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="845" y="354.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">hora</text>
+<ellipse cx="615" cy="45" rx="34.2" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="615" y="49.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">codigo</text>
+<line x1="593.8" y1="52" x2="636.2" y2="52" stroke="#2B2F33" stroke-width="1"/>
+<ellipse cx="905" cy="45" rx="36.2" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="905" y="49.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">nombre</text>
+<ellipse cx="905" cy="100" rx="53.5" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="905" y="104.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">especialidad</text>
+<ellipse cx="495" cy="195" rx="72.9" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="495" y="199.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">fecha_inscripcion</text>
+<ellipse cx="655" cy="195" rx="47.8" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="655" y="199.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">nota_final</text>
+<ellipse cx="905" cy="400" rx="51.8" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="905" y="404.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">n_prestamo</text>
+<line x1="866.2" y1="407" x2="943.8" y2="407" stroke="#2B2F33" stroke-width="1"/>
+<ellipse cx="915" cy="445" rx="55.5" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="915" y="449.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">fecha_salida</text>
+<ellipse cx="900" cy="490" rx="71.0" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="900" y="494.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">fecha_devolucion</text>
+<ellipse cx="600" cy="580" rx="55.5" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="600" y="584.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">n_inventario</text>
+<line x1="557.5" y1="587" x2="642.5" y2="587" stroke="#2B2F33" stroke-width="1"/>
+<ellipse cx="905" cy="550" rx="30.0" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="905" y="554.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">tipo</text>
+<ellipse cx="900" cy="597" rx="36.2" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="900" y="601.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">estado</text>
+<polygon points="712,172 760,148 808,172 760,196" fill="#FBEDE6" stroke="#2B2F33" stroke-width="1.5"/>
+<text x="760" y="176.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">dicta</text>
+<polygon points="498.75,270 575,246 651.25,270 575,294" fill="#FBEDE6" stroke="#2B2F33" stroke-width="1.5"/>
+<text x="575" y="274.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">se_inscribe_en</text>
+<polygon points="527,440 575,416 623,440 575,464" fill="#FBEDE6" stroke="#2B2F33" stroke-width="1.5"/>
+<text x="575" y="444.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">pide</text>
+<polygon points="712,505 760,481 808,505 760,529" fill="#FBEDE6" stroke="#2B2F33" stroke-width="1.5"/>
+<text x="760" y="509.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">lleva</text>
+<polygon points="261.375,130 330,106 398.625,130 330,154" fill="#FBEDE6" stroke="#2B2F33" stroke-width="1.5"/>
+<text x="330" y="134.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">es_tutor_de</text>
+<rect x="293.1" y="283.0" width="73.9" height="34" fill="white" stroke="#2B2F33" stroke-width="1.8"/>
+<text x="330" y="304.8" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#2B2F33">alumno</text>
+<rect x="725.1" y="253.0" width="69.8" height="34" fill="white" stroke="#2B2F33" stroke-width="1.8"/>
+<text x="760" y="274.8" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#2B2F33">curso</text>
+<rect x="712.5" y="58.0" width="95.0" height="34" fill="white" stroke="#2B2F33" stroke-width="1.8"/>
+<text x="760" y="79.8" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#2B2F33">profesor</text>
+<rect x="712.5" y="423.0" width="95.0" height="34" fill="white" stroke="#2B2F33" stroke-width="1.8"/>
+<text x="760" y="444.8" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#2B2F33">prestamo</text>
+<rect x="702.1" y="553.0" width="115.8" height="34" fill="white" stroke="#2B2F33" stroke-width="1.8"/>
+<text x="760" y="574.8" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#2B2F33">instrumento</text>
+<text x="279.0" y="215.0" text-anchor="end" font-size="11.5" font-style="italic" fill="#E2622A">tutor</text>
+<text x="381.0" y="215.0" text-anchor="start" font-size="11.5" font-style="italic" fill="#E2622A">tutorado</text>
+</g>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" width="680" height="400" font-family="Segoe UI, sans-serif" font-size="12">
+<rect width="680" height="400" fill="white"/>
+<defs><marker id="f0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5F656B"/></marker><marker id="f1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#E2622A"/></marker></defs>
+<line x1="110.9" y1="184.0" x2="239.1" y2="86.0" stroke="#B9B5AE" stroke-width="1.6"/>
+<line x1="117.2" y1="216.0" x2="232.8" y2="284.0" stroke="#E2622A" stroke-width="3.6"/>
+<line x1="260.0" y1="86.0" x2="260.0" y2="284.0" stroke="#E2622A" stroke-width="3.6"/>
+<line x1="285.3" y1="86.0" x2="424.7" y2="174.0" stroke="#B9B5AE" stroke-width="1.6"/>
+<line x1="287.6" y1="284.0" x2="422.4" y2="206.0" stroke="#E2622A" stroke-width="3.6"/>
+<line x1="289.4" y1="302.8" x2="538.3" y2="326.1" stroke="#B9B5AE" stroke-width="1.6"/>
+<line x1="464.9" y1="206.0" x2="565.1" y2="314.0" stroke="#E2622A" stroke-width="3.6"/>
+<line x1="468.7" y1="174.0" x2="571.3" y2="86.0" stroke="#E2622A" stroke-width="3.6"/>
+<line x1="580.6" y1="314.0" x2="589.4" y2="86.0" stroke="#B9B5AE" stroke-width="1.6"/>
+<path d="M289.4,59.0 Q420,10 556.5,58.2" fill="none" stroke="#B9B5AE" stroke-width="1.6"/>
+<rect x="153.5" y="126.0" width="43.0" height="17" rx="3" fill="white" stroke="#B9B5AE" stroke-width="0.8"/><text x="175.0" y="139.0" text-anchor="middle" fill="#2B2F33" font-weight="400">430 m</text>
+<rect x="153.5" y="241.0" width="43.0" height="17" rx="3" fill="white" stroke="#E2622A" stroke-width="0.8"/><text x="175.0" y="254.0" text-anchor="middle" fill="#E2622A" font-weight="600">385 m</text>
+<rect x="238.5" y="176.0" width="43.0" height="17" rx="3" fill="white" stroke="#E2622A" stroke-width="0.8"/><text x="260.0" y="189.0" text-anchor="middle" fill="#E2622A" font-weight="600">245 m</text>
+<rect x="333.5" y="121.0" width="43.0" height="17" rx="3" fill="white" stroke="#B9B5AE" stroke-width="0.8"/><text x="355.0" y="134.0" text-anchor="middle" fill="#2B2F33" font-weight="400">515 m</text>
+<rect x="333.5" y="236.0" width="43.0" height="17" rx="3" fill="white" stroke="#E2622A" stroke-width="0.8"/><text x="355.0" y="249.0" text-anchor="middle" fill="#E2622A" font-weight="600">465 m</text>
+<rect x="392.3" y="305.4" width="43.0" height="17" rx="3" fill="white" stroke="#B9B5AE" stroke-width="0.8"/><text x="413.8" y="318.4" text-anchor="middle" fill="#2B2F33" font-weight="400">610 m</text>
+<rect x="493.5" y="251.0" width="43.0" height="17" rx="3" fill="white" stroke="#E2622A" stroke-width="0.8"/><text x="515.0" y="264.0" text-anchor="middle" fill="#E2622A" font-weight="600">335 m</text>
+<rect x="498.5" y="121.0" width="43.0" height="17" rx="3" fill="white" stroke="#E2622A" stroke-width="0.8"/><text x="520.0" y="134.0" text-anchor="middle" fill="#E2622A" font-weight="600">295 m</text>
+<rect x="563.5" y="191.0" width="43.0" height="17" rx="3" fill="white" stroke="#B9B5AE" stroke-width="0.8"/><text x="585.0" y="204.0" text-anchor="middle" fill="#2B2F33" font-weight="400">405 m</text>
+<rect x="400.0" y="25.3" width="43.0" height="17" rx="3" fill="white" stroke="#B9B5AE" stroke-width="0.8"/><text x="421.5" y="38.3" text-anchor="middle" fill="#2B2F33" font-weight="400">645 m</text>
+<rect x="47.2" y="187.0" width="85.6" height="26" rx="13" fill="#F2F1EF" stroke="#2B2F33" stroke-width="1.3"/><text x="90" y="204.5" text-anchor="middle" fill="#2B2F33" font-weight="600">Estanque</text>
+<rect x="233.6" y="57.0" width="52.8" height="26" rx="13" fill="#F2F1EF" stroke="#2B2F33" stroke-width="1.3"/><text x="260" y="74.5" text-anchor="middle" fill="#2B2F33" font-weight="600">Alto</text>
+<rect x="233.6" y="287.0" width="52.8" height="26" rx="13" fill="#F2F1EF" stroke="#2B2F33" stroke-width="1.3"/><text x="260" y="304.5" text-anchor="middle" fill="#2B2F33" font-weight="600">Bajo</text>
+<rect x="411.3" y="177.0" width="77.4" height="26" rx="13" fill="#F2F1EF" stroke="#2B2F33" stroke-width="1.3"/><text x="450" y="194.5" text-anchor="middle" fill="#2B2F33" font-weight="600">Capilla</text>
+<rect x="541.3" y="317.0" width="77.4" height="26" rx="13" fill="#F2F1EF" stroke="#2B2F33" stroke-width="1.3"/><text x="580" y="334.5" text-anchor="middle" fill="#2B2F33" font-weight="600">Escuela</text>
+<rect x="559.5" y="57.0" width="61.0" height="26" rx="13" fill="#F2F1EF" stroke="#2B2F33" stroke-width="1.3"/><text x="590" y="74.5" text-anchor="middle" fill="#2B2F33" font-weight="600">Feria</text>
+<text x="340.0" y="390" text-anchor="middle" fill="#5F656B" font-size="11">En naranjo, el árbol de expansión mínima: 1.725 m de tubería</text>
+</svg>

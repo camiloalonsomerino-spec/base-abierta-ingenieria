@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 770 325" width="770" height="325" font-family="Segoe UI, Roboto, sans-serif"><title>Club de natación: de la planilla a cinco tablas</title>
+<rect width="770" height="325" fill="#FFFFFF"/>
+<rect x="10" y="0" width="200" height="195" rx="5" fill="#FFFFFF" stroke="#2B2F33" stroke-width="1.3"/>
+<path d="M10,24 v-19 a5,5 0 0 1 5,-5 h190 a5,5 0 0 1 5,5 v19 z" fill="#2B2F33"/>
+<text x="19" y="16.5" font-size="12.5" font-weight="600" fill="#FFFFFF">planilla</text>
+<rect x="11" y="24" width="9" height="19" fill="#2F7F8C"/>
+<text x="27" y="37.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">rut</text>
+<rect x="11" y="43" width="9" height="19" fill="#2F7F8C"/>
+<text x="27" y="56.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">nadador</text>
+<rect x="11" y="62" width="9" height="19" fill="#7A5BA6"/>
+<text x="27" y="75.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">curso</text>
+<rect x="11" y="81" width="9" height="19" fill="#4E7D3A"/>
+<text x="27" y="94.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">nivel</text>
+<rect x="11" y="100" width="9" height="19" fill="#7A5BA6"/>
+<text x="27" y="113.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">horario</text>
+<rect x="11" y="119" width="9" height="19" fill="#7A5BA6"/>
+<text x="27" y="132.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">piscina</text>
+<rect x="11" y="138" width="9" height="19" fill="#B8862B"/>
+<text x="27" y="151.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">profesor</text>
+<rect x="11" y="157" width="9" height="19" fill="#B8862B"/>
+<text x="27" y="170.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">fono_profesor</text>
+<rect x="11" y="176" width="9" height="19" fill="#4E7D3A"/>
+<text x="27" y="189.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">mensualidad</text>
+<text x="250" y="97.5" font-size="26" fill="#5F656B" text-anchor="middle">→</text>
+<rect x="290" y="0" width="210" height="62" rx="5" fill="#FFFFFF" stroke="#E2622A" stroke-width="1.6"/>
+<path d="M290,24 v-19 a5,5 0 0 1 5,-5 h200 a5,5 0 0 1 5,5 v19 z" fill="#E2622A"/>
+<text x="299" y="16.5" font-size="12.5" font-weight="600" fill="#FFFFFF">inscripcion</text>
+<rect x="291" y="24" width="8" height="19" fill="#2F7F8C"/>
+<text x="305" y="37.5" font-size="11.5" fill="#2B2F33" font-weight="700" font-family="Cascadia Mono, Consolas, monospace">rut</text>
+<text x="492" y="37.5" font-size="10" fill="#2F7F8C" text-anchor="end" font-weight="600">FK</text>
+<rect x="291" y="43" width="8" height="19" fill="#7A5BA6"/>
+<text x="305" y="56.5" font-size="11.5" fill="#2B2F33" font-weight="700" font-family="Cascadia Mono, Consolas, monospace">curso</text>
+<text x="492" y="56.5" font-size="10" fill="#7A5BA6" text-anchor="end" font-weight="600">FK</text>
+<rect x="290" y="78" width="210" height="119" rx="5" fill="#FFFFFF" stroke="#7A5BA6" stroke-width="1.6"/>
+<path d="M290,102 v-19 a5,5 0 0 1 5,-5 h200 a5,5 0 0 1 5,5 v19 z" fill="#7A5BA6"/>
+<text x="299" y="94.5" font-size="12.5" font-weight="600" fill="#FFFFFF">curso</text>
+<rect x="291" y="102" width="8" height="19" fill="#7A5BA6"/>
+<text x="305" y="115.5" font-size="11.5" fill="#2B2F33" font-weight="700" font-family="Cascadia Mono, Consolas, monospace">curso</text>
+<rect x="291" y="121" width="8" height="19" fill="#4E7D3A"/>
+<text x="305" y="134.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">nivel</text>
+<text x="492" y="134.5" font-size="10" fill="#4E7D3A" text-anchor="end" font-weight="600">FK</text>
+<rect x="291" y="140" width="8" height="19" fill="#7A5BA6"/>
+<text x="305" y="153.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">horario</text>
+<rect x="291" y="159" width="8" height="19" fill="#7A5BA6"/>
+<text x="305" y="172.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">piscina</text>
+<rect x="291" y="178" width="8" height="19" fill="#B8862B"/>
+<text x="305" y="191.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">profesor</text>
+<text x="492" y="191.5" font-size="10" fill="#B8862B" text-anchor="end" font-weight="600">FK</text>
+<rect x="290" y="213" width="210" height="62" rx="5" fill="#FFFFFF" stroke="#4E7D3A" stroke-width="1.6"/>
+<path d="M290,237 v-19 a5,5 0 0 1 5,-5 h200 a5,5 0 0 1 5,5 v19 z" fill="#4E7D3A"/>
+<text x="299" y="229.5" font-size="12.5" font-weight="600" fill="#FFFFFF">tarifa</text>
+<rect x="291" y="237" width="8" height="19" fill="#4E7D3A"/>
+<text x="305" y="250.5" font-size="11.5" fill="#2B2F33" font-weight="700" font-family="Cascadia Mono, Consolas, monospace">nivel</text>
+<rect x="291" y="256" width="8" height="19" fill="#4E7D3A"/>
+<text x="305" y="269.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">mensualidad</text>
+<rect x="525" y="0" width="210" height="62" rx="5" fill="#FFFFFF" stroke="#2F7F8C" stroke-width="1.6"/>
+<path d="M525,24 v-19 a5,5 0 0 1 5,-5 h200 a5,5 0 0 1 5,5 v19 z" fill="#2F7F8C"/>
+<text x="534" y="16.5" font-size="12.5" font-weight="600" fill="#FFFFFF">nadador</text>
+<rect x="526" y="24" width="8" height="19" fill="#2F7F8C"/>
+<text x="540" y="37.5" font-size="11.5" fill="#2B2F33" font-weight="700" font-family="Cascadia Mono, Consolas, monospace">rut</text>
+<rect x="526" y="43" width="8" height="19" fill="#2F7F8C"/>
+<text x="540" y="56.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">nadador</text>
+<rect x="525" y="78" width="210" height="62" rx="5" fill="#FFFFFF" stroke="#B8862B" stroke-width="1.6"/>
+<path d="M525,102 v-19 a5,5 0 0 1 5,-5 h200 a5,5 0 0 1 5,5 v19 z" fill="#B8862B"/>
+<text x="534" y="94.5" font-size="12.5" font-weight="600" fill="#FFFFFF">profesor</text>
+<rect x="526" y="102" width="8" height="19" fill="#B8862B"/>
+<text x="540" y="115.5" font-size="11.5" fill="#2B2F33" font-weight="700" font-family="Cascadia Mono, Consolas, monospace">profesor</text>
+<rect x="526" y="121" width="8" height="19" fill="#B8862B"/>
+<text x="540" y="134.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">fono_profesor</text>
+<text x="10" y="313" font-size="10" fill="#5F656B">Cada color es una tabla: la franja dice en qué tabla vive el dato de esa columna. En negrita, la clave primaria; FK, la columna que vuelve a conectar las tablas.</text>
+</svg>
