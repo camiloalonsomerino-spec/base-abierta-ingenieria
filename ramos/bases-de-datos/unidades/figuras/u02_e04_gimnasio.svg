@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="325" viewBox="0 0 900 325" font-family="Segoe UI, Arial, sans-serif" role="img" aria-label="Diagrama del gimnasio del ejercicio 2.4">
+<rect width="900" height="325" fill="white"/>
+<g transform="translate(0,-75)">
+<line x1="230" y1="200" x2="90" y2="130" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="230" y1="200" x2="230" y2="110" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="230" y1="200" x2="370" y2="120" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="230" y1="200" x2="75" y2="200" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="230" y1="200" x2="80" y2="265" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="230" y1="340" x2="90" y2="340" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="230" y1="340" x2="145" y2="385" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="230" y1="340" x2="330" y2="385" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="620" y1="200" x2="620" y2="110" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="620" y1="200" x2="770" y2="155" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="620" y1="200" x2="775" y2="220" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="620" y1="340" x2="775" y2="320" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="620" y1="340" x2="770" y2="375" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="230" y1="270" x2="380" y2="270" stroke="#8A8F94" stroke-width="1.2"/>
+<polyline points="230,200 230,270" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<polyline points="230,340 230,270" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<polyline points="230,200 425,200" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<polyline points="620,200 425,200" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<polyline points="620,340 620,270" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<polyline points="620,200 620,270" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<ellipse cx="90" cy="130" rx="40.0" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="90" y="134.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">id_socio</text>
+<line x1="63.0" y1="137" x2="117.0" y2="137" stroke="#2B2F33" stroke-width="1"/>
+<ellipse cx="230" cy="110" rx="36.2" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="230" y="114.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">nombre</text>
+<ellipse cx="370" cy="120" rx="42.0" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<ellipse cx="370" cy="120" rx="38.0" ry="11" fill="none" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="370" y="124.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">telefono</text>
+<ellipse cx="75" cy="200" rx="47.9" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="75" y="204.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">fecha_nac</text>
+<ellipse cx="80" cy="265" rx="30.0" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2" stroke-dasharray="5 3"/>
+<text x="80" y="269.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">edad</text>
+<ellipse cx="90" cy="340" rx="42.0" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="90" y="344.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">cod_plan</text>
+<line x1="61.0" y1="347" x2="119.0" y2="347" stroke="#2B2F33" stroke-width="1"/>
+<ellipse cx="145" cy="385" rx="36.2" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="145" y="389.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">nombre</text>
+<ellipse cx="330" cy="385" rx="63.2" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="330" y="389.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">precio_mensual</text>
+<ellipse cx="620" cy="110" rx="45.9" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="620" y="114.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">cod_clase</text>
+<line x1="587.1" y1="117" x2="652.9" y2="117" stroke="#2B2F33" stroke-width="1"/>
+<ellipse cx="770" cy="155" rx="43.8" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="770" y="159.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">disciplina</text>
+<ellipse cx="775" cy="220" rx="38.1" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="775" y="224.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">horario</text>
+<ellipse cx="775" cy="320" rx="30.0" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="775" y="324.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">rut</text>
+<line x1="763.4" y1="327" x2="786.6" y2="327" stroke="#2B2F33" stroke-width="1"/>
+<ellipse cx="770" cy="375" rx="36.2" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="770" y="379.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">nombre</text>
+<ellipse cx="380" cy="270" rx="53.5" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="380" y="274.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">fecha_inicio</text>
+<polygon points="173.0,270 230,246 287.0,270 230,294" fill="#FBEDE6" stroke="#2B2F33" stroke-width="1.5"/>
+<text x="230" y="274.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">contrata</text>
+<polygon points="371.875,200 425,176 478.125,200 425,224" fill="#FBEDE6" stroke="#2B2F33" stroke-width="1.5"/>
+<text x="425" y="204.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">reserva</text>
+<polygon points="572,270 620,246 668,270 620,294" fill="#FBEDE6" stroke="#2B2F33" stroke-width="1.5"/>
+<text x="620" y="274.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">dicta</text>
+<rect x="197.2" y="183.0" width="65.5" height="34" fill="white" stroke="#2B2F33" stroke-width="1.8"/>
+<text x="230" y="204.8" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#2B2F33">socio</text>
+<rect x="201.4" y="323.0" width="57.2" height="34" fill="white" stroke="#2B2F33" stroke-width="1.8"/>
+<text x="230" y="344.8" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#2B2F33">plan</text>
+<rect x="587.2" y="183.0" width="65.5" height="34" fill="white" stroke="#2B2F33" stroke-width="1.8"/>
+<text x="620" y="204.8" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#2B2F33">clase</text>
+<rect x="566.3" y="323.0" width="107.4" height="34" fill="white" stroke="#2B2F33" stroke-width="1.8"/>
+<text x="620" y="344.8" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#2B2F33">instructor</text>
+</g>
+</svg>

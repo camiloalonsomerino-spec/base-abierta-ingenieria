@@ -1,0 +1,19 @@
+// Unidad 3 · ejercicio 3.6 · taller de impresión 3D (una semana)
+
+Piezas = {"soporte", "carcasa"};
+Modos  = {"PLA", "PETG"};
+
+margen = [
+  [2350 4150]          // PLA  (CLP por pieza)
+  [2350 5650]          // PETG (CLP por pieza)
+];
+horas = [
+  [0.75 1.45]          // PLA  (h por pieza)
+  [1.05 1.9]           // PETG (h por pieza)
+];
+
+H                 = 126;      // horas de impresora en la semana
+demanda           = [160 84];
+topeCarcasaPLA    = 48;
+pedidoCarcasaPETG = 32;
+topeSoportePETG   = 66;

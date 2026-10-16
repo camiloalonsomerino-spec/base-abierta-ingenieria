@@ -1,0 +1,11 @@
+// Unidad 7 · ejercicio 7.5: cuatro nodos
+// Base abierta de ingeniería. Lo genera verificacion/u07_arbol_minimo.py.
+
+Nodos = {"1", "2", "3", "4"};
+Aristas = {
+  <"1", "2", 5>,
+  <"1", "3", 6>,
+  <"2", "3", 4>,
+  <"2", "4", 9>,
+  <"3", "4", 8>
+};

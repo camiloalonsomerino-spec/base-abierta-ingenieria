@@ -1,0 +1,5 @@
+/* Unidad 12 · Ejemplo resuelto · la camioneta de la feria */
+Cajas    = {"paltas", "tomates", "ajos", "zapallos", "frutillas"};
+ganancia = [25, 29, 13, 11, 26];
+volumen  = [7, 8, 4, 5, 3];
+cap      = 14;

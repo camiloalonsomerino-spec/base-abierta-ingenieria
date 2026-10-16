@@ -1,0 +1,28 @@
+/*********************************************
+ * Unidad 4 · datos de la granola (una semana). Datos originales.
+ *********************************************/
+
+Ingredientes = {"avena", "mani", "pasas"};
+Productos    = {"clasica", "premium"};
+Atributos    = {"proteina", "azucar"};
+
+contenido = [
+  [12  1]        // avena: % proteína, % azúcar
+  [24  5]        // maní
+  [ 4 65]        // pasas
+];
+
+costo  = [1380 4150 2950];
+disp   = [980 190 280];
+
+precio  = [4650 6980];
+demanda = [760 230];
+
+minimo = [
+  [12 14]        // clásica: proteína ≥ 12 %, azúcar ≥ 14 %
+  [16  9]        // premium: proteína ≥ 16 %, azúcar ≥ 9 %
+];
+maximo = [
+  [100 18]       // clásica: azúcar ≤ 18 %
+  [100 12]       // premium: azúcar ≤ 12 %
+];

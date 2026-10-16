@@ -1,0 +1,19 @@
+// Unidad 4 · ejercicio 4.9 · dos camionetas en vez del camión
+// km de ruta más corta: los mismos del caso (u04_ruta_camion.dat)
+
+Lugares = {"Taller", "Centro", "Puerto", "Lagos", "Valle", "Costa", "Cerro"};
+base    = "Taller";
+
+d = [
+  [ 0  7 16 21 20 16 23]     // Taller
+  [ 7  0  9 14 15 17 18]     // Centro
+  [16  9  0 12 22  8 27]     // Puerto
+  [21 14 12  0 10 20 17]     // Lagos
+  [20 15 22 10  0 30  7]     // Valle
+  [16 17  8 20 30  0 23]     // Costa
+  [23 18 27 17  7 23  0]     // Cerro
+];
+
+q = [0 31 24 19 36 14 22];   // cajas que pide cada tienda
+Q = 80;                      // cajas por camioneta
+K = 2;

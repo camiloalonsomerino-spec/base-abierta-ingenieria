@@ -1,0 +1,7 @@
+/* Unidad 5 · caso integrador: las cifras de verificacion/caso_estampa_sur_lp.py (U5).
+   Generado por verificacion/u05_modelamiento_ii.py */
+NSemanas = 4;
+demanda = [380 460 610 540];
+cap = 560;
+invMax = 380;
+cInv = 210;

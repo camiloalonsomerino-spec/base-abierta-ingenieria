@@ -1,0 +1,15 @@
+/* Unidad 1 - Heladeria Nieve del Sur: datos de una semana */
+Helados = {"vainilla", "frambuesa", "maqui"};
+Recursos = {"pasteurizacion", "envasado"};
+
+margen = [9200, 10600, 11400];
+
+uso = [[5, 7, 6],     // pasteurizacion, minutos por litro
+       [4, 3, 5]];    // envasado, minutos por litro
+
+cap = [2400, 1620];   // 40 h y 27 h
+
+ConMinimo = {"vainilla"};
+minimo = [60];
+ConTope = {"maqui"};
+tope = [60];

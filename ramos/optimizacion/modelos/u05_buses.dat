@@ -1,0 +1,11 @@
+/* Unidad 5 · ejercicio 5.3, asignación de buses (oferta y demanda 1). Generado por verificacion/u05_modelamiento_ii.py */
+Origenes = {"B1", "B2", "B3", "B4"};
+Destinos = {"R1", "R2", "R3", "R4"};
+oferta  = [1 1 1 1];
+demanda = [1 1 1 1];
+costo = [
+  [14 9 12 17]
+  [11 13 16 10]
+  [15 12 8 14]
+  [10 16 13 11]
+];

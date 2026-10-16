@@ -1,0 +1,157 @@
+{
+ "tablas": {
+  "tienda": 6,
+  "producto": 5,
+  "proveedor": 4,
+  "suministra": 7,
+  "cliente": 30,
+  "pedido": 120,
+  "detalle_pedido": 212,
+  "orden_produccion": 21
+ },
+ "u9_productos_caros": [
+  [
+   "polerones",
+   9890
+  ],
+  [
+   "poleras estampado doble",
+   6290
+  ]
+ ],
+ "u9_pedidos_pendientes": [
+  [
+   8
+  ]
+ ],
+ "u10_ventas_por_tienda": [
+  [
+   "Valle",
+   7297650
+  ],
+  [
+   "Centro",
+   6951140
+  ],
+  [
+   "Lagos",
+   6134350
+  ],
+  [
+   "Costa",
+   5922540
+  ],
+  [
+   "Puerto",
+   5534370
+  ],
+  [
+   "Cerro",
+   3883390
+  ]
+ ],
+ "u10_unidades_por_producto": [
+  [
+   "gorros",
+   1746
+  ],
+  [
+   "polerones",
+   1449
+  ],
+  [
+   "poleras estampado doble",
+   1379
+  ],
+  [
+   "bolsas",
+   1304
+  ],
+  [
+   "poleras básicas",
+   978
+  ]
+ ],
+ "u10_margen_por_tipo_cliente": [
+  [
+   "empresa",
+   4667900
+  ],
+  [
+   "colegio",
+   4427520
+  ],
+  [
+   "club",
+   4004330
+  ],
+  [
+   "persona",
+   383940
+  ]
+ ],
+ "u10_clientes_sin_pedidos": [
+  [
+   4
+  ]
+ ],
+ "u11_clientes_sobre_promedio": [
+  [
+   12
+  ]
+ ],
+ "u11_proveedor_mas_barato": [
+  [
+   "poleras básicas",
+   "Telas Norte",
+   2400
+  ],
+  [
+   "polerones",
+   "Algodones Sur",
+   5400
+  ],
+  [
+   "poleras estampado doble",
+   "Textil Ñuble",
+   3600
+  ],
+  [
+   "bolsas",
+   "Telas Norte",
+   1350
+  ],
+  [
+   "gorros",
+   "Textil Ñuble",
+   1880
+  ]
+ ],
+ "u11_produccion_semana_6": [
+  [
+   "poleras básicas",
+   720,
+   6.0
+  ],
+  [
+   "polerones",
+   360,
+   9.0
+  ],
+  [
+   "poleras estampado doble",
+   360,
+   11.0
+  ],
+  [
+   "bolsas",
+   540,
+   3.0
+  ],
+  [
+   "gorros",
+   480,
+   4.0
+  ]
+ ]
+}

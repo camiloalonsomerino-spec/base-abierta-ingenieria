@@ -1,0 +1,9 @@
+Prendas  = {"poleras", "polerones", "doble", "bolsas", "gorros"};
+Recursos = {"estampado", "planchado", "tinta"};
+caja     = 24;
+margen   = [1380, 3940, 2270, 960, 1170];
+uso      = [[30, 90, 110, 20, 30],
+            [20, 50, 30, 40, 15],
+            [12, 25, 22, 8, 6]];
+cap      = [144000, 64800, 29500];
+demanda  = [1450, 520, 380, 860, 690];

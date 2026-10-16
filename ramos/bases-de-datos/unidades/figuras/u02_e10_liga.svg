@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="720" viewBox="0 0 1100 720" font-family="Segoe UI, Arial, sans-serif" role="img" aria-label="Diagrama de la liga de básquetbol, pauta 2.10">
+<rect width="1100" height="720" fill="white"/>
+<g transform="translate(0,0)">
+<line x1="300" y1="330" x2="165" y2="255" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="300" y1="330" x2="300" y2="225" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="300" y1="225" x2="220" y2="165" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="300" y1="225" x2="380" y2="165" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="300" y1="330" x2="140" y2="320" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="300" y1="330" x2="150" y2="385" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="300" y1="330" x2="440" y2="250" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="300" y1="600" x2="150" y2="560" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="300" y1="600" x2="145" y2="620" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="300" y1="600" x2="200" y2="680" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="300" y1="600" x2="330" y2="690" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="720" y1="330" x2="880" y2="280" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="720" y1="330" x2="900" y2="330" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="720" y1="330" x2="880" y2="380" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="720" y1="330" x2="610" y2="230" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="720" y1="330" x2="840" y2="230" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="800" y1="600" x2="655" y2="665" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="800" y1="600" x2="800" y2="690" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="800" y1="600" x2="950" y2="600" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="950" y1="600" x2="1045" y2="545" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="950" y1="600" x2="1050" y2="615" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="950" y1="600" x2="1000" y2="680" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="720" y1="90" x2="590" y2="50" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="720" y1="90" x2="860" y2="60" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="300" y1="470" x2="165" y2="470" stroke="#8A8F94" stroke-width="1.2"/>
+<line x1="510" y1="330" x2="510" y2="390" stroke="#8A8F94" stroke-width="1.2"/>
+<polyline points="300,330 300,470" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<polyline points="300,600 300,470" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<polyline points="300,330 510,330" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<polyline points="720,330 510,330" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<polyline points="300,600 470,470" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<polyline points="720,330 470,470" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<polyline points="300,600 620,470" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<polyline points="720,330 620,470" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<polyline points="720,330 800,470" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<polyline points="800,600 800,470" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<polyline points="720,90 720,200" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<polyline points="720,330 720,200" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<polyline points="300,330 255,330 255,85 300,85" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<polyline points="300,330 345,330 345,85 300,85" fill="none" stroke="#2B2F33" stroke-width="1.6"/>
+<ellipse cx="165" cy="255" rx="30.0" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="165" y="259.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">rut</text>
+<line x1="153.4" y1="262" x2="176.6" y2="262" stroke="#2B2F33" stroke-width="1"/>
+<ellipse cx="300" cy="225" rx="36.2" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="300" y="229.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">nombre</text>
+<ellipse cx="220" cy="165" rx="40.1" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="220" y="169.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">nombres</text>
+<ellipse cx="380" cy="165" rx="41.9" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="380" y="169.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">apellidos</text>
+<ellipse cx="140" cy="320" rx="47.9" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="140" y="324.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">fecha_nac</text>
+<ellipse cx="150" cy="385" rx="45.9" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2" stroke-dasharray="5 3"/>
+<text x="150" y="389.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">categoria</text>
+<ellipse cx="440" cy="250" rx="42.0" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<ellipse cx="440" cy="250" rx="38.0" ry="11" fill="none" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="440" y="254.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">telefono</text>
+<ellipse cx="150" cy="560" rx="42.0" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="150" y="564.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">cod_club</text>
+<line x1="121.0" y1="567" x2="179.0" y2="567" stroke="#2B2F33" stroke-width="1"/>
+<ellipse cx="145" cy="620" rx="36.2" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="145" y="624.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">nombre</text>
+<ellipse cx="200" cy="680" rx="36.2" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="200" y="684.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">comuna</text>
+<ellipse cx="330" cy="690" rx="38.1" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<ellipse cx="330" cy="690" rx="34.1" ry="11" fill="none" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="330" y="694.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">colores</text>
+<ellipse cx="880" cy="280" rx="45.9" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="880" y="284.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">n_partido</text>
+<line x1="847.1" y1="287" x2="912.9" y2="287" stroke="#2B2F33" stroke-width="1"/>
+<ellipse cx="900" cy="330" rx="32.4" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="900" y="334.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">fecha</text>
+<ellipse cx="880" cy="380" rx="30.0" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="880" y="384.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">hora</text>
+<ellipse cx="610" cy="230" rx="55.5" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2" stroke-dasharray="5 3"/>
+<text x="610" y="234.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">puntos_local</text>
+<ellipse cx="840" cy="230" rx="59.4" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2" stroke-dasharray="5 3"/>
+<text x="840" y="234.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">puntos_visita</text>
+<ellipse cx="655" cy="665" rx="36.2" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="655" y="669.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">nombre</text>
+<line x1="631.8" y1="672" x2="678.2" y2="672" stroke="#2B2F33" stroke-width="1"/>
+<ellipse cx="800" cy="690" rx="45.9" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="800" y="694.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">capacidad</text>
+<ellipse cx="950" cy="600" rx="43.9" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="950" y="604.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">direccion</text>
+<ellipse cx="1045" cy="545" rx="30.0" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="1045" y="549.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">calle</text>
+<ellipse cx="1050" cy="615" rx="36.2" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="1050" y="619.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">numero</text>
+<ellipse cx="1000" cy="680" rx="36.2" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="1000" y="684.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">comuna</text>
+<ellipse cx="590" cy="50" rx="30.0" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="590" y="54.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">rut</text>
+<line x1="578.4" y1="57" x2="601.6" y2="57" stroke="#2B2F33" stroke-width="1"/>
+<ellipse cx="860" cy="60" rx="36.2" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="860" y="64.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">nombre</text>
+<ellipse cx="165" cy="470" rx="32.4" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="165" y="474.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">desde</text>
+<ellipse cx="510" cy="390" rx="36.2" ry="15" fill="white" stroke="#2B2F33" stroke-width="1.2"/>
+<text x="510" y="394.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">puntos</text>
+<polygon points="243.0,470 300,446 357.0,470 300,494" fill="#FBEDE6" stroke="#2B2F33" stroke-width="1.5"/>
+<text x="300" y="474.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">juega_en</text>
+<polygon points="462,330 510,306 558,330 510,354" fill="#FBEDE6" stroke="#2B2F33" stroke-width="1.5"/>
+<text x="510" y="334.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">anota</text>
+<polygon points="417.0,470 470,446 523.0,470 470,494" fill="#FBEDE6" stroke="#2B2F33" stroke-width="1.5"/>
+<text x="470" y="474.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">es_local</text>
+<polygon points="563.125,470 620,446 676.875,470 620,494" fill="#FBEDE6" stroke="#2B2F33" stroke-width="1.5"/>
+<text x="620" y="474.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">es_visita</text>
+<polygon points="731.375,470 800,446 868.625,470 800,494" fill="#FBEDE6" stroke="#2B2F33" stroke-width="1.5"/>
+<text x="800" y="474.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">se_juega_en</text>
+<polygon points="672,200 720,176 768,200 720,224" fill="#FBEDE6" stroke="#2B2F33" stroke-width="1.5"/>
+<text x="720" y="204.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">dirige</text>
+<polygon points="223.625,85 300,61 376.375,85 300,109" fill="#FBEDE6" stroke="#2B2F33" stroke-width="1.5"/>
+<text x="300" y="89.3" text-anchor="middle" font-size="12.5" fill="#2B2F33">es_mentora_de</text>
+<rect x="252.5" y="313.0" width="95.0" height="34" fill="white" stroke="#2B2F33" stroke-width="1.8"/>
+<text x="300" y="334.8" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#2B2F33">jugadora</text>
+<rect x="271.4" y="583.0" width="57.2" height="34" fill="white" stroke="#2B2F33" stroke-width="1.8"/>
+<text x="300" y="604.8" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#2B2F33">club</text>
+<rect x="678.9" y="313.0" width="82.3" height="34" fill="white" stroke="#2B2F33" stroke-width="1.8"/>
+<text x="720" y="334.8" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#2B2F33">partido</text>
+<rect x="756.8" y="583.0" width="86.3" height="34" fill="white" stroke="#2B2F33" stroke-width="1.8"/>
+<text x="800" y="604.8" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#2B2F33">gimnasio</text>
+<rect x="678.9" y="73.0" width="82.3" height="34" fill="white" stroke="#2B2F33" stroke-width="1.8"/>
+<text x="720" y="94.8" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#2B2F33">arbitro</text>
+<text x="249.0" y="207.5" text-anchor="end" font-size="11.5" font-style="italic" fill="#E2622A">mentora</text>
+<text x="351.0" y="207.5" text-anchor="start" font-size="11.5" font-style="italic" fill="#E2622A">aprendiz</text>
+</g>
+</svg>

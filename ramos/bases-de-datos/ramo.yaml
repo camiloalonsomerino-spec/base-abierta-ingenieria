@@ -1,0 +1,29 @@
+# ramo.yaml · Bases de Datos (16-10-2026)
+nombre: Bases de Datos
+slug: bases-de-datos
+nivel: segundo año de Ingeniería Civil Industrial
+antes: []
+
+privado:
+  carpeta: ../base-abierta-ingenieria-datos/bases-de-datos
+  texto: ../base-abierta-ingenieria-datos/bases-de-datos/texto-del-material
+  programa: no disponible (el alcance sale de las clases y los tests)
+  encargo: ../base-abierta-ingenieria-datos/bases-de-datos/ENCARGO-UNIDADES.md
+
+caso:
+  nombre: la base de datos de Estampa Sur
+  script: verificacion/caso_estampa_sur_bd.py
+  datos: datos/estampa_sur.db y datos/esquema.sql (los regenera el script)
+
+software:
+  lenguaje: SQL estándar que corre en SQLite (Python, módulo sqlite3) y en MySQL; las diferencias se dicen
+  diagramas: entidad-relación como SVG generado por el script (notación de Chen o pata de gallo, la misma en todo el ramo)
+
+estilo:
+  comentes: false
+  notas: >
+    Cada diseño parte del problema en palabras (qué hay que guardar y qué preguntas hay que responder).
+    Cada consulta se escribe, se ejecuta y se muestra con su resultado real. Las consultas largas se
+    explican cláusula por cláusula en el orden en que el motor las evalúa.
+
+bibliografia_programa: []

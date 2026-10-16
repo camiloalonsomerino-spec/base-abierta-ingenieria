@@ -1,0 +1,16 @@
+// Unidad 7 · ejercicio 7.10: la central tiene dos puertos libres (metros de cable)
+// Base abierta de ingeniería. Lo genera verificacion/u07_arbol_minimo.py.
+
+Nodos = {"Central", "A", "B", "C", "D", "E"};
+Aristas = {
+  <"Central", "C", 35>,
+  <"Central", "D", 85>,
+  <"Central", "E", 175>,
+  <"A", "B", 265>,
+  <"A", "C", 280>,
+  <"A", "D", 205>,
+  <"B", "E", 95>,
+  <"C", "D", 110>
+};
+centro = "Central";
+puertos = 2;

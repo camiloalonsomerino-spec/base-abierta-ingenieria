@@ -1,0 +1,14 @@
+// Unidad 9 · caso integrador · Estampa Sur: dos talleres y cuatro tiendas (cajas por semana)
+// costo por caja = $95 por km de la ruta más corta (unidad 8)
+
+Orig = {"Taller", "Cruce"};
+Dest = {"Centro", "Lagos", "Valle", "Costa"};
+Prohibidas = {};
+
+oferta  = [320 216];
+demanda = [156 118 138 124];
+
+costo = [
+  [665 1995 1900 1520]    // Taller: 7, 21, 20 y 16 km
+  [570 1235  855 2185]    // Cruce:  6, 13,  9 y 23 km
+];

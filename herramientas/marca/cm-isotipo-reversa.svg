@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="17 25 180 178" width="180" height="178">
+  <title>Camilo Merino — isotipo CM</title>
+  <defs>
+    <mask id="cut" maskUnits="userSpaceOnUse" x="17" y="25" width="180" height="178">
+      <rect x="17" y="25" width="180" height="178" fill="#ffffff"></rect>
+      <g transform="translate(30,0) skewX(-12)">
+        <path d="M106,154 V70 L131,115 L157,70 V154" fill="none" stroke="#000000" stroke-width="38" stroke-linejoin="round" stroke-linecap="butt"></path>
+      </g>
+    </mask>
+  </defs>
+  <g mask="url(#cut)">
+    <g transform="translate(30,0) skewX(-12)">
+      <circle cx="100" cy="114" r="76" fill="none" stroke="#ffffff" stroke-width="9" stroke-dasharray="345 133" transform="rotate(46 100 114)"></circle>
+      <circle cx="98" cy="112" r="46" fill="none" stroke="#ffffff" stroke-width="34" stroke-dasharray="225 64" transform="rotate(40 98 112)"></circle>
+    </g>
+  </g>
+  <g transform="translate(30,0) skewX(-12)">
+    <path d="M106,154 V70 L131,115 L157,70 V154" fill="none" stroke="#ffffff" stroke-width="26" stroke-linejoin="round" stroke-linecap="butt"></path>
+  </g>
+</svg>

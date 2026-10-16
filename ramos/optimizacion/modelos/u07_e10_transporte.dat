@@ -1,0 +1,13 @@
+// Unidad 7 · ejercicio 7.10 · distribuidora (una semana)
+
+Bodegas = {"Talca", "Linares", "Parral"};
+Locales = {"L1", "L2", "L3", "L4"};
+
+oferta = [535 615 385];
+pedido = [305 265 345 218];
+
+costo = [
+  [146 212 264 188]    // Talca
+  [231 127 183 249]    // Linares
+  [297 238 114 176]    // Parral
+];

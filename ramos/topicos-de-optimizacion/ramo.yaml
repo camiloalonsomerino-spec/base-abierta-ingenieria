@@ -1,0 +1,32 @@
+# ramo.yaml · Tópicos de Optimización (15-10-2026)
+nombre: Tópicos de Optimización
+slug: topicos-de-optimizacion
+nivel: tercer año de Ingeniería Civil Industrial
+antes: [Optimización]
+
+privado:
+  carpeta: ../base-abierta-ingenieria-datos/topicos-de-optimizacion
+  texto: ../base-abierta-ingenieria-datos/topicos-de-optimizacion/texto-del-material
+  programa: el del curso, en la carpeta de texto privada (no se publica)
+  encargo: ../base-abierta-ingenieria-datos/topicos-de-optimizacion/ENCARGO-UNIDADES.md
+
+caso:
+  nombre: Estampa Sur crece
+  script: verificacion/caso_estampa_sur_red.py
+
+software:
+  modelos: OPL (CPLEX Studio); cada modelo en ramos/topicos-de-optimizacion/modelos/uNN_*.mod y .dat
+  verificacion: herramientas/opl.py corre el modelo si hay oplrun; el verificador siempre lo resuelve
+    también en Python (scipy linprog con HiGHS, o PuLP) y exige que coincidan
+
+estilo:
+  comentes: false
+  moneda: CLP
+  notas: >
+    Cada modelo se escribe primero en palabras (decisión, objetivo, restricciones), después en
+    notación algebraica con conjuntos e índices y al final en OPL. La lectura de la solución
+    (restricciones activas, holguras, precios sombra) pesa tanto como el modelo.
+
+bibliografia_programa:
+  - Winston, Investigación de operaciones - aplicaciones y algoritmos, Thomson, 4.ª ed., 2005
+  - Hillier y Lieberman, Introducción a la investigación de operaciones, McGraw-Hill, 7.ª ed., 2001

@@ -1,0 +1,14 @@
+// Unidad 7 · ejercicio 7.5 · mermeladas (una semana)
+
+Sabores  = {"frutilla", "damasco", "mora", "naranja"};
+Recursos = {"coccion", "envasado", "azucar"};
+
+margen = [38000 30000 45500 33500];
+
+uso = [
+  [50 40 60 45]       // cocción (min/lote)
+  [20 20 25 15]       // envasado (min/lote)
+  [12 10 14 11]       // azúcar (kg/lote)
+];
+
+disp = [2350 925 560];

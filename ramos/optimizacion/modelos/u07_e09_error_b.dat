@@ -1,0 +1,17 @@
+/*********************************************
+ * Unidad 7 · ejercicio 7.9 · .dat CON UN ERROR A PROPÓSITO (versión B)
+ *********************************************/
+
+Prendas  = {"poleras", "polerones", "doble", "bolsas", "gorros"};
+Recursos = {"estampado", "planchado", "tinta"};
+
+margen  = [1380 3940 2270 960 1170];
+
+uso = [
+  [30 90 110 20 30]      // estampado (s/unidad)
+  [20 50  30 40 15]      // planchado (s/unidad)
+  [12 25  22  8  6]      // tinta (g/unidad)
+];
+
+cap     = [40 18 29500];               // 40 h, 18 h y 29.500 g
+demanda = [1450 520 380 860 690];

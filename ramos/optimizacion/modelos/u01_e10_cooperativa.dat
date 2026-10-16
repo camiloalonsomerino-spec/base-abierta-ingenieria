@@ -1,0 +1,12 @@
+/* Unidad 1 - Ejercicio 1.10: una semana de la cooperativa */
+Especies = {"reineta", "merluza"};
+Procesos = {"fresco", "ahumado", "congelado"};
+
+captura   = [4200, 5800];
+capacidad = [3400, 2600, 3100];
+
+rend   = [[1.00, 0.52, 0.46],
+          [1.00, 0.41, 0.43]];
+precio = [[3250, 14200, 9650],
+          [2150, 11300, 7300]];
+costo  = [160, 1850, 870];

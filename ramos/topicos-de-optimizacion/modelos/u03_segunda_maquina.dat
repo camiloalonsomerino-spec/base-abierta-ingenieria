@@ -1,0 +1,7 @@
+// Unidad 3 · caso integrador · la segunda máquina de Estampa Sur
+
+margen = 18400;      // CLP por caja extra
+fijo   = 1650000;    // CLP
+tope   = 136;        // cajas como máximo
+minimo = 40;         // lote mínimo
+M      = 136;        // gran M ajustada = el tope

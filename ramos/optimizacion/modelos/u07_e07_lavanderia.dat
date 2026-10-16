@@ -1,0 +1,7 @@
+// Unidad 7 · ejercicio 7.7 · lavandería (una semana)
+
+Lavadoras = {"A", "B", "C"};
+cap  = [920 680 470];
+fijo = [61000 43500 24800];
+cvar = [38 45 61];
+D = 1340;

@@ -1,0 +1,15 @@
+// Unidad 8 · ejemplo: senderos de un sentido, personas por minuto
+// Base abierta de ingeniería. Lo genera verificacion/u08_ruta_y_flujo.py.
+
+Nodos = {"s", "a", "b", "c", "d", "t"};
+fuente = "s";
+sumidero = "t";
+Arcos = {
+  <"s", "a", 35>,
+  <"s", "b", 30>,
+  <"a", "b", 20>,
+  <"a", "c", 20>,
+  <"b", "d", 40>,
+  <"c", "t", 30>,
+  <"d", "t", 30>
+};

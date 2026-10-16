@@ -1,0 +1,262 @@
+{
+ "u1": {
+  "total_activo": 15768000,
+  "total_pasivo": 1340000,
+  "capital": 14428000
+ },
+ "u2": {
+  "asientos": [
+   {
+    "n": 1,
+    "glosa": "Compra de poleras lisas básicas a crédito",
+    "debe": {
+     "Poleras lisas básicas": 5145000,
+     "IVA crédito fiscal": 977550
+    },
+    "haber": {
+     "Proveedores": 6122550
+    }
+   },
+   {
+    "n": 2,
+    "glosa": "Compra de las otras prendas lisas a crédito",
+    "debe": {
+     "Otras prendas lisas": 10166980,
+     "IVA crédito fiscal": 1931726
+    },
+    "haber": {
+     "Proveedores": 12098706
+    }
+   },
+   {
+    "n": 3,
+    "glosa": "Compra de tinta al contado",
+    "debe": {
+     "Tinta": 1176731,
+     "IVA crédito fiscal": 223579
+    },
+    "haber": {
+     "Banco": 1400310
+    }
+   },
+   {
+    "n": 4,
+    "glosa": "Compra de la segunda máquina",
+    "debe": {
+     "Maquinaria": 14300000,
+     "IVA crédito fiscal": 2717000
+    },
+    "haber": {
+     "Banco": 8267000,
+     "Documentos por pagar a largo plazo": 8750000
+    }
+   },
+   {
+    "n": 5,
+    "glosa": "Préstamo bancario",
+    "debe": {
+     "Banco": 6400000
+    },
+    "haber": {
+     "Préstamo bancario": 6400000
+    }
+   },
+   {
+    "n": 6,
+    "glosa": "Ventas del mes",
+    "debe": {
+     "Banco": 18368507,
+     "Clientes": 12245671
+    },
+    "haber": {
+     "Ventas": 25726200,
+     "IVA débito fiscal": 4887978
+    }
+   },
+   {
+    "n": 7,
+    "glosa": "Pago de sueldos",
+    "debe": {
+     "Sueldos": 2880000
+    },
+    "haber": {
+     "Banco": 2880000
+    }
+   },
+   {
+    "n": 8,
+    "glosa": "Arriendo de abril a junio pagado por anticipado",
+    "debe": {
+     "Arriendo pagado por anticipado": 1740000
+    },
+    "haber": {
+     "Banco": 1740000
+    }
+   },
+   {
+    "n": 9,
+    "glosa": "Seguro anual pagado al contado",
+    "debe": {
+     "Seguro pagado por anticipado": 948000,
+     "IVA crédito fiscal": 180120
+    },
+    "haber": {
+     "Banco": 1128120
+    }
+   },
+   {
+    "n": 10,
+    "glosa": "Pago a proveedores del saldo inicial",
+    "debe": {
+     "Proveedores": 1340000
+    },
+    "haber": {
+     "Banco": 1340000
+    }
+   },
+   {
+    "n": 11,
+    "glosa": "Cobro a clientes del saldo inicial",
+    "debe": {
+     "Banco": 1180000
+    },
+    "haber": {
+     "Clientes": 1180000
+    }
+   },
+   {
+    "n": 12,
+    "glosa": "Otros gastos fijos de administración",
+    "debe": {
+     "Gastos de administración": 436000,
+     "IVA crédito fiscal": 82840
+    },
+    "haber": {
+     "Banco": 518840
+    }
+   }
+  ],
+  "ventas_netas": 25726200,
+  "compra_tinta_kg": 71.317,
+  "otras_prendas_lisas": 10166980
+ },
+ "u3": {
+  "debito": 4887978.0,
+  "credito": 6112815.0,
+  "a_pagar": 0,
+  "remanente": 1224837.0
+ },
+ "u4": {
+  "depreciacion_mensual": {
+   "pulpo 6 (inicial)": 102500.0,
+   "segunda máquina": 208333.33333333334
+  },
+  "total_mes": 310833.3333333334
+ },
+ "u5": {
+  "arriendo_devengado": 580000,
+  "seguro_devengado": 79000.0,
+  "arriendo_anticipado_al_31": 1740000,
+  "seguro_anticipado_al_31": 869000.0
+ },
+ "u6": {
+  "cuota": 306678.1094581736,
+  "interes_mes_1": 73600.0,
+  "amortizacion_mes_1": 233078.10945817363,
+  "saldo_tras_cuota_1": 6166921.890541826,
+  "interes_total": 960274.626996167
+ },
+ "u7": {
+  "consumo": 2236,
+  "costo_fifo": 5433200,
+  "saldo_fifo": 1871800,
+  "ppp": 2435.0,
+  "costo_ppp": 5444660.0,
+  "saldo_ppp": 1860340.0,
+  "costo_estandar": 5366400,
+  "variacion_fifo": 66800,
+  "variacion_ppp": 78260.0
+ },
+ "u9": {
+  "costo_variable": [
+   2610,
+   5950,
+   4020,
+   1530,
+   2020
+  ],
+  "otros_variables": [
+   12.0,
+   137.5,
+   57.0,
+   48.0,
+   41.0
+  ],
+  "cif_fijos_mes": 3849833.3333333335,
+  "gastos_admin": 436000,
+  "gasto_financiero": 73600.0
+ },
+ "u11": {
+  "segundos_estampado_mes": 275020,
+  "tasa_por_segundo": 13.99837587569389,
+  "cif_por_prenda": [
+   419.9512762708167,
+   1259.85382881245,
+   1539.821346326328,
+   279.9675175138778,
+   419.9512762708167
+  ],
+  "costo_absorcion_por_prenda": [
+   3029.951276270817,
+   7209.85382881245,
+   5559.821346326328,
+   1809.9675175138777,
+   2439.951276270817
+  ]
+ },
+ "u10": {
+  "resultado_variable": 5236676.666666666,
+  "resultado_absorcion": 5436293.506654061,
+  "diferencia": 199616.83998739533,
+  "inventario_final": [
+   116,
+   44,
+   43,
+   52,
+   35
+  ],
+  "cif_en_inventario": 199616.83998739487
+ },
+ "u8": {
+  "ventas": 25726200,
+  "costo_ventas": 19853906.49334594,
+  "margen_bruto": 5872293.506654061,
+  "resultado_operacional": 5436293.506654061,
+  "gastos_financieros": 73600.0,
+  "utilidad_antes_impuesto": 5362693.506654061,
+  "margen_neto": 0.2084526088833198,
+  "margen_bruto_pct": 0.22826120867652672
+ },
+ "u12": {
+  "mezcla": [
+   0.4,
+   0.15,
+   0.15,
+   0.18,
+   0.12
+  ],
+  "margen_ponderado": 1796.7,
+  "costos_fijos_operacionales": 4285833.333333334,
+  "equilibrio_unidades": 2385.3917367024733,
+  "equilibrio_por_producto": [
+   954.1566946809894,
+   357.80876050537097,
+   357.80876050537097,
+   429.3705126064452,
+   286.24700840429676
+  ],
+  "equilibrio_pesos": 11578691.489953805,
+  "margen_seguridad": 0.5499260874146277,
+  "apalancamiento_operativo": 1.8184261901473138
+ }
+}

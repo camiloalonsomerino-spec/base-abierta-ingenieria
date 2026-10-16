@@ -1,0 +1,29 @@
+# ramo.yaml · Gestión de Operaciones (15-10-2026)
+nombre: Gestión de Operaciones
+slug: gestion-de-operaciones
+nivel: tercer año de Ingeniería Civil Industrial
+antes: [Optimización, probabilidad básica]
+
+# Rutas PRIVADAS (no se publican). Relativas a la raíz de la base o absolutas.
+privado:
+  carpeta: ../base-abierta-ingenieria-datos/gestion-de-operaciones
+  texto: ../base-abierta-ingenieria-datos/gestion-de-operaciones/texto-del-material
+  programa: el del curso, en la carpeta de texto privada (no se publica)
+
+# Caso integrador: un solo script, fuente única de las cifras que cruzan unidades.
+caso:
+  nombre: Estampa Sur
+  script: verificacion/caso_estampa_sur.py
+
+# Estilo de los ejercicios
+estilo:
+  comentes: false        # true si el ramo evalúa afirmaciones con argumento (dos de los diez)
+  moneda: CLP
+  notas: >
+    Contexto chileno creíble (talleres, imprentas, agroindustria). Las unidades de planificación
+    usan tablas semanales anchas: abreviar rótulos.
+
+bibliografia_programa:
+  - Chase, Jacobs y Aquilano, Administración de operaciones, 12.ª ed., 2009
+  - Schroeder, Administración de operaciones, 2.ª ed., 2004
+  - Heizer y Render, Principios de administración de operaciones, 5.ª ed., 2004

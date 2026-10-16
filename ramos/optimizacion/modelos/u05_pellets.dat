@@ -1,0 +1,13 @@
+/*********************************************
+ * Unidad 5 · datos del ejemplo Pellet del Laja (abril a julio)
+ *********************************************/
+NMeses  = 4;
+demanda = [1850 2700 3450 3150];
+capReg  = 2480;
+cReg    = 2140;
+capExt  = 690;
+cExt    = 2590;
+cInv    = 95;
+bodega  = 1250;
+inv0    = 240;
+invFin  = 180;

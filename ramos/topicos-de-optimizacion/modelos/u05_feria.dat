@@ -1,0 +1,5 @@
+// Unidad 5 · ejemplo · cinco cajas y un maletero de 165 litros
+Productos = {"tazones", "velas", "lámparas", "mantas", "jabones"};
+ganancia  = [217 259 47 248 138];
+litros    = [50 65 145 60 35];
+maletero  = 165;

@@ -1,0 +1,13 @@
+// Unidad 4 · ejercicio 4.5 · ensamblaje de 9.600 L. Datos originales.
+
+Vinos     = {"cabernet", "merlot", "carmenere"};
+principal = "cabernet";
+
+alcohol = [14.0 13.0 14.5];
+costo   = [1900 1480 1100];
+disp    = [7000 4000 5800];
+
+total    = 9600;
+alc_min  = 13.2;
+alc_max  = 13.8;
+part_min = 0.5;

@@ -1,0 +1,19 @@
+// Unidad 4 · ejercicio 4.6 · tablas de 320 cm en piezas de 110, 80 y 50 cm
+
+Piezas   = {"A110", "B80", "C50"};
+Patrones = {"P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10"};
+
+a = [
+  [2 1 0]     // P1  merma 20 cm
+  [2 0 2]     // P2  merma 0
+  [1 2 1]     // P3  merma 0
+  [1 1 2]     // P4  merma 30 cm
+  [1 0 4]     // P5  merma 10 cm
+  [0 4 0]     // P6  merma 0
+  [0 3 1]     // P7  merma 30 cm
+  [0 2 3]     // P8  merma 10 cm
+  [0 1 4]     // P9  merma 40 cm
+  [0 0 6]     // P10 merma 20 cm
+];
+
+pide = [40 65 90];

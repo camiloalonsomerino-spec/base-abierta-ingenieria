@@ -1,0 +1,7 @@
+// Unidad 6 · ejercicio 6.10 · gran M ajustada (el tope de cada línea)
+Lineas = {"rubia", "roja"};
+margen = [14 11];
+fijo   = [172 97];
+tope   = [40 30];
+K      = 55;
+M      = [40 30];

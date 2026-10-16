@@ -1,0 +1,15 @@
+// Unidad 9 · ejemplo resuelto · agua purificada: tres plantas y cuatro sectores (bidones por semana)
+// sobran 72 bidones: con oferta <= el modelo no necesita destino ficticio
+
+Orig = {"Coihueco", "Bulnes", "Yungay"};
+Dest = {"Norte", "Poniente", "Oriente", "Sur"};
+Prohibidas = {};
+
+oferta  = [312 372 228];
+demanda = [216 276 180 168];
+
+costo = [               // CLP por bidón
+  [428 676 552 386]
+  [524 366 458 614]
+  [662 494 336 486]
+];

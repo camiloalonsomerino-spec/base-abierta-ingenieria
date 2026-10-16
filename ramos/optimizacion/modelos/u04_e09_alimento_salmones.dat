@@ -1,0 +1,29 @@
+// Unidad 4 · ejercicio 4.9 · alimento para salmones (una semana). Datos originales.
+
+Ingredientes = {"harina_pescado", "soya", "aceite_pescado", "aceite_raps"};
+Aceites      = {"aceite_pescado", "aceite_raps"};
+Nutrientes   = {"proteina", "lipidos"};
+Alimentos    = {"inicio", "engorda"};
+
+aporte = [
+  [64  10]       // harina de pescado: % proteína, % lípidos
+  [45   2]       // harina de soya
+  [ 0 100]       // aceite de pescado
+  [ 0 100]       // aceite de raps
+];
+
+costo = [1650 520 2400 1150];
+disp  = [60 10000 10000 10000];
+dem   = [40 120];
+
+minimo = [
+  [48 18]        // inicio
+  [38 28]        // engorda
+];
+maximo = [
+  [100 22]
+  [100 32]
+];
+
+omega      = 0.4;
+harina_min = 0.25;

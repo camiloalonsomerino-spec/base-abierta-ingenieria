@@ -1,0 +1,15 @@
+// Unidad 7 · ejemplo resuelto · datos de la panadería (una semana)
+
+Panes    = {"marraqueta", "hallulla", "amasado"};
+Recursos = {"horno", "amasadora", "harina"};
+
+margen = [6000 4200 6500];
+
+uso = [
+  [16 12 20]        // horno (min/bandeja)
+  [ 8 10 18]        // amasadora (min/bandeja)
+  [ 5 4.5 6]        // harina (kg/bandeja)
+];
+
+disp = [2480 1730 885];
+tope = [80 125 60];

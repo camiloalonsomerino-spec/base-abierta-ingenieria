@@ -1,0 +1,5 @@
+// Unidad 5 · ejercicio 5.10 · seis pedidos y 162 horas-máquina
+n      = 6;
+margen = [133 232 157 124 48 144];
+horas  = [34 44 84 54 59 74];
+H      = 162;

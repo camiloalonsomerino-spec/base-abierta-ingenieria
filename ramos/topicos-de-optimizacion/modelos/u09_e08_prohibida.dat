@@ -1,0 +1,14 @@
+// Unidad 9 · ejercicio 9.8 · tres plantas y cuatro clientes, con una ruta prohibida (P2 a C4)
+
+Orig = {"P1", "P2", "P3"};
+Dest = {"C1", "C2", "C3", "C4"};
+Prohibidas = {<"P2", "C4">};
+
+oferta  = [90 75 85];
+demanda = [60 70 55 65];
+
+costo = [               // miles de CLP por tonelada (el 0 de P2-C4 no se usa: la ruta está prohibida)
+  [30 25 40 46]
+  [39 37 34  0]
+  [29 38 36 37]
+];

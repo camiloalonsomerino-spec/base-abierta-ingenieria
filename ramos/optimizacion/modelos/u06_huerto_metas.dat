@@ -1,0 +1,12 @@
+/* Unidad 6 · ejemplo del huerto (metas). Generado por verificacion/u06_varios_objetivos.py */
+margen = [2600 1400];
+agua = [1100 450];
+trabajo = [168 84];
+superficie = 120;
+minutos = 15120;
+tomateMin = 20;
+lechugaMax = 90;
+metaMargen = 200000;
+metaAgua = 68000;
+wMargen = 0.5;
+wAgua = 0.5;

@@ -1,0 +1,14 @@
+// Unidad 7 · ejercicio 7.3 · vivero (una semana)
+
+Plantas  = {"lavanda", "romero", "suculenta"};
+Recursos = {"trasplante", "sustrato"};
+
+margen = [1070 845 1360];
+
+uso = [
+  [4 3 6]             // trasplante (min/maceta)
+  [3 2 1]             // sustrato (L/maceta)
+];
+
+cap     = [2510 1570];
+demanda = [310 410 240];

@@ -1,0 +1,12 @@
+/* Unidad 11 · Ejemplo resuelto · la panadería y sus seis almacenes (km, línea recta redondeada) */
+Nodos = {"P", "A", "B", "C", "D", "E", "F"};
+Base  = "P";
+d = [
+  [ 0,  9,  3,  7,  9,  7,  7],
+  [ 9,  0,  6,  9, 11, 13,  5],
+  [ 3,  6,  0,  6,  8,  9,  5],
+  [ 7,  9,  6,  0,  2,  5,  4],
+  [ 9, 11,  8,  2,  0,  5,  5],
+  [ 7, 13,  9,  5,  5,  0,  9],
+  [ 7,  5,  5,  4,  5,  9,  0]
+];

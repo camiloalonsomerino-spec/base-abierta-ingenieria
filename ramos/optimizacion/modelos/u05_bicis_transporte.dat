@@ -1,0 +1,11 @@
+/* Unidad 5 · ejercicio 5.10, el plan de 5.5 como transporte. Generado por verificacion/u05_modelamiento_ii.py */
+Origenes = {"prod1", "prod2", "prod3", "prod4"};
+Destinos = {"dem1", "dem2", "dem3", "dem4"};
+oferta  = [170 170 170 170];
+demanda = [120 160 210 150];
+costo = [
+  [0 9000 18000 27000]
+  [15000 0 9000 18000]
+  [30000 15000 0 9000]
+  [45000 30000 15000 0]
+];

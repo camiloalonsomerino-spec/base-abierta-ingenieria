@@ -1,0 +1,14 @@
+// Unidad 9 · ejercicio 9.9 · fruta: tres huertos y tres plantas; Huerto 3 no puede vender a Planta A
+
+Orig = {"Huerto 1", "Huerto 2", "Huerto 3"};
+Dest = {"Planta A", "Planta B", "Planta C"};
+Prohibidas = {<"Huerto 3", "Planta A">};
+
+oferta = [80 70 90];
+pedido = [70 85 60];
+
+ganancia = [            // miles de CLP por tonelada (el 0 de Huerto 3-Planta A no se usa)
+  [70 62 46]
+  [70 70 68]
+  [ 0 49 40]
+];

@@ -1,0 +1,17 @@
+// Unidad 10 · ejercicio 10.5 · cinco personas y cinco trabajos
+
+Personas = {"Amanda", "Beto", "Carla", "Dante", "Elisa"};
+Tareas   = {"J1", "J2", "J3", "J4", "J5"};
+Prohibidos = {};
+
+costo = [
+  [48 97 68 61 82]
+  [86 84 73 77 48]
+  [77 42 99 41 70]
+  [98 62 84 59 42]
+  [41 78 80 44 70]
+];
+
+minTareas   = [1 1 1 1 1];
+maxTareas   = [1 1 1 1 1];
+obligatoria = [1 1 1 1 1];

@@ -1,0 +1,16 @@
+// Unidad 8 · ejercicio 8.10: minutos y peaje en pesos
+// Base abierta de ingeniería. Lo genera verificacion/u08_ruta_y_flujo.py.
+
+Nodos = {"s", "a", "b", "c", "t"};
+origen = "s";
+destino = "t";
+presupuesto = 6200;
+Arcos = {
+  <"s", "a", 8, 3450>,
+  <"a", "t", 12, 5850>,
+  <"s", "b", 15, 950>,
+  <"b", "t", 25, 2150>,
+  <"s", "c", 18, 2650>,
+  <"c", "t", 16, 2750>,
+  <"a", "b", 4, 650>
+};

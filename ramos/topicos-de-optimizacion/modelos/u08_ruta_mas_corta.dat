@@ -1,0 +1,22 @@
+// Unidad 8 · caso: caminos de doble sentido, en km
+// Base abierta de ingeniería. Lo genera verificacion/u08_ruta_y_flujo.py.
+
+Nodos = {"Taller", "Centro", "Puerto", "Lagos", "Valle", "Costa", "Cerro", "Cruce"};
+origen = "Taller";
+destino = "Cerro";
+Caminos = {
+  <"Taller", "Centro", 7>,
+  <"Taller", "Cruce", 11>,
+  <"Taller", "Costa", 16>,
+  <"Centro", "Puerto", 9>,
+  <"Centro", "Cruce", 6>,
+  <"Centro", "Lagos", 14>,
+  <"Puerto", "Costa", 8>,
+  <"Puerto", "Lagos", 12>,
+  <"Lagos", "Valle", 10>,
+  <"Lagos", "Cruce", 13>,
+  <"Valle", "Cruce", 9>,
+  <"Valle", "Cerro", 7>,
+  <"Cerro", "Cruce", 12>,
+  <"Cerro", "Costa", 23>
+};

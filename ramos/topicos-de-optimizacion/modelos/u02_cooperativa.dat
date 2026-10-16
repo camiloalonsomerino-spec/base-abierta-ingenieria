@@ -1,0 +1,5 @@
+n            = 6;
+inversion    = [10, 39, 16, 26, 8, 15];
+van          = [18, 23, 9, 17, 13, 12];
+presupuesto  = 75;
+maxProyectos = 4;

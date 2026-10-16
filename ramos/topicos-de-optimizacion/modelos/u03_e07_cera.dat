@@ -1,0 +1,5 @@
+// Unidad 3 · ejercicio 3.7 · cera de soya con descuento incremental
+
+precio = [1900 1600 1350];   // CLP por kg: primeros 200 kg, del 201 al 500, sobre 500
+corte  = [200 500];          // kg acumulados
+compra = 640;                // kg

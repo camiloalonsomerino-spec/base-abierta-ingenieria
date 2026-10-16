@@ -1,0 +1,10 @@
+// Unidad 7 · ejercicio 7.6 · empanadas congeladas (cuatro semanas)
+
+T = 4;
+demanda = [370 460 515 290];
+inv0 = 45;
+cap_regular = 410;
+cap_extra = 160;
+c_regular = 1750;
+c_extra = 2480;
+c_inv = 135;

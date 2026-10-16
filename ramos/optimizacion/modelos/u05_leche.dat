@@ -1,0 +1,10 @@
+/* Unidad 5 · ejercicio 5.2, leche de tres predios a tres plantas. Generado por verificacion/u05_modelamiento_ii.py */
+Origenes = {"PredioA", "PredioB", "PredioC"};
+Destinos = {"Planta1", "Planta2", "Planta3"};
+oferta  = [4200 3100 4700];
+demanda = [3600 4300 4100];
+costo = [
+  [18 25 31]
+  [22 15 27]
+  [29 20 14]
+];

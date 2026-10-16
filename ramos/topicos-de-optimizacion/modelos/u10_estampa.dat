@@ -1,0 +1,16 @@
+// Unidad 10 · caso integrador · Estampa Sur: cuatro operarios y cuatro máquinas (minutos por lote)
+
+Personas = {"Ana", "Bruno", "Daniela", "Esteban"};
+Tareas   = {"pulpo 6 brazos", "pulpo 4 brazos", "termica", "bordadora"};
+Prohibidos = {};
+
+costo = [
+  [38 44 29 51]    // Ana
+  [42 37 33 47]    // Bruno
+  [35 41 36 43]    // Daniela
+  [46 39 31 49]    // Esteban
+];
+
+minTareas   = [1 1 1 1];
+maxTareas   = [1 1 1 1];
+obligatoria = [1 1 1 1];

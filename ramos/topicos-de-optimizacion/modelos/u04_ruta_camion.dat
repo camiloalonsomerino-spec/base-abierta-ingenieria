@@ -1,0 +1,15 @@
+// Unidad 4 · caso integrador · el camión de Estampa Sur y las seis tiendas
+// km de ruta más corta por los caminos (sale de verificacion/caso_estampa_sur_red.py)
+
+Lugares = {"Taller", "Centro", "Puerto", "Lagos", "Valle", "Costa", "Cerro"};
+base    = "Taller";
+
+d = [
+  [ 0  7 16 21 20 16 23]     // Taller
+  [ 7  0  9 14 15 17 18]     // Centro
+  [16  9  0 12 22  8 27]     // Puerto
+  [21 14 12  0 10 20 17]     // Lagos
+  [20 15 22 10  0 30  7]     // Valle
+  [16 17  8 20 30  0 23]     // Costa
+  [23 18 27 17  7 23  0]     // Cerro
+];

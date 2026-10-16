@@ -1,0 +1,11 @@
+/* Unidad 12 · ejercicio 12.7: la chocolatería de la unidad 11 con la caja degustación.
+   Se corre con u12_mezcla_topes.mod. */
+Productos = {"clasica", "surtida", "trufas", "degustacion"};
+Recursos  = {"templado", "envasado"};
+margen  = [4100 1400 4500 2000];           // CLP por caja
+uso = [
+  [5 4 3 2]                                // minutos de templado por caja
+  [4 4 3 3]                                // minutos de envasado por caja
+];
+cap     = [660 820];
+demanda = [180 390 80 150];

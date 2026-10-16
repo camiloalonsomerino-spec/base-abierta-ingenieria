@@ -1,0 +1,9 @@
+/* Unidad 5 · sección 3, huevos de dos granjas a tres supermercados. Generado por verificacion/u05_modelamiento_ii.py */
+Origenes = {"Limache", "Casablanca"};
+Destinos = {"Vina", "Valparaiso", "Quilpue"};
+oferta  = [900 700];
+demanda = [620 480 350];
+costo = [
+  [58 72 41]
+  [66 49 83]
+];

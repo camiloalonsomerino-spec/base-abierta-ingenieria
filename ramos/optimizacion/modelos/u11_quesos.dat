@@ -1,0 +1,10 @@
+/* Unidad 11 · ejercicio 11.5: quesería (una semana) */
+Productos = {"gauda", "mantecoso", "fresco"};
+Recursos  = {"leche", "camara", "envasado"};
+margen = [2600 2900 1900];                 // CLP por horma
+uso = [
+  [4 6 3]                                  // decenas de litros de leche por horma
+  [2 1 1]                                  // horas de cámara de maduración por horma
+  [1 2 1]                                  // horas de envasado por horma
+];
+cap = [960 300 260];

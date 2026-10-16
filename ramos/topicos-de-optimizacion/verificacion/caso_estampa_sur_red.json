@@ -1,0 +1,190 @@
+{
+ "u1": {
+  "cajas_lp": [
+   34.739583333333336,
+   21.666666666666668,
+   0.0,
+   12.265625,
+   28.75
+  ],
+  "redondeo_abajo": [
+   34,
+   21,
+   0,
+   12,
+   28
+  ],
+  "margen_redondeo": 4174560.0,
+  "cajas_entero": [
+   38,
+   21,
+   0,
+   10,
+   28
+  ],
+  "margen_entero": 4260960.0,
+  "margen_lp": 4289275.0
+ },
+ "u2": {
+  "valor_neto": 2510000,
+  "lanza": [
+   "banderines",
+   "chaquetas",
+   "delantales",
+   "parches"
+  ],
+  "inversion": 4810000
+ },
+ "u3": {
+  "utilidad": 852400,
+  "compra": 1,
+  "cajas": 136,
+  "cajas_equilibrio": 89.67391304347827
+ },
+ "u4": {
+  "tsp_km": 78,
+  "tsp_ruta": [
+   "Taller",
+   "Centro",
+   "Cerro",
+   "Valle",
+   "Lagos",
+   "Puerto",
+   "Costa",
+   "Taller"
+  ]
+ },
+ "u7": {
+  "mst_km": 56,
+  "mst_aristas": [
+   [
+    "Centro",
+    "Cruce"
+   ],
+   [
+    "Centro",
+    "Puerto"
+   ],
+   [
+    "Centro",
+    "Taller"
+   ],
+   [
+    "Cerro",
+    "Valle"
+   ],
+   [
+    "Costa",
+    "Puerto"
+   ],
+   [
+    "Cruce",
+    "Valle"
+   ],
+   [
+    "Lagos",
+    "Valle"
+   ]
+  ]
+ },
+ "u8": {
+  "dijkstra": {
+   "Taller": 0,
+   "Centro": 7,
+   "Puerto": 16,
+   "Lagos": 21,
+   "Valle": 20,
+   "Costa": 16,
+   "Cerro": 23,
+   "Cruce": 11
+  },
+  "camino_a_Cerro": [
+   "Taller",
+   "Cruce",
+   "Cerro"
+  ],
+  "flujo_max_a_Cerro": 55,
+  "corte_min_valor": 55
+ },
+ "u9": {
+  "costos": [
+   [
+    665,
+    1995,
+    1900,
+    1520
+   ],
+   [
+    570,
+    1235,
+    855,
+    2185
+   ]
+  ],
+  "envios": [
+   [
+    156.0,
+    40.0,
+    0.0,
+    124.0
+   ],
+   [
+    0.0,
+    78.0,
+    138.0,
+    0.0
+   ]
+  ],
+  "costo_total": 586340.0,
+  "oferta_total": 536,
+  "demanda_total": 536
+ },
+ "u10": {
+  "minutos": 149,
+  "asignacion": {
+   "Ana": "pulpo 6 brazos",
+   "Bruno": "pulpo 4 brazos",
+   "Daniela": "bordadora",
+   "Esteban": "térmica"
+  }
+ },
+ "u11": {
+  "vecino_km": 84,
+  "vecino_ruta": [
+   "Taller",
+   "Centro",
+   "Puerto",
+   "Costa",
+   "Lagos",
+   "Valle",
+   "Cerro",
+   "Taller"
+  ],
+  "dos_opt_km": 84,
+  "dos_opt_ruta": [
+   "Taller",
+   "Centro",
+   "Puerto",
+   "Costa",
+   "Lagos",
+   "Valle",
+   "Cerro",
+   "Taller"
+  ],
+  "gap_vecino": 0.07692307692307693
+ },
+ "u12": {
+  "recocido_km": 78,
+  "recocido_ruta": [
+   "Taller",
+   "Costa",
+   "Puerto",
+   "Lagos",
+   "Valle",
+   "Cerro",
+   "Centro",
+   "Taller"
+  ],
+  "optimo_km": 78
+ }
+}

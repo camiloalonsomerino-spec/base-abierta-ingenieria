@@ -1,0 +1,116 @@
+{
+ "productos": [
+  "poleras básicas",
+  "polerones",
+  "poleras estampado doble",
+  "bolsas",
+  "gorros"
+ ],
+ "u2": {
+  "x": [
+   1440.0,
+   720.0
+  ],
+  "z": 4824000.0,
+  "vertices": [
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    830.0,
+    3270200.0
+   ],
+   [
+    1110.0,
+    830.0,
+    4802000.0
+   ],
+   [
+    1440.0,
+    720.0,
+    4824000.0
+   ],
+   [
+    3240.0,
+    0.0,
+    4471200.0
+   ]
+  ],
+  "duales": [
+   32.66666666666667,
+   20.0
+  ]
+ },
+ "u3": {
+  "precio_optimo": 11825.0,
+  "cantidad": 635.5999999999999,
+  "utilidad": 3607029.9999999995,
+  "precio_numerico": 11825.000000000002,
+  "segunda_derivada": -0.224
+ },
+ "u4": {
+  "x": [
+   833.75,
+   520.0,
+   0.0,
+   294.375,
+   690.0
+  ],
+  "z": 4289275.0,
+  "holguras": [
+   45600.0,
+   0.0,
+   0.0
+  ],
+  "precios_sombra": [
+   0.0,
+   1.5,
+   112.5
+  ],
+  "costo_reducido_cotas": [
+   -0.0,
+   1052.5,
+   -0.0,
+   -0.0,
+   472.5
+  ]
+ },
+ "u12": {
+  "valor_hora_estampado": 0.0,
+  "valor_hora_planchado": 5400.0,
+  "conviene_extra_estampado": false,
+  "conviene_extra_planchado": false
+ },
+ "u5": {
+  "produccion": [
+   380.0,
+   510.0,
+   560.0,
+   540.0
+  ],
+  "inventario": [
+   0.0,
+   50.0,
+   0.0,
+   0.0
+  ],
+  "costo": 10500.0,
+  "cap_semana": 560,
+  "costo_envio_total": 433300
+ },
+ "u6": {
+  "z_max": 4289275.0,
+  "tinta_en_z_max": 29500.0,
+  "tinta_min_con_meta_margen": 26039.777777777777,
+  "x_meta": [
+   401.2222222222223,
+   520.0,
+   0.0,
+   510.6388888888888,
+   690.0
+  ]
+ }
+}

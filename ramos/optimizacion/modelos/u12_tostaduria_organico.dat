@@ -1,0 +1,11 @@
+/* Unidad 12 · ejemplo: la tostaduría de la unidad 11 con una mezcla nueva (orgánico).
+   Se corre con u11_mezcla.mod: el modelo no cambia, solo los datos. */
+Productos = {"espresso", "filtro", "descafeinado", "organico"};
+Recursos  = {"tostadora", "envasadora", "bolsas"};
+margen = [4200 3450 5100 3700];            // CLP por kg
+uso = [
+  [6 4 9 4]                                // minutos de tostadora por kg
+  [3 2 2 2]                                // minutos de envasadora por kg
+  [1 1 1 1]                                // bolsas con válvula por kg
+];
+cap = [2400 1000 350];

@@ -1,0 +1,16 @@
+/* Unidad 5 · ejercicio 5.9. Generado por verificacion/u05_modelamiento_ii.py */
+NMeses = 3;
+Plantas = {"Talca", "Chillan"};
+Clientes = {"Curico", "Linares", "LosAngeles"};
+cap = [880 690];
+cProd = [1170 1020];
+cInv = [60 75];
+cEnv = [
+  [95 117 370]
+  [285 155 138]
+];
+dem = [
+  [430 370 590]
+  [380 390 470]
+  [360 415 570]
+];

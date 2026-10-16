@@ -1,0 +1,9 @@
+/* Unidad 5 · caso integrador, envío a las tres tiendas. Generado por verificacion/u05_modelamiento_ii.py */
+Origenes = {"Taller", "BodegaChillan"};
+Destinos = {"Concepcion", "Chillan", "LosAngeles", "Ficticio"};
+oferta  = [1440 500];
+demanda = [690 410 340 500];
+costo = [
+  [140 390 520 0]
+  [380 90 310 0]
+];

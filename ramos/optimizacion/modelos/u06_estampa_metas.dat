@@ -1,0 +1,14 @@
+/* Unidad 6 · caso integrador: las cifras de verificacion/caso_estampa_sur_lp.py.
+   Generado por verificacion/u06_varios_objetivos.py */
+Prendas = {"poleras", "polerones", "doble", "bolsas", "gorros"};
+margen = [1380 3940 2270 960 1170];
+est = [30 90 110 20 30];
+pla = [20 50 30 40 15];
+tinta = [12 25 22 8 6];
+demanda = [1450 520 380 860 690];
+capEst = 144000;
+capPla = 64800;
+capTinta = 29500.0;
+metaMargen = 3900000.0;
+metaTinta = 24000.0;
+wMargen = 0.7;

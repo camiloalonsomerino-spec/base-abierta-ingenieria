@@ -1,0 +1,11 @@
+// Unidad 3 · sección 9 · encuadernadora: impresión y luego encuadernación (horas)
+
+Trabajos = {"L1", "L2", "L3", "L4"};
+Maquinas = {"impresion", "encuadernacion"};
+
+p = [
+  [6 2]     // L1
+  [3 7]     // L2
+  [5 4]     // L3
+  [2 5]     // L4
+];

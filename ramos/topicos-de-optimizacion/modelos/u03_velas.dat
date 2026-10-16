@@ -1,0 +1,16 @@
+// Unidad 3 · ejemplo resuelto · datos del taller de velas (una semana)
+
+Velas    = {"frasco", "pilar", "derretible"};
+Recursos = {"cera", "vertido"};
+
+margen  = [3190 2530 1045];
+fijo    = [70400 24200 30800];
+
+uso = [
+  [0.32 0.30 0.08]      // cera (kg/vela)
+  [6    4    2   ]      // vertido (min/vela)
+];
+
+disp    = [132 2640];     // 132 kg de cera y 2.640 min de vertido
+demanda = [330 198 660];
+minimo  = [66 132 165];

@@ -1,0 +1,14 @@
+// Unidad 7 · ejercicio 7.8 · taller de mochilas (un mes)
+
+Modelos  = {"urbana", "trekking", "escolar"};
+Procesos = {"costura", "corte"};
+
+margen = [58300 68000 31700];
+
+horas = [
+  [3 4 2]             // costura
+  [2 2 1]             // corte
+];
+
+disp = [342 196];
+tope_trekking = 52;

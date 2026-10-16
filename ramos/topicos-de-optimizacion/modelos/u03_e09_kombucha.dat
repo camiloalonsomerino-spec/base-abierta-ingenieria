@@ -1,0 +1,12 @@
+// Unidad 3 · ejercicio 3.9 · kombucha artesanal (una semana)
+
+Sabores = {"jengibre", "frambuesa", "maqui"};
+Turnos  = {"simple", "extendido", "doble"};
+
+margen  = [1150 1480 1720];          // CLP por litro
+fijo    = [47000 63000 98000];       // CLP por semana
+minimo  = [320 260 210];             // litros
+demanda = [880 690 470];             // litros
+cap     = [1250 1750 2300];          // litros por semana
+costo   = [0 165000 385000];         // CLP por semana
+maxSabores = 2;

@@ -1,0 +1,15 @@
+// Unidad 7 · ejercicio 7.2 · lote de 250 kg
+
+Ingredientes = {"pollo", "arroz", "maiz", "aceite"};
+Nutrientes   = {"proteina", "grasa"};
+
+costo = [2380 870 640 1950];          // CLP por kg
+
+aporte = [
+  [58 8 10   0]                       // proteína (% del ingrediente)
+  [ 9 1  5 100]                       // grasa (%)
+];
+
+minimo = [24 10];                     // % mínimo en el lote
+maximo = [0 16];                      // % máximo; 0 = sin techo
+K = 250;                              // kg del lote

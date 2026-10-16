@@ -1,0 +1,16 @@
+// Unidad 10 · ejercicio 10.6 · tres personas y cuatro tareas: una tarea queda sin hacer
+// (sin fila ficticia: basta con que las tareas no sean obligatorias)
+
+Personas = {"Pia", "Raul", "Sara"};
+Tareas   = {"Inventario", "Caja", "Bodega", "Vitrinas"};
+Prohibidos = {};
+
+costo = [
+  [57 65 52 47]
+  [28 38 27 62]
+  [48 67 36 64]
+];
+
+minTareas   = [1 1 1];
+maxTareas   = [1 1 1];
+obligatoria = [0 0 0 0];

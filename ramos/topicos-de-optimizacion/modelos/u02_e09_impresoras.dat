@@ -1,0 +1,7 @@
+nPiezas     = 8;
+nImpresoras = 3;
+horas       = [12, 10, 9, 8, 7, 6, 6, 3];
+juntaA      = 2;
+juntaB      = 7;
+separadaA   = 1;
+separadaB   = 3;

@@ -1,0 +1,4 @@
+Productos   = {"chaquetas", "buzos", "parches", "banderines", "toallas", "delantales"};
+inversion   = [2850000, 1960000, 430000, 610000, 1380000, 920000];
+margen      = [4120000, 2740000, 790000, 980000, 1890000, 1430000];
+presupuesto = 5200000;

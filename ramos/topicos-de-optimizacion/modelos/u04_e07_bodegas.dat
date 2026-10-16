@@ -1,0 +1,12 @@
+// Unidad 4 · ejercicio 4.7 · tres bodegas candidatas y cinco clientes (un mes)
+
+Bodegas  = {"Norte", "Rio", "Sur"};
+Clientes = {"C1", "C2", "C3", "C4", "C5"};
+
+fijo    = [430000 380000 410000];          // CLP al mes
+demanda = [120 85 145 65 105];             // cajas al mes
+costo = [
+  [1800 2600 4150 3350 5200]               // Norte (CLP por caja)
+  [3400 1900 2300 4550 3100]               // Rio
+  [4950 3800 2700 2100 1650]               // Sur
+];

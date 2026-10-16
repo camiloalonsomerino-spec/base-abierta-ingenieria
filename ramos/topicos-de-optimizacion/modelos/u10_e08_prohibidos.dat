@@ -1,0 +1,17 @@
+// Unidad 10 · ejercicio 10.8 · cuatro turnos y cuatro procesos, con dos pares prohibidos
+// (el 0 de un par prohibido no se usa)
+
+Personas = {"Turno 1", "Turno 2", "Turno 3", "Turno 4"};
+Tareas   = {"Lavado", "Secado", "Planchado", "Doblado"};
+Prohibidos = {<"Turno 1", "Secado">, <"Turno 3", "Doblado">};
+
+costo = [
+  [45  0 21 17]
+  [18 32 31 35]
+  [20 37 32  0]
+  [41 22 23 18]
+];
+
+minTareas   = [1 1 1 1];
+maxTareas   = [1 1 1 1];
+obligatoria = [1 1 1 1];

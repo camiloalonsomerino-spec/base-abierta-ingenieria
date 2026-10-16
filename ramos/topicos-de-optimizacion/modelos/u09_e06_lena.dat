@@ -1,0 +1,15 @@
+// Unidad 9 · ejercicio 9.6 · leña: dos acopios y tres sectores (sacos por semana)
+// falta oferta: el origen ficticio "Ficticio" cobra la multa por saco no entregado en cada sector
+
+Orig = {"Acopio A", "Acopio B", "Ficticio"};
+Dest = {"S1", "S2", "S3"};
+Prohibidas = {};
+
+oferta  = [132 99 66];
+demanda = [110 99 88];
+
+costo = [               // CLP de flete por saco (fila Ficticio: multa por saco no entregado)
+  [341 308 385]
+  [286 363 319]
+  [550 495 660]
+];

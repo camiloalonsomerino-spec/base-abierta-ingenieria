@@ -1,0 +1,30 @@
+# ramo.yaml · Finanzas (15-10-2026)
+nombre: Finanzas
+slug: finanzas
+nivel: tercer año de Ingeniería Civil Industrial
+antes: [cálculo, probabilidad y estadística básica]
+
+# Rutas PRIVADAS (no se publican).
+privado:
+  carpeta: ../base-abierta-ingenieria-datos/finanzas
+  texto: ../base-abierta-ingenieria-datos/finanzas/texto-del-material
+  programa: el del curso, en la carpeta de texto privada (no se publica)
+  encargo: ../base-abierta-ingenieria-datos/finanzas/ENCARGO-UNIDADES.md
+
+caso:
+  nombre: Valentina (dueña de Estampa Sur)
+  script: verificacion/caso_valentina.py
+
+estilo:
+  comentes: true         # el ramo evalúa 40 % conceptual con afirmaciones que se argumentan
+  moneda: CLP
+  notas: >
+    Ejemplos cotidianos (crédito de consumo para un viaje, hipotecario, tarjeta, ahorro para el pie)
+    con montos propios. En el valor futuro de una anualidad se destaca el −1 y se comprueba por el
+    valor presente capitalizado. La explicación de la intuición pesa en la nota.
+
+bibliografia_programa:
+  - Ross, Westerfield y Jaffe, Finanzas corporativas, 9.ª ed., 2012
+  - Fabozzi, The Handbook of Fixed Income Securities
+  - Kelleher y MacCormack, Internal rate of return - A cautionary tale, McKinsey Quarterly, 2004
+  - Lazzatti, Técnicas de inmunización basadas en la duración, 2001

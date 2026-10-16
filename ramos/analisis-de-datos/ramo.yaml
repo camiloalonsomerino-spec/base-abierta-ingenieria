@@ -1,0 +1,36 @@
+# ramo.yaml · Análisis de Datos (15-10-2026)
+nombre: Análisis de Datos
+slug: analisis-de-datos
+nivel: tercer año de Ingeniería Civil Industrial
+antes: [Probabilidades y Estadística]
+
+privado:
+  carpeta: ../base-abierta-ingenieria-datos/analisis-de-datos
+  texto: ../base-abierta-ingenieria-datos/analisis-de-datos/texto-del-material
+  programa: el del curso, en la carpeta de texto privada (no se publica)
+  encargo: ../base-abierta-ingenieria-datos/analisis-de-datos/ENCARGO-UNIDADES.md
+
+caso:
+  nombre: Estampa Sur mira sus datos
+  script: verificacion/caso_estampa_sur_datos.py
+  datos: datos/   # CSV simulados con semilla fija; los regenera el script del caso
+
+software:
+  lenguaje: Python (scipy, pandas, statsmodels)
+  cuadernos: notebooks/uNN_<tema>.ipynb, uno por unidad, que reproducen el ejemplo y el caso
+
+estilo:
+  comentes: false
+  moneda: CLP
+  notas: >
+    Cada prueba se presenta en cinco pasos: pregunta en palabras, hipótesis, estadístico y su
+    distribución, valor p o región de rechazo, y conclusión en el lenguaje del problema. Los supuestos
+    se revisan antes de confiar en el resultado. Se calcula a mano con la fórmula y se confirma con
+    Python.
+
+bibliografia_programa:
+  - Walpole, Myers, Myers y Ye, Probability & Statistics for Engineers & Scientists, Pearson, 2017
+  - Casella y Berger, Statistical Inference, Cengage, 2021
+  - Montgomery, Design and Analysis of Experiments, Wiley, 2005
+  - Kutner, Applied Linear Statistical Models, McGraw-Hill, 2004
+  - Gelman, Carlin, Stern, Dunson, Vehtari y Rubin, Bayesian Data Analysis, 2013

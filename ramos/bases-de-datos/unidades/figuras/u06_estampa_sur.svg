@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 770 382" width="770" height="382" font-family="Segoe UI, Roboto, sans-serif"><title>Estampa Sur: la planilla de pedidos y sus cinco tablas</title>
+<rect width="770" height="382" fill="#FFFFFF"/>
+<rect x="10" y="0" width="200" height="328" rx="5" fill="#FFFFFF" stroke="#2B2F33" stroke-width="1.3"/>
+<path d="M10,24 v-19 a5,5 0 0 1 5,-5 h190 a5,5 0 0 1 5,5 v19 z" fill="#2B2F33"/>
+<text x="19" y="16.5" font-size="12.5" font-weight="600" fill="#FFFFFF">planilla</text>
+<rect x="11" y="24" width="9" height="19" fill="#2F7F8C"/>
+<text x="27" y="37.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">id_pedido</text>
+<rect x="11" y="43" width="9" height="19" fill="#2F7F8C"/>
+<text x="27" y="56.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">fecha</text>
+<rect x="11" y="62" width="9" height="19" fill="#2F7F8C"/>
+<text x="27" y="75.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">estado</text>
+<rect x="11" y="81" width="9" height="19" fill="#B8862B"/>
+<text x="27" y="94.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">id_cliente</text>
+<rect x="11" y="100" width="9" height="19" fill="#B8862B"/>
+<text x="27" y="113.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">cliente</text>
+<rect x="11" y="119" width="9" height="19" fill="#B8862B"/>
+<text x="27" y="132.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">tipo</text>
+<rect x="11" y="138" width="9" height="19" fill="#4E7D3A"/>
+<text x="27" y="151.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">id_tienda</text>
+<rect x="11" y="157" width="9" height="19" fill="#4E7D3A"/>
+<text x="27" y="170.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">tienda</text>
+<rect x="11" y="176" width="9" height="19" fill="#4E7D3A"/>
+<text x="27" y="189.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">comuna</text>
+<rect x="11" y="195" width="9" height="19" fill="#7A5BA6"/>
+<text x="27" y="208.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">id_producto</text>
+<rect x="11" y="214" width="9" height="19" fill="#7A5BA6"/>
+<text x="27" y="227.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">producto</text>
+<rect x="11" y="233" width="9" height="19" fill="#7A5BA6"/>
+<text x="27" y="246.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">precio</text>
+<rect x="11" y="252" width="9" height="19" fill="#7A5BA6"/>
+<text x="27" y="265.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">costo_var</text>
+<rect x="11" y="271" width="9" height="19" fill="#7A5BA6"/>
+<text x="27" y="284.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">seg_estampado</text>
+<rect x="11" y="290" width="9" height="19" fill="#E2622A"/>
+<text x="27" y="303.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">cantidad</text>
+<rect x="11" y="309" width="9" height="19" fill="#E2622A"/>
+<text x="27" y="322.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">precio_unit</text>
+<text x="250" y="164.0" font-size="26" fill="#5F656B" text-anchor="middle">→</text>
+<rect x="290" y="0" width="210" height="100" rx="5" fill="#FFFFFF" stroke="#E2622A" stroke-width="1.6"/>
+<path d="M290,24 v-19 a5,5 0 0 1 5,-5 h200 a5,5 0 0 1 5,5 v19 z" fill="#E2622A"/>
+<text x="299" y="16.5" font-size="12.5" font-weight="600" fill="#FFFFFF">detalle_pedido</text>
+<rect x="291" y="24" width="8" height="19" fill="#2F7F8C"/>
+<text x="305" y="37.5" font-size="11.5" fill="#2B2F33" font-weight="700" font-family="Cascadia Mono, Consolas, monospace">id_pedido</text>
+<text x="492" y="37.5" font-size="10" fill="#2F7F8C" text-anchor="end" font-weight="600">FK</text>
+<rect x="291" y="43" width="8" height="19" fill="#7A5BA6"/>
+<text x="305" y="56.5" font-size="11.5" fill="#2B2F33" font-weight="700" font-family="Cascadia Mono, Consolas, monospace">id_producto</text>
+<text x="492" y="56.5" font-size="10" fill="#7A5BA6" text-anchor="end" font-weight="600">FK</text>
+<rect x="291" y="62" width="8" height="19" fill="#E2622A"/>
+<text x="305" y="75.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">cantidad</text>
+<rect x="291" y="81" width="8" height="19" fill="#E2622A"/>
+<text x="305" y="94.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">precio_unit</text>
+<rect x="290" y="116" width="210" height="119" rx="5" fill="#FFFFFF" stroke="#7A5BA6" stroke-width="1.6"/>
+<path d="M290,140 v-19 a5,5 0 0 1 5,-5 h200 a5,5 0 0 1 5,5 v19 z" fill="#7A5BA6"/>
+<text x="299" y="132.5" font-size="12.5" font-weight="600" fill="#FFFFFF">producto</text>
+<rect x="291" y="140" width="8" height="19" fill="#7A5BA6"/>
+<text x="305" y="153.5" font-size="11.5" fill="#2B2F33" font-weight="700" font-family="Cascadia Mono, Consolas, monospace">id_producto</text>
+<rect x="291" y="159" width="8" height="19" fill="#7A5BA6"/>
+<text x="305" y="172.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">producto</text>
+<rect x="291" y="178" width="8" height="19" fill="#7A5BA6"/>
+<text x="305" y="191.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">precio</text>
+<rect x="291" y="197" width="8" height="19" fill="#7A5BA6"/>
+<text x="305" y="210.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">costo_var</text>
+<rect x="291" y="216" width="8" height="19" fill="#7A5BA6"/>
+<text x="305" y="229.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">seg_estampado</text>
+<rect x="290" y="251" width="210" height="81" rx="5" fill="#FFFFFF" stroke="#4E7D3A" stroke-width="1.6"/>
+<path d="M290,275 v-19 a5,5 0 0 1 5,-5 h200 a5,5 0 0 1 5,5 v19 z" fill="#4E7D3A"/>
+<text x="299" y="267.5" font-size="12.5" font-weight="600" fill="#FFFFFF">tienda</text>
+<rect x="291" y="275" width="8" height="19" fill="#4E7D3A"/>
+<text x="305" y="288.5" font-size="11.5" fill="#2B2F33" font-weight="700" font-family="Cascadia Mono, Consolas, monospace">id_tienda</text>
+<rect x="291" y="294" width="8" height="19" fill="#4E7D3A"/>
+<text x="305" y="307.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">tienda</text>
+<rect x="291" y="313" width="8" height="19" fill="#4E7D3A"/>
+<text x="305" y="326.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">comuna</text>
+<rect x="525" y="0" width="210" height="100" rx="5" fill="#FFFFFF" stroke="#2F7F8C" stroke-width="1.6"/>
+<path d="M525,24 v-19 a5,5 0 0 1 5,-5 h200 a5,5 0 0 1 5,5 v19 z" fill="#2F7F8C"/>
+<text x="534" y="16.5" font-size="12.5" font-weight="600" fill="#FFFFFF">pedido</text>
+<rect x="526" y="24" width="8" height="19" fill="#2F7F8C"/>
+<text x="540" y="37.5" font-size="11.5" fill="#2B2F33" font-weight="700" font-family="Cascadia Mono, Consolas, monospace">id_pedido</text>
+<rect x="526" y="43" width="8" height="19" fill="#B8862B"/>
+<text x="540" y="56.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">id_cliente</text>
+<text x="727" y="56.5" font-size="10" fill="#B8862B" text-anchor="end" font-weight="600">FK</text>
+<rect x="526" y="62" width="8" height="19" fill="#2F7F8C"/>
+<text x="540" y="75.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">fecha</text>
+<rect x="526" y="81" width="8" height="19" fill="#2F7F8C"/>
+<text x="540" y="94.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">estado</text>
+<rect x="525" y="116" width="210" height="100" rx="5" fill="#FFFFFF" stroke="#B8862B" stroke-width="1.6"/>
+<path d="M525,140 v-19 a5,5 0 0 1 5,-5 h200 a5,5 0 0 1 5,5 v19 z" fill="#B8862B"/>
+<text x="534" y="132.5" font-size="12.5" font-weight="600" fill="#FFFFFF">cliente</text>
+<rect x="526" y="140" width="8" height="19" fill="#B8862B"/>
+<text x="540" y="153.5" font-size="11.5" fill="#2B2F33" font-weight="700" font-family="Cascadia Mono, Consolas, monospace">id_cliente</text>
+<rect x="526" y="159" width="8" height="19" fill="#B8862B"/>
+<text x="540" y="172.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">cliente</text>
+<rect x="526" y="178" width="8" height="19" fill="#B8862B"/>
+<text x="540" y="191.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">tipo</text>
+<rect x="526" y="197" width="8" height="19" fill="#4E7D3A"/>
+<text x="540" y="210.5" font-size="11.5" fill="#2B2F33" font-family="Cascadia Mono, Consolas, monospace">id_tienda</text>
+<text x="727" y="210.5" font-size="10" fill="#4E7D3A" text-anchor="end" font-weight="600">FK</text>
+<text x="10" y="370" font-size="10" fill="#5F656B">Cada color es una tabla: la franja dice en qué tabla vive el dato de esa columna. En negrita, la clave primaria; FK, la columna que vuelve a conectar las tablas.</text>
+</svg>

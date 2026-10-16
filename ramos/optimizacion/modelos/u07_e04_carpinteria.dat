@@ -1,0 +1,15 @@
+// Unidad 7 · ejercicio 7.4 · carpintería (un mes)
+
+Muebles  = {"mesa", "silla", "estante", "velador"};
+Procesos = {"corte", "armado", "barniz"};
+
+margen = [32800 21700 56100 27600];
+
+uso = [
+  [3 2 4 2]           // corte (h/mueble)
+  [2 1 5 3]           // armado (h/mueble)
+  [2 1 3 2]           // barniz (L/mueble)
+];
+
+cap = [452 306 281];
+tope_sillas = 126;

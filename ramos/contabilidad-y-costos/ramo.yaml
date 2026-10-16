@@ -1,0 +1,34 @@
+# ramo.yaml · Contabilidad y Costos (16-10-2026)
+nombre: Contabilidad y Costos
+slug: contabilidad-y-costos
+nivel: segundo o tercer año de Ingeniería Civil Industrial
+antes: [Gestión de Empresas]
+
+privado:
+  carpeta: ../base-abierta-ingenieria-datos/contabilidad-y-costos
+  texto: ../base-abierta-ingenieria-datos/contabilidad-y-costos/texto-del-material
+  programa: el del curso, en la carpeta de texto privada (no se publica)
+  encargo: ../base-abierta-ingenieria-datos/contabilidad-y-costos/ENCARGO-UNIDADES.md
+
+caso:
+  nombre: el mes de marzo de Estampa Sur
+  script: verificacion/caso_estampa_sur_contable.py
+
+software:
+  planillas: planillas/uNN_<tema>.xlsx generadas por el verificador con openpyxl, con fórmulas (no valores pegados)
+
+estilo:
+  comentes: false
+  moneda: CLP
+  notas: >
+    Contabilidad chilena: IVA 19 %, plan de cuentas en español, libro diario con columnas Debe y Haber.
+    Cada asiento se escribe con fecha, cuentas, Debe, Haber y glosa, y se comprueba que cuadra. Los
+    costos se leen siempre con la decisión que permiten tomar (precio, mezcla, producir o no).
+
+bibliografia_programa:
+  - Gálvez y Clarke, Contabilidad financiera para la dirección de empresas, Ediciones UC (obligatoria)
+  - Irarrázabal, Contabilidad - fundamentos y usos, Ediciones UC, 2014 (obligatoria)
+  - Garrison, Noreen y Brewer, Contabilidad administrativa, McGraw-Hill, 2007 (complementaria)
+  - Horngren, Contabilidad de costos, Pearson, 2012 (complementaria)
+  - Weygandt, Kimmel y Kieso, Accounting Principles, Wiley, 12.ª ed., 2014 (complementaria)
+  - Jonick, Principles of Financial Accounting, University of North Georgia, 2017 (complementaria y abierta)

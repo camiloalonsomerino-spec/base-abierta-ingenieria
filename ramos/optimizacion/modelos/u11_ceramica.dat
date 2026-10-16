@@ -1,0 +1,10 @@
+/* Unidad 11 · ejercicio 11.9: taller de cerámica (solución degenerada) */
+Productos = {"tazas", "platos"};
+Recursos  = {"horno", "esmalte", "tope_tazas"};
+margen = [3000 2000];                      // CLP por unidad
+uso = [
+  [1 1]                                    // horas de horno por unidad (lotes)
+  [2 1]                                    // litros de esmalte por unidad
+  [1 0]                                    // tope de tazas que acepta la tienda
+];
+cap = [40 60 20];

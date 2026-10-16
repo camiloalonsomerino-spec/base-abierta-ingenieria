@@ -1,0 +1,7 @@
+// Unidad 5 · caso · el turno del sábado (4 h de estampado y 2 h 30 min de planchado)
+Prendas  = {"poleras", "polerones"};
+Recursos = {"estampado", "planchado"};
+margen   = [33120 94560];
+uso      = [[12 36]      // estampado (min/caja)
+            [ 8 20]];    // planchado (min/caja)
+disp     = [240 150];

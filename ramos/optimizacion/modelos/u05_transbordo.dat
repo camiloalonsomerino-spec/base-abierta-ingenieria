@@ -1,0 +1,15 @@
+/* Unidad 5 · ejercicio 5.6. Generado por verificacion/u05_modelamiento_ii.py */
+Plantas = {"Rancagua", "Talca"};
+Centros = {"SanBernardo", "Chillan"};
+Clientes = {"Santiago", "Concepcion", "Temuco"};
+oferta = [1180 870];
+capCentro = [2000 960];
+demanda = [780 640 470];
+cPC = [
+  [4100 12800]
+  [8700 6300]
+];
+cCK = [
+  [2400 14600 20700]
+  [13900 3300 9200]
+];
