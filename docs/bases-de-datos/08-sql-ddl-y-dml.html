@@ -521,12 +521,12 @@ SELECT * FROM equipo;
 no 3: no rellena huecos) y la comuna salió del <code>DEFAULT</code>.</p>
 <h3>Paso 3 · Cargar los jugadores</h3>
 <pre><code class="language-sql">INSERT INTO jugador (id_jugador, rut, nombre, fecha_nac, camiseta, id_equipo) VALUES
-    (1, '20.814.337-9', 'Tomás Sepúlveda',     '2001-04-17',  7, 1),
-    (2, '19.427.065-8', 'Ignacio Riquelme',    '1998-11-02', 23, 1),
-    (3, '21.306.598-K', 'Benjamín Toro',       '2003-01-29',  7, 2),
-    (4, '19.982.410-4', 'Vicente Jara',        '1999-08-12', 11, 2),
-    (5, '20.553.172-6', 'Felipe Castro',       '2002-06-05',  4, 5),
-    (6, '20.140.836-9', 'Cristóbal Navarrete', '2000-03-21', 15, 4);
+    (1, '43.538.745-4', 'Tomás Sepúlveda',     '2001-04-17',  7, 1),
+    (2, '42.527.675-1', 'Ignacio Riquelme',    '1998-11-02', 23, 1),
+    (3, '43.740.959-5', 'Benjamín Toro',       '2003-01-29',  7, 2),
+    (4, '42.932.103-4', 'Vicente Jara',        '1999-08-12', 11, 2),
+    (5, '43.437.638-6', 'Felipe Castro',       '2002-06-05',  4, 5),
+    (6, '43.235.424-5', 'Cristóbal Navarrete', '2000-03-21', 15, 4);
 SELECT COUNT(*) FROM jugador;
 </code></pre>
 <div class="tabla"><table>
@@ -546,24 +546,24 @@ permite.</p>
 <h3>Paso 4 · Seis filas que la base rechaza</h3>
 <p>Cada <code>INSERT</code> de abajo rompe una regla distinta. Lo que importa es leer el mensaje: dice qué
 restricción saltó y en qué columna.</p>
-<pre><code class="language-sql">INSERT INTO jugador (rut, fecha_nac, camiseta, id_equipo) VALUES ('21.775.403-8', '2004-09-30', 9, 1);
+<pre><code class="language-sql">INSERT INTO jugador (rut, fecha_nac, camiseta, id_equipo) VALUES ('43.943.173-3', '2004-09-30', 9, 1);
 </code></pre>
 <p><code>NOT NULL constraint failed: jugador.nombre</code> (falta el nombre).</p>
 <pre><code class="language-sql">INSERT INTO jugador (rut, nombre, fecha_nac, camiseta, id_equipo)
-VALUES ('19.427.065-8', 'Martín Riquelme', '2004-09-30', 9, 1);
+VALUES ('42.527.675-1', 'Martín Riquelme', '2004-09-30', 9, 1);
 </code></pre>
 <p><code>UNIQUE constraint failed: jugador.rut</code> (es el RUT de Ignacio: alguien lo copió mal).</p>
 <pre><code class="language-sql">INSERT INTO jugador (rut, nombre, fecha_nac, camiseta, id_equipo)
-VALUES ('21.775.403-8', 'Martín Riquelme', '2004-09-30', 120, 1);
+VALUES ('43.943.173-3', 'Martín Riquelme', '2004-09-30', 120, 1);
 </code></pre>
 <p><code>CHECK constraint failed: camiseta BETWEEN 0 AND 99</code></p>
 <pre><code class="language-sql">INSERT INTO jugador (rut, nombre, fecha_nac, camiseta, id_equipo)
-VALUES ('21.775.403-8', 'Martín Riquelme', '2004-09-30', 9, 3);
+VALUES ('43.943.173-3', 'Martín Riquelme', '2004-09-30', 9, 3);
 </code></pre>
 <p><code>FOREIGN KEY constraint failed</code> (no hay equipo 3). SQLite no dice cuál clave foránea; con varias en
 la tabla, hay que revisar cada una.</p>
 <pre><code class="language-sql">INSERT INTO jugador (rut, nombre, fecha_nac, camiseta, id_equipo)
-VALUES ('21.775.403-8', 'Martín Riquelme', '2004-09-30', 7, 1);
+VALUES ('43.943.173-3', 'Martín Riquelme', '2004-09-30', 7, 1);
 </code></pre>
 <p><code>UNIQUE constraint failed: jugador.id_equipo, jugador.camiseta</code> (Tomás ya usa la 7 en Halcones).</p>
 <pre><code class="language-sql">INSERT INTO partido (fecha, id_local, id_visita) VALUES ('2026-10-10', 2, 2);
@@ -639,7 +639,7 @@ SELECT changes();
 <p>La directiva pide guardar un teléfono de contacto. La columna nueva queda en <code>NULL</code> para todos
 hasta que se llene:</p>
 <pre><code class="language-sql">ALTER TABLE jugador ADD COLUMN telefono VARCHAR(15);
-UPDATE jugador SET telefono = '+56 9 6123 4870' WHERE id_jugador = 2;
+UPDATE jugador SET telefono = '+56 9 0000 0023' WHERE id_jugador = 2;
 SELECT id_jugador, nombre, telefono FROM jugador WHERE id_equipo = 1;
 </code></pre>
 <div class="tabla"><table>
@@ -659,7 +659,7 @@ SELECT id_jugador, nombre, telefono FROM jugador WHERE id_equipo = 1;
 <tr>
 <td>2</td>
 <td>Ignacio Riquelme</td>
-<td>+56 9 6123 4870</td>
+<td>+56 9 0000 0023</td>
 </tr>
 </tbody>
 </table></div>
@@ -739,7 +739,7 @@ SELECT id_equipo, nombre FROM equipo;
 <td>Ignacio Riquelme</td>
 <td>23</td>
 <td>1</td>
-<td>+56 9 6123 4870</td>
+<td>+56 9 0000 0023</td>
 </tr>
 <tr>
 <td>3</td>
@@ -977,7 +977,7 @@ CREATE TABLE mascota (
     rut_dueno  VARCHAR(12) NOT NULL
 );
 INSERT INTO mascota (nombre, especie, fecha_nac, peso_kg, rut_dueno)
-VALUES ('Canela', 'perro', '2019-05-14', 12.5, '18.904.265-5');
+VALUES ('Canela', 'perro', '2019-05-14', 12.5, '42.224.354-2');
 SELECT * FROM mascota;
 </code></pre>
 <div class="tabla"><table>
@@ -998,15 +998,15 @@ SELECT * FROM mascota;
 <td>perro</td>
 <td>2019-05-14</td>
 <td>12.5</td>
-<td>18.904.265-5</td>
+<td>42.224.354-2</td>
 </tr>
 </tbody>
 </table></div>
 <p>En SQL el decimal se escribe con punto (<code>12.5</code>). Las dos filas malas:</p>
-<pre><code class="language-sql">INSERT INTO mascota (nombre, especie, rut_dueno) VALUES ('Pirata', 'loro', '18.904.265-5');
+<pre><code class="language-sql">INSERT INTO mascota (nombre, especie, rut_dueno) VALUES ('Pirata', 'loro', '42.224.354-2');
 </code></pre>
 <p><code>CHECK constraint failed: especie IN ('perro', 'gato', 'otro')</code></p>
-<pre><code class="language-sql">INSERT INTO mascota (nombre, especie, peso_kg, rut_dueno) VALUES ('Mota', 'gato', 0, '18.904.265-5');
+<pre><code class="language-sql">INSERT INTO mascota (nombre, especie, peso_kg, rut_dueno) VALUES ('Mota', 'gato', 0, '42.224.354-2');
 </code></pre>
 <p><code>CHECK constraint failed: peso_kg &gt; 0</code></p>
 <p>En MySQL: <code>id_mascota INT AUTO_INCREMENT PRIMARY KEY</code>, <code>INT</code> en vez de <code>INTEGER</code>, y <code>DECIMAL(5,1)</code>

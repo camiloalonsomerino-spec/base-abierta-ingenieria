@@ -5,13 +5,13 @@ CREATE TABLE carro (
     comida    VARCHAR(30),
     metros    INTEGER
 );
-INSERT INTO carro VALUES ('KTRW-21', 'Juana Sepúlveda', 'empanadas', 6);
-INSERT INTO carro VALUES ('LPFX-73', 'Luis Fuentealba', 'jugos', 4);
-INSERT INTO carro VALUES ('JHZS-08', 'Juana Sepúlveda', 'sopaipillas', 3);
-INSERT INTO carro VALUES ('PBDC-45', 'Héctor Vergara', 'ceviche', 5);
-INSERT INTO carro VALUES ('RGKT-19', 'Ana Cifuentes', 'completos', 6);
-INSERT INTO carro VALUES ('LPFX-73', 'Luis Fuentealba', 'jugos', 4);
-INSERT INTO carro VALUES ('SVWL-62', 'Ana Cifuentes', 'café', 3);
+INSERT INTO carro VALUES ('EJAG-21', 'Juana Sepúlveda', 'empanadas', 6);
+INSERT INTO carro VALUES ('EJAH-73', 'Luis Fuentealba', 'jugos', 4);
+INSERT INTO carro VALUES ('EJAD-08', 'Juana Sepúlveda', 'sopaipillas', 3);
+INSERT INTO carro VALUES ('EJAJ-45', 'Héctor Vergara', 'ceviche', 5);
+INSERT INTO carro VALUES ('EJAL-19', 'Ana Cifuentes', 'completos', 6);
+INSERT INTO carro VALUES ('EJAH-73', 'Luis Fuentealba', 'jugos', 4);
+INSERT INTO carro VALUES ('EJAO-62', 'Ana Cifuentes', 'café', 3);
 
 -- @grado
 SELECT COUNT(*) FROM pragma_table_info('carro');

@@ -327,12 +327,12 @@ no 3: no rellena huecos) y la comuna salió del `DEFAULT`.
 
 ```sql
 INSERT INTO jugador (id_jugador, rut, nombre, fecha_nac, camiseta, id_equipo) VALUES
-    (1, '20.814.337-9', 'Tomás Sepúlveda',     '2001-04-17',  7, 1),
-    (2, '19.427.065-8', 'Ignacio Riquelme',    '1998-11-02', 23, 1),
-    (3, '21.306.598-K', 'Benjamín Toro',       '2003-01-29',  7, 2),
-    (4, '19.982.410-4', 'Vicente Jara',        '1999-08-12', 11, 2),
-    (5, '20.553.172-6', 'Felipe Castro',       '2002-06-05',  4, 5),
-    (6, '20.140.836-9', 'Cristóbal Navarrete', '2000-03-21', 15, 4);
+    (1, '43.538.745-4', 'Tomás Sepúlveda',     '2001-04-17',  7, 1),
+    (2, '42.527.675-1', 'Ignacio Riquelme',    '1998-11-02', 23, 1),
+    (3, '43.740.959-5', 'Benjamín Toro',       '2003-01-29',  7, 2),
+    (4, '42.932.103-4', 'Vicente Jara',        '1999-08-12', 11, 2),
+    (5, '43.437.638-6', 'Felipe Castro',       '2002-06-05',  4, 5),
+    (6, '43.235.424-5', 'Cristóbal Navarrete', '2000-03-21', 15, 4);
 SELECT COUNT(*) FROM jugador;
 ```
 
@@ -349,28 +349,28 @@ Cada `INSERT` de abajo rompe una regla distinta. Lo que importa es leer el mensa
 restricción saltó y en qué columna.
 
 ```sql
-INSERT INTO jugador (rut, fecha_nac, camiseta, id_equipo) VALUES ('21.775.403-8', '2004-09-30', 9, 1);
+INSERT INTO jugador (rut, fecha_nac, camiseta, id_equipo) VALUES ('43.943.173-3', '2004-09-30', 9, 1);
 ```
 
 `NOT NULL constraint failed: jugador.nombre` (falta el nombre).
 
 ```sql
 INSERT INTO jugador (rut, nombre, fecha_nac, camiseta, id_equipo)
-VALUES ('19.427.065-8', 'Martín Riquelme', '2004-09-30', 9, 1);
+VALUES ('42.527.675-1', 'Martín Riquelme', '2004-09-30', 9, 1);
 ```
 
 `UNIQUE constraint failed: jugador.rut` (es el RUT de Ignacio: alguien lo copió mal).
 
 ```sql
 INSERT INTO jugador (rut, nombre, fecha_nac, camiseta, id_equipo)
-VALUES ('21.775.403-8', 'Martín Riquelme', '2004-09-30', 120, 1);
+VALUES ('43.943.173-3', 'Martín Riquelme', '2004-09-30', 120, 1);
 ```
 
 `CHECK constraint failed: camiseta BETWEEN 0 AND 99`
 
 ```sql
 INSERT INTO jugador (rut, nombre, fecha_nac, camiseta, id_equipo)
-VALUES ('21.775.403-8', 'Martín Riquelme', '2004-09-30', 9, 3);
+VALUES ('43.943.173-3', 'Martín Riquelme', '2004-09-30', 9, 3);
 ```
 
 `FOREIGN KEY constraint failed` (no hay equipo 3). SQLite no dice cuál clave foránea; con varias en
@@ -378,7 +378,7 @@ la tabla, hay que revisar cada una.
 
 ```sql
 INSERT INTO jugador (rut, nombre, fecha_nac, camiseta, id_equipo)
-VALUES ('21.775.403-8', 'Martín Riquelme', '2004-09-30', 7, 1);
+VALUES ('43.943.173-3', 'Martín Riquelme', '2004-09-30', 7, 1);
 ```
 
 `UNIQUE constraint failed: jugador.id_equipo, jugador.camiseta` (Tomás ya usa la 7 en Halcones).
@@ -429,14 +429,14 @@ hasta que se llene:
 
 ```sql
 ALTER TABLE jugador ADD COLUMN telefono VARCHAR(15);
-UPDATE jugador SET telefono = '+56 9 6123 4870' WHERE id_jugador = 2;
+UPDATE jugador SET telefono = '+56 9 0000 0023' WHERE id_jugador = 2;
 SELECT id_jugador, nombre, telefono FROM jugador WHERE id_equipo = 1;
 ```
 
 | id_jugador | nombre | telefono |
 |---|---|---|
 | 1 | Tomás Sepúlveda | NULL |
-| 2 | Ignacio Riquelme | +56 9 6123 4870 |
+| 2 | Ignacio Riquelme | +56 9 0000 0023 |
 
 ### Paso 7 · Nacimiento BC se retira de la liga
 
@@ -483,7 +483,7 @@ SELECT id_jugador, nombre, camiseta, id_equipo, telefono FROM jugador;
 | id_jugador | nombre | camiseta | id_equipo | telefono |
 |---|---|---|---|---|
 | 1 | Tomás Sepúlveda | 7 | 1 | NULL |
-| 2 | Ignacio Riquelme | 23 | 1 | +56 9 6123 4870 |
+| 2 | Ignacio Riquelme | 23 | 1 | +56 9 0000 0023 |
 | 3 | Benjamín Toro | 7 | 2 | NULL |
 | 4 | Vicente Jara | 11 | 2 | NULL |
 | 5 | Felipe Castro | 4 | 5 | NULL |
@@ -646,24 +646,24 @@ CREATE TABLE mascota (
     rut_dueno  VARCHAR(12) NOT NULL
 );
 INSERT INTO mascota (nombre, especie, fecha_nac, peso_kg, rut_dueno)
-VALUES ('Canela', 'perro', '2019-05-14', 12.5, '18.904.265-5');
+VALUES ('Canela', 'perro', '2019-05-14', 12.5, '42.224.354-2');
 SELECT * FROM mascota;
 ```
 
 | id_mascota | nombre | especie | fecha_nac | peso_kg | rut_dueno |
 |---|---|---|---|---|---|
-| 1 | Canela | perro | 2019-05-14 | 12.5 | 18.904.265-5 |
+| 1 | Canela | perro | 2019-05-14 | 12.5 | 42.224.354-2 |
 
 En SQL el decimal se escribe con punto (`12.5`). Las dos filas malas:
 
 ```sql
-INSERT INTO mascota (nombre, especie, rut_dueno) VALUES ('Pirata', 'loro', '18.904.265-5');
+INSERT INTO mascota (nombre, especie, rut_dueno) VALUES ('Pirata', 'loro', '42.224.354-2');
 ```
 
 `CHECK constraint failed: especie IN ('perro', 'gato', 'otro')`
 
 ```sql
-INSERT INTO mascota (nombre, especie, peso_kg, rut_dueno) VALUES ('Mota', 'gato', 0, '18.904.265-5');
+INSERT INTO mascota (nombre, especie, peso_kg, rut_dueno) VALUES ('Mota', 'gato', 0, '42.224.354-2');
 ```
 
 `CHECK constraint failed: peso_kg > 0`

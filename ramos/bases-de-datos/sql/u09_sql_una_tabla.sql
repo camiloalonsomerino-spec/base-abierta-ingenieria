@@ -23,18 +23,18 @@ CREATE TABLE orden_trabajo (
 );
 
 INSERT INTO orden_trabajo VALUES
- (1,  'KFTR42', 'Toyota',    'mantención',  '2026-09-01', '2026-09-01',  85200,  64900, 'aceite y filtros'),
- (2,  'HJPL17', 'Chevrolet', 'frenos',      '2026-09-02', '2026-09-03', 132400, 118500, 'pastillas y discos delanteros'),
- (3,  'GW5821', 'Nissan',    'embrague',    '2026-09-02', '2026-09-05', 210700, 389000, 'kit de embrague'),
- (4,  'LSVB63', 'Hyundai',   'mantención',  '2026-09-04', '2026-09-04',  40100,  72400, 'aceite, filtros y revisión'),
- (5,  'PRDK28', 'Kia',       'diagnóstico', '2026-09-07', NULL,          98300,   NULL, 'ruido en la suspensión'),
- (6,  'JBXW90', 'Toyota',    'frenos',      '2026-09-08', '2026-09-09', 156900,  86300, 'pastillas traseras'),
- (7,  'CZ4417', 'Suzuki',    'alineación',  '2026-09-09', '2026-09-09', 187500,  28000, 'alineación y balanceo'),
- (8,  'RTKM55', 'Mazda',     'mantención',  '2026-09-10', '2026-09-11',  61800,  79900, 'aceite, filtros y bujías'),
- (9,  'FHGS31', 'Chevrolet', 'embrague',    '2026-09-14', NULL,         176200, 412000, 'embrague patina'),
- (10, 'KLWD74', 'Hyundai',   'frenos',      '2026-09-15', NULL,         119600,  97800, 'líquido y pastillas delanteras'),
- (11, 'BV7302', 'Nissan',    'diagnóstico', '2026-09-16', NULL,         243100,   NULL, 'luz de motor encendida'),
- (12, 'SPYT16', 'Kia',       'alineación',  '2026-09-16', '2026-09-16',  72900,  26000, 'alineación');
+ (1,  'EJAE42', 'Toyota',    'mantención',  '2026-09-01', '2026-09-01',  85200,  64900, 'aceite y filtros'),
+ (2,  'EJAB17', 'Chevrolet', 'frenos',      '2026-09-02', '2026-09-03', 132400, 118500, 'pastillas y discos delanteros'),
+ (3,  'AE5821', 'Nissan',    'embrague',    '2026-09-02', '2026-09-05', 210700, 389000, 'kit de embrague'),
+ (4,  'EJAI63', 'Hyundai',   'mantención',  '2026-09-04', '2026-09-04',  40100,  72400, 'aceite, filtros y revisión'),
+ (5,  'EJAK28', 'Kia',       'diagnóstico', '2026-09-07', NULL,          98300,   NULL, 'ruido en la suspensión'),
+ (6,  'EJAC90', 'Toyota',    'frenos',      '2026-09-08', '2026-09-09', 156900,  86300, 'pastillas traseras'),
+ (7,  'AE4417', 'Suzuki',    'alineación',  '2026-09-09', '2026-09-09', 187500,  28000, 'alineación y balanceo'),
+ (8,  'EJAM55', 'Mazda',     'mantención',  '2026-09-10', '2026-09-11',  61800,  79900, 'aceite, filtros y bujías'),
+ (9,  'EJAA31', 'Chevrolet', 'embrague',    '2026-09-14', NULL,         176200, 412000, 'embrague patina'),
+ (10, 'EJAF74', 'Hyundai',   'frenos',      '2026-09-15', NULL,         119600,  97800, 'líquido y pastillas delanteras'),
+ (11, 'AE7302', 'Nissan',    'diagnóstico', '2026-09-16', NULL,         243100,   NULL, 'luz de motor encendida'),
+ (12, 'EJAN16', 'Kia',       'alineación',  '2026-09-16', '2026-09-16',  72900,  26000, 'alineación');
 
 CREATE TABLE hora (
     id_hora     INTEGER PRIMARY KEY,

@@ -290,7 +290,7 @@ porque son los que entiende un SGBD.</p>
 <pre><code class="language-json">{
   &quot;id_socio&quot;: 2,
   &quot;nombre&quot;: &quot;Benjamín Soto&quot;,
-  &quot;telefono&quot;: &quot;9 6655 2091&quot;,
+  &quot;telefono&quot;: &quot;9 0000 0028&quot;,
   &quot;categoria&quot;: {&quot;nombre&quot;: &quot;sub-15&quot;, &quot;cuota&quot;: 16500},
   &quot;pagos&quot;: [
     {&quot;fecha&quot;: &quot;2026-03-03&quot;, &quot;monto&quot;: 16500},
@@ -436,7 +436,7 @@ planilla con los pagos de marzo y abril de 2026:</p>
 <tr>
 <td>2026-03-02</td>
 <td>Antonia Rivas</td>
-<td>9 7412 3380</td>
+<td>9 0000 0033</td>
 <td>sub-13</td>
 <td>14500</td>
 <td>14500</td>
@@ -444,7 +444,7 @@ planilla con los pagos de marzo y abril de 2026:</p>
 <tr>
 <td>2026-03-03</td>
 <td>Benjamín Soto</td>
-<td>9 6655 2091</td>
+<td>9 0000 0028</td>
 <td>sub-15</td>
 <td>16500</td>
 <td>16500</td>
@@ -452,7 +452,7 @@ planilla con los pagos de marzo y abril de 2026:</p>
 <tr>
 <td>2026-03-05</td>
 <td>Catalina Mora</td>
-<td>9 8120 4473</td>
+<td>9 0000 0038</td>
 <td>adulto</td>
 <td>21000</td>
 <td>21000</td>
@@ -460,7 +460,7 @@ planilla con los pagos de marzo y abril de 2026:</p>
 <tr>
 <td>2026-03-09</td>
 <td>Diego Paredes</td>
-<td>9 5531 7804</td>
+<td>9 0000 0015</td>
 <td>sub-15</td>
 <td>16500</td>
 <td>16500</td>
@@ -468,7 +468,7 @@ planilla con los pagos de marzo y abril de 2026:</p>
 <tr>
 <td>2026-03-10</td>
 <td>Emilia Cáceres</td>
-<td>9 4478 1962</td>
+<td>9 0000 0008</td>
 <td>sub-13</td>
 <td>14500</td>
 <td>14500</td>
@@ -476,7 +476,7 @@ planilla con los pagos de marzo y abril de 2026:</p>
 <tr>
 <td>2026-04-01</td>
 <td>Antonia Rivas</td>
-<td>9 7412 3380</td>
+<td>9 0000 0033</td>
 <td>sub-13</td>
 <td>14500</td>
 <td>14500</td>
@@ -484,7 +484,7 @@ planilla con los pagos de marzo y abril de 2026:</p>
 <tr>
 <td>2026-04-04</td>
 <td>Benjamín Soto</td>
-<td>9 6655 2019</td>
+<td>9 0000 0027</td>
 <td>sub-15</td>
 <td>16500</td>
 <td>16500</td>
@@ -492,7 +492,7 @@ planilla con los pagos de marzo y abril de 2026:</p>
 <tr>
 <td>2026-04-06</td>
 <td>Catalina Mora</td>
-<td>9 8120 4473</td>
+<td>9 0000 0038</td>
 <td>adulto</td>
 <td>21000</td>
 <td>21000</td>
@@ -500,7 +500,7 @@ planilla con los pagos de marzo y abril de 2026:</p>
 <tr>
 <td>2026-04-08</td>
 <td>Diego Paredes</td>
-<td>9 5531 7804</td>
+<td>9 0000 0015</td>
 <td>sub-15</td>
 <td>16000</td>
 <td>16000</td>
@@ -508,7 +508,7 @@ planilla con los pagos de marzo y abril de 2026:</p>
 <tr>
 <td>2026-04-12</td>
 <td>Emilia Caceres</td>
-<td>9 4478 1962</td>
+<td>9 0000 0008</td>
 <td>sub-13</td>
 <td>14500</td>
 <td>14500</td>
@@ -571,7 +571,7 @@ celdas (36,7 %) repiten algo que ya estaba escrito. La fecha y lo pagado no se r
 pago.</p>
 <p><strong>Paso 2 · Buscar las contradicciones.</strong> Donde hay copias, hay contradicciones:</p>
 <ul>
-<li>Benjamín Soto tiene dos teléfonos (<code>9 6655 2091</code> y <code>9 6655 2019</code>). ¿Cuál es el bueno? La planilla no
+<li>Benjamín Soto tiene dos teléfonos (<code>9 0000 0028</code> y <code>9 0000 0027</code>). ¿Cuál es el bueno? La planilla no
   lo sabe.</li>
 <li>Emilia aparece como «Cáceres» y como «Caceres». Un filtro por nombre la cuenta como dos personas.</li>
 <li>La cuota sub-15 aparece como 16.500 y como 16.000. En abril se le cobraron &#36;500 de menos a Diego, y
@@ -637,11 +637,11 @@ CREATE TABLE pago (
 INSERT INTO categoria VALUES ('sub-13', 14500), ('sub-15', 16500), ('adulto', 21000);
 
 INSERT INTO socio VALUES
-    (1, 'Antonia Rivas',  '9 7412 3380', 'sub-13'),
-    (2, 'Benjamín Soto',  '9 6655 2091', 'sub-15'),
-    (3, 'Catalina Mora',  '9 8120 4473', 'adulto'),
-    (4, 'Diego Paredes',  '9 5531 7804', 'sub-15'),
-    (5, 'Emilia Cáceres', '9 4478 1962', 'sub-13');
+    (1, 'Antonia Rivas',  '9 0000 0033', 'sub-13'),
+    (2, 'Benjamín Soto',  '9 0000 0028', 'sub-15'),
+    (3, 'Catalina Mora',  '9 0000 0038', 'adulto'),
+    (4, 'Diego Paredes',  '9 0000 0015', 'sub-15'),
+    (5, 'Emilia Cáceres', '9 0000 0008', 'sub-13');
 
 INSERT INTO pago VALUES
     (1, '2026-03-02', 14500), (2, '2026-03-03', 16500), (3, '2026-03-05', 21000),
@@ -679,7 +679,7 @@ WHERE p.monto &lt; c.cuota;
 </table></div>
 <p>El error que la planilla escondía sale solo: a Diego le faltan &#36;500. Y si Benjamín cambia de teléfono,
 se corrige en una fila:</p>
-<pre><code class="language-sql">UPDATE socio SET telefono = '9 6655 8034' WHERE id_socio = 2;
+<pre><code class="language-sql">UPDATE socio SET telefono = '9 0000 0029' WHERE id_socio = 2;
 SELECT id_socio, nombre, telefono FROM socio WHERE id_socio = 2;
 </code></pre>
 <p>El <code>UPDATE</code> cambia 1 fila, y la consulta devuelve:</p>
@@ -695,7 +695,7 @@ SELECT id_socio, nombre, telefono FROM socio WHERE id_socio = 2;
 <tr>
 <td>2</td>
 <td>Benjamín Soto</td>
-<td>9 6655 8034</td>
+<td>9 0000 0029</td>
 </tr>
 </tbody>
 </table></div>
@@ -721,7 +721,7 @@ responde con estos mensajes (corridos por el verificador):</p>
 <td><code>CHECK constraint failed: monto &gt; 0</code></td>
 </tr>
 <tr>
-<td><code>INSERT INTO socio VALUES (6, 'Martina Lagos', '9 3307 6618', 'sub-17');</code></td>
+<td><code>INSERT INTO socio VALUES (6, 'Martina Lagos', '9 0000 0003', 'sub-17');</code></td>
 <td>una categoría que el club no tiene</td>
 <td><code>FOREIGN KEY constraint failed</code></td>
 </tr>
@@ -779,7 +779,7 @@ registra los pagos en la base; la planilla, si alguien la quiere, se arma con un
 <td>pregunta de quién es el dato; si es del socio, va en la tabla de socios</td>
 </tr>
 <tr>
-<td>Poner varios valores en una celda («9 7412 3380 / 9 2210 5547»)</td>
+<td>Poner varios valores en una celda («9 0000 0033 / 9 0000 0001»)</td>
 <td>eso es un atributo multivaluado; va en una tabla aparte (unidades 2 y 4)</td>
 </tr>
 <tr>
@@ -872,7 +872,7 @@ planillas. Di qué problema de la sección 2 es cada situación:</p>
 <p>(a) Un delegado inscribió a un jugador nacido el 31-02-2008.
 (b) El teléfono del árbitro Ramírez está en la planilla del fixture, en la de pagos y en la de
 sanciones.
-(c) En la de pagos aparece como <code>9 8833 1207</code> y en la de sanciones como <code>9 8833 1270</code>.
+(c) En la de pagos aparece como <code>9 0000 0040</code> y en la de sanciones como <code>9 0000 0041</code>.
 (d) Para saber qué jugadores sancionados jugaron el domingo, alguien cruza a mano la planilla del
 tribunal con las actas de los partidos, que están en PDF.
 (e) El tesorero y la secretaria abren la misma planilla compartida, los dos guardan y se pierde lo que
@@ -906,7 +906,7 @@ sus atenciones de agosto (la lista de precios no cambió en el mes):</p>
 <td>2026-08-03</td>
 <td>Toby</td>
 <td>Marcela Ojeda</td>
-<td>9 4410 2286</td>
+<td>9 0000 0005</td>
 <td>vacuna antirrábica</td>
 <td>18900</td>
 </tr>
@@ -914,7 +914,7 @@ sus atenciones de agosto (la lista de precios no cambió en el mes):</p>
 <td>2026-08-03</td>
 <td>Luna</td>
 <td>Marcela Ojeda</td>
-<td>9 4410 2286</td>
+<td>9 0000 0005</td>
 <td>desparasitación</td>
 <td>9400</td>
 </tr>
@@ -922,7 +922,7 @@ sus atenciones de agosto (la lista de precios no cambió en el mes):</p>
 <td>2026-08-07</td>
 <td>Rocco</td>
 <td>Andrés Vidal</td>
-<td>9 7302 5519</td>
+<td>9 0000 0031</td>
 <td>consulta</td>
 <td>22500</td>
 </tr>
@@ -930,7 +930,7 @@ sus atenciones de agosto (la lista de precios no cambió en el mes):</p>
 <td>2026-08-12</td>
 <td>Toby</td>
 <td>Marcela Ojeda</td>
-<td>9 4410 2286</td>
+<td>9 0000 0005</td>
 <td>consulta</td>
 <td>22500</td>
 </tr>
@@ -938,7 +938,7 @@ sus atenciones de agosto (la lista de precios no cambió en el mes):</p>
 <td>2026-08-15</td>
 <td>Kira</td>
 <td>Sofía Henríquez</td>
-<td>9 6158 3340</td>
+<td>9 0000 0024</td>
 <td>vacuna antirrábica</td>
 <td>18900</td>
 </tr>
@@ -946,7 +946,7 @@ sus atenciones de agosto (la lista de precios no cambió en el mes):</p>
 <td>2026-08-19</td>
 <td>Rocco</td>
 <td>Andrés Vidal</td>
-<td>9 7302 5591</td>
+<td>9 0000 0032</td>
 <td>desparasitación</td>
 <td>9400</td>
 </tr>
@@ -954,7 +954,7 @@ sus atenciones de agosto (la lista de precios no cambió en el mes):</p>
 <td>2026-08-21</td>
 <td>Luna</td>
 <td>Marcela Ojeda</td>
-<td>9 4410 2286</td>
+<td>9 0000 0005</td>
 <td>vacuna antirrábica</td>
 <td>19800</td>
 </tr>
@@ -962,7 +962,7 @@ sus atenciones de agosto (la lista de precios no cambió en el mes):</p>
 <td>2026-08-26</td>
 <td>Kira</td>
 <td>Sofía Henríquez</td>
-<td>9 6158 3340</td>
+<td>9 0000 0024</td>
 <td>consulta</td>
 <td>22500</td>
 </tr>
@@ -996,7 +996,7 @@ documento:</p>
 <pre><code class="language-json">{
   &quot;pedido&quot;: 5012,
   &quot;fecha&quot;: &quot;2026-09-18&quot;,
-  &quot;cliente&quot;: {&quot;nombre&quot;: &quot;Daniela Pizarro&quot;, &quot;telefono&quot;: &quot;9 5520 7714&quot;},
+  &quot;cliente&quot;: {&quot;nombre&quot;: &quot;Daniela Pizarro&quot;, &quot;telefono&quot;: &quot;9 0000 0013&quot;},
   &quot;items&quot;: [
     {&quot;producto&quot;: &quot;torta tres leches&quot;, &quot;cantidad&quot;: 1, &quot;precio&quot;: 18500},
     {&quot;producto&quot;: &quot;kuchen de nuez&quot;, &quot;cantidad&quot;: 2, &quot;precio&quot;: 9800},
@@ -1048,7 +1048,7 @@ de las que hay, y muestra qué pasa con la tercera venta.</p>
 <td>101</td>
 <td>2026-07-02</td>
 <td>Felipe Cárcamo</td>
-<td>9 3381 0457</td>
+<td>9 0000 0004</td>
 <td>ruta roja</td>
 <td>cambio de cadena</td>
 <td>12900</td>
@@ -1057,7 +1057,7 @@ de las que hay, y muestra qué pasa con la tercera venta.</p>
 <td>101</td>
 <td>2026-07-02</td>
 <td>Felipe Cárcamo</td>
-<td>9 3381 0457</td>
+<td>9 0000 0004</td>
 <td>ruta roja</td>
 <td>ajuste de frenos</td>
 <td>7500</td>
@@ -1066,7 +1066,7 @@ de las que hay, y muestra qué pasa con la tercera venta.</p>
 <td>102</td>
 <td>2026-07-03</td>
 <td>Ignacia Muñoz</td>
-<td>9 7724 9163</td>
+<td>9 0000 0035</td>
 <td>urbana azul</td>
 <td>mantención completa</td>
 <td>34900</td>
@@ -1075,7 +1075,7 @@ de las que hay, y muestra qué pasa con la tercera venta.</p>
 <td>103</td>
 <td>2026-07-08</td>
 <td>Felipe Cárcamo</td>
-<td>9 3381 0457</td>
+<td>9 0000 0004</td>
 <td>ruta roja</td>
 <td>parche de cámara</td>
 <td>4500</td>
@@ -1084,7 +1084,7 @@ de las que hay, y muestra qué pasa con la tercera venta.</p>
 <td>103</td>
 <td>2026-07-08</td>
 <td>Felipe Cárcamo</td>
-<td>9 3381 0457</td>
+<td>9 0000 0004</td>
 <td>ruta roja</td>
 <td>ajuste de frenos</td>
 <td>7500</td>
@@ -1093,7 +1093,7 @@ de las que hay, y muestra qué pasa con la tercera venta.</p>
 <td>104</td>
 <td>2026-07-10</td>
 <td>Tomás Leiva</td>
-<td>9 5096 2238</td>
+<td>9 0000 0009</td>
 <td>montaña negra</td>
 <td>cambio de cadena</td>
 <td>12900</td>
@@ -1102,7 +1102,7 @@ de las que hay, y muestra qué pasa con la tercera venta.</p>
 <td>104</td>
 <td>2026-07-10</td>
 <td>Tomás Leiva</td>
-<td>9 5096 2238</td>
+<td>9 0000 0009</td>
 <td>montaña negra</td>
 <td>ajuste de frenos</td>
 <td>7500</td>
@@ -1111,7 +1111,7 @@ de las que hay, y muestra qué pasa con la tercera venta.</p>
 <td>104</td>
 <td>2026-07-10</td>
 <td>Tomás Leiva</td>
-<td>9 5096 2238</td>
+<td>9 0000 0009</td>
 <td>montaña negra</td>
 <td>parche de cámara</td>
 <td>4500</td>
@@ -1120,7 +1120,7 @@ de las que hay, y muestra qué pasa con la tercera venta.</p>
 <td>105</td>
 <td>2026-07-15</td>
 <td>Ignacia Muñoz</td>
-<td>9 7724 9163</td>
+<td>9 0000 0035</td>
 <td>urbana azul</td>
 <td>ajuste de frenos</td>
 <td>7500</td>
@@ -1189,7 +1189,7 @@ un lugar, reglas declaradas, una sola fuente, transacciones y vistas por usuario
 </tbody>
 </table></div>
 <p><strong>1.5.</strong> (a) El teléfono de Marcela está escrito 4 veces. Hay 8 filas y 3 dueños: 5 copias de más del
-teléfono. (b) Andrés Vidal tiene dos teléfonos (<code>9 7302 5519</code> y <code>9 7302 5591</code>), y la vacuna antirrábica
+teléfono. (b) Andrés Vidal tiene dos teléfonos (<code>9 0000 0031</code> y <code>9 0000 0032</code>), y la vacuna antirrábica
 aparece a 18.900 y a 19.800 con la lista de precios sin cambios. (c) En la planilla, 4 celdas; en una
 base, 1. (d) 5 copias de más del teléfono y 5 del precio (8 filas, 3 servicios): 10 de las 48 celdas
 repiten algo que ya estaba escrito. (e) <code>dueno</code> (3 dueños, con su teléfono), <code>mascota</code> (4 mascotas, cada
@@ -1287,7 +1287,7 @@ CREATE TABLE detalle (
     PRIMARY KEY (id_pedido, id_producto)
 );
 
-INSERT INTO cliente VALUES (1, 'Daniela Pizarro', '9 5520 7714');
+INSERT INTO cliente VALUES (1, 'Daniela Pizarro', '9 0000 0013');
 INSERT INTO producto VALUES (1, 'torta tres leches'), (2, 'kuchen de nuez'), (3, 'berlines');
 INSERT INTO pedido VALUES (5012, 1, '2026-09-18');
 INSERT INTO detalle VALUES (5012, 1, 1, 18500), (5012, 2, 2, 9800), (5012, 3, 12, 900);

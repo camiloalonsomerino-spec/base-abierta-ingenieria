@@ -129,21 +129,21 @@ def base_del_caso(m):
 # ---------------------------------------------------------------- datos (originales)
 # Ejemplo · planilla de cuotas del club: (fecha, nombre escrito, teléfono escrito, categoría,
 # cuota escrita, pagado, socio real). El socio real es lo que la planilla no guarda.
-CLUB_SOCIOS = {1: ("Antonia Rivas", "9 7412 3380", "sub-13"), 2: ("Benjamín Soto", "9 6655 2091", "sub-15"),
-               3: ("Catalina Mora", "9 8120 4473", "adulto"), 4: ("Diego Paredes", "9 5531 7804", "sub-15"),
-               5: ("Emilia Cáceres", "9 4478 1962", "sub-13")}
+CLUB_SOCIOS = {1: ("Antonia Rivas", "9 0000 0033", "sub-13"), 2: ("Benjamín Soto", "9 0000 0028", "sub-15"),
+               3: ("Catalina Mora", "9 0000 0038", "adulto"), 4: ("Diego Paredes", "9 0000 0015", "sub-15"),
+               5: ("Emilia Cáceres", "9 0000 0008", "sub-13")}
 CLUB_CUOTAS = {"sub-13": 14500, "sub-15": 16500, "adulto": 21000}
 CLUB_PLANILLA = [
-    ("2026-03-02", "Antonia Rivas", "9 7412 3380", "sub-13", 14500, 14500, 1),
-    ("2026-03-03", "Benjamín Soto", "9 6655 2091", "sub-15", 16500, 16500, 2),
-    ("2026-03-05", "Catalina Mora", "9 8120 4473", "adulto", 21000, 21000, 3),
-    ("2026-03-09", "Diego Paredes", "9 5531 7804", "sub-15", 16500, 16500, 4),
-    ("2026-03-10", "Emilia Cáceres", "9 4478 1962", "sub-13", 14500, 14500, 5),
-    ("2026-04-01", "Antonia Rivas", "9 7412 3380", "sub-13", 14500, 14500, 1),
-    ("2026-04-04", "Benjamín Soto", "9 6655 2019", "sub-15", 16500, 16500, 2),
-    ("2026-04-06", "Catalina Mora", "9 8120 4473", "adulto", 21000, 21000, 3),
-    ("2026-04-08", "Diego Paredes", "9 5531 7804", "sub-15", 16000, 16000, 4),
-    ("2026-04-12", "Emilia Caceres", "9 4478 1962", "sub-13", 14500, 14500, 5),
+    ("2026-03-02", "Antonia Rivas", "9 0000 0033", "sub-13", 14500, 14500, 1),
+    ("2026-03-03", "Benjamín Soto", "9 0000 0028", "sub-15", 16500, 16500, 2),
+    ("2026-03-05", "Catalina Mora", "9 0000 0038", "adulto", 21000, 21000, 3),
+    ("2026-03-09", "Diego Paredes", "9 0000 0015", "sub-15", 16500, 16500, 4),
+    ("2026-03-10", "Emilia Cáceres", "9 0000 0008", "sub-13", 14500, 14500, 5),
+    ("2026-04-01", "Antonia Rivas", "9 0000 0033", "sub-13", 14500, 14500, 1),
+    ("2026-04-04", "Benjamín Soto", "9 0000 0027", "sub-15", 16500, 16500, 2),
+    ("2026-04-06", "Catalina Mora", "9 0000 0038", "adulto", 21000, 21000, 3),
+    ("2026-04-08", "Diego Paredes", "9 0000 0015", "sub-15", 16000, 16000, 4),
+    ("2026-04-12", "Emilia Caceres", "9 0000 0008", "sub-13", 14500, 14500, 5),
 ]
 CLUB_ESCALA = (120, 12)    # socios y meses de un año completo
 
@@ -152,18 +152,18 @@ FERIA = [(14, "Juana Toledo", "verduras", 6, "miércoles"), (15, "Luis Arriagada
          (22, "Juana Toledo", "verduras", 6, "sábado"), (31, "Pedro Sanhueza", "huevos", 3, "sábado")]
 
 # 1.5 · planilla de la veterinaria: (fecha, mascota, dueño, teléfono, servicio, precio)
-VETE = [("2026-08-03", "Toby", "Marcela Ojeda", "9 4410 2286", "vacuna antirrábica", 18900),
-        ("2026-08-03", "Luna", "Marcela Ojeda", "9 4410 2286", "desparasitación", 9400),
-        ("2026-08-07", "Rocco", "Andrés Vidal", "9 7302 5519", "consulta", 22500),
-        ("2026-08-12", "Toby", "Marcela Ojeda", "9 4410 2286", "consulta", 22500),
-        ("2026-08-15", "Kira", "Sofía Henríquez", "9 6158 3340", "vacuna antirrábica", 18900),
-        ("2026-08-19", "Rocco", "Andrés Vidal", "9 7302 5591", "desparasitación", 9400),
-        ("2026-08-21", "Luna", "Marcela Ojeda", "9 4410 2286", "vacuna antirrábica", 19800),
-        ("2026-08-26", "Kira", "Sofía Henríquez", "9 6158 3340", "consulta", 22500)]
+VETE = [("2026-08-03", "Toby", "Marcela Ojeda", "9 0000 0005", "vacuna antirrábica", 18900),
+        ("2026-08-03", "Luna", "Marcela Ojeda", "9 0000 0005", "desparasitación", 9400),
+        ("2026-08-07", "Rocco", "Andrés Vidal", "9 0000 0031", "consulta", 22500),
+        ("2026-08-12", "Toby", "Marcela Ojeda", "9 0000 0005", "consulta", 22500),
+        ("2026-08-15", "Kira", "Sofía Henríquez", "9 0000 0024", "vacuna antirrábica", 18900),
+        ("2026-08-19", "Rocco", "Andrés Vidal", "9 0000 0032", "desparasitación", 9400),
+        ("2026-08-21", "Luna", "Marcela Ojeda", "9 0000 0005", "vacuna antirrábica", 19800),
+        ("2026-08-26", "Kira", "Sofía Henríquez", "9 0000 0024", "consulta", 22500)]
 
 # 1.7 · el pedido de la pastelería como documento
 PASTELERIA = {"pedido": 5012, "fecha": "2026-09-18",
-              "cliente": {"nombre": "Daniela Pizarro", "telefono": "9 5520 7714"},
+              "cliente": {"nombre": "Daniela Pizarro", "telefono": "9 0000 0013"},
               "items": [{"producto": "torta tres leches", "cantidad": 1, "precio": 18500},
                         {"producto": "kuchen de nuez", "cantidad": 2, "precio": 9800},
                         {"producto": "berlines", "cantidad": 12, "precio": 900}]}
@@ -173,15 +173,15 @@ PASTELERIA_PEDIDOS_DANIELA = 9
 HOSTAL = {"libres": 6, "A": 2, "B": 3, "despues": 3}
 
 # 1.10 · planilla del taller de bicicletas: (orden, fecha, cliente, teléfono, bicicleta, servicio, valor)
-BICI = [(101, "2026-07-02", "Felipe Cárcamo", "9 3381 0457", "ruta roja", "cambio de cadena", 12900),
-        (101, "2026-07-02", "Felipe Cárcamo", "9 3381 0457", "ruta roja", "ajuste de frenos", 7500),
-        (102, "2026-07-03", "Ignacia Muñoz", "9 7724 9163", "urbana azul", "mantención completa", 34900),
-        (103, "2026-07-08", "Felipe Cárcamo", "9 3381 0457", "ruta roja", "parche de cámara", 4500),
-        (103, "2026-07-08", "Felipe Cárcamo", "9 3381 0457", "ruta roja", "ajuste de frenos", 7500),
-        (104, "2026-07-10", "Tomás Leiva", "9 5096 2238", "montaña negra", "cambio de cadena", 12900),
-        (104, "2026-07-10", "Tomás Leiva", "9 5096 2238", "montaña negra", "ajuste de frenos", 7500),
-        (104, "2026-07-10", "Tomás Leiva", "9 5096 2238", "montaña negra", "parche de cámara", 4500),
-        (105, "2026-07-15", "Ignacia Muñoz", "9 7724 9163", "urbana azul", "ajuste de frenos", 7500)]
+BICI = [(101, "2026-07-02", "Felipe Cárcamo", "9 0000 0004", "ruta roja", "cambio de cadena", 12900),
+        (101, "2026-07-02", "Felipe Cárcamo", "9 0000 0004", "ruta roja", "ajuste de frenos", 7500),
+        (102, "2026-07-03", "Ignacia Muñoz", "9 0000 0035", "urbana azul", "mantención completa", 34900),
+        (103, "2026-07-08", "Felipe Cárcamo", "9 0000 0004", "ruta roja", "parche de cámara", 4500),
+        (103, "2026-07-08", "Felipe Cárcamo", "9 0000 0004", "ruta roja", "ajuste de frenos", 7500),
+        (104, "2026-07-10", "Tomás Leiva", "9 0000 0009", "montaña negra", "cambio de cadena", 12900),
+        (104, "2026-07-10", "Tomás Leiva", "9 0000 0009", "montaña negra", "ajuste de frenos", 7500),
+        (104, "2026-07-10", "Tomás Leiva", "9 0000 0009", "montaña negra", "parche de cámara", 4500),
+        (105, "2026-07-15", "Ignacia Muñoz", "9 0000 0035", "urbana azul", "ajuste de frenos", 7500)]
 
 
 # ---------------------------------------------------------------- cálculos

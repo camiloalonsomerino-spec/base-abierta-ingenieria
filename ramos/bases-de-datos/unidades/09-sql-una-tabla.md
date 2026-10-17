@@ -57,18 +57,18 @@ SELECT * FROM orden_trabajo;
 
 | id_ot | patente | marca | servicio | ingreso | entrega | km | monto | detalle |
 |---|---|---|---|---|---|---|---|---|
-| 1 | KFTR42 | Toyota | mantención | 2026-09-01 | 2026-09-01 | 85200 | 64900 | aceite y filtros |
-| 2 | HJPL17 | Chevrolet | frenos | 2026-09-02 | 2026-09-03 | 132400 | 118500 | pastillas y discos delanteros |
-| 3 | GW5821 | Nissan | embrague | 2026-09-02 | 2026-09-05 | 210700 | 389000 | kit de embrague |
-| 4 | LSVB63 | Hyundai | mantención | 2026-09-04 | 2026-09-04 | 40100 | 72400 | aceite, filtros y revisión |
-| 5 | PRDK28 | Kia | diagnóstico | 2026-09-07 | NULL | 98300 | NULL | ruido en la suspensión |
-| 6 | JBXW90 | Toyota | frenos | 2026-09-08 | 2026-09-09 | 156900 | 86300 | pastillas traseras |
-| 7 | CZ4417 | Suzuki | alineación | 2026-09-09 | 2026-09-09 | 187500 | 28000 | alineación y balanceo |
-| 8 | RTKM55 | Mazda | mantención | 2026-09-10 | 2026-09-11 | 61800 | 79900 | aceite, filtros y bujías |
-| 9 | FHGS31 | Chevrolet | embrague | 2026-09-14 | NULL | 176200 | 412000 | embrague patina |
-| 10 | KLWD74 | Hyundai | frenos | 2026-09-15 | NULL | 119600 | 97800 | líquido y pastillas delanteras |
-| 11 | BV7302 | Nissan | diagnóstico | 2026-09-16 | NULL | 243100 | NULL | luz de motor encendida |
-| 12 | SPYT16 | Kia | alineación | 2026-09-16 | 2026-09-16 | 72900 | 26000 | alineación |
+| 1 | EJAE42 | Toyota | mantención | 2026-09-01 | 2026-09-01 | 85200 | 64900 | aceite y filtros |
+| 2 | EJAB17 | Chevrolet | frenos | 2026-09-02 | 2026-09-03 | 132400 | 118500 | pastillas y discos delanteros |
+| 3 | AE5821 | Nissan | embrague | 2026-09-02 | 2026-09-05 | 210700 | 389000 | kit de embrague |
+| 4 | EJAI63 | Hyundai | mantención | 2026-09-04 | 2026-09-04 | 40100 | 72400 | aceite, filtros y revisión |
+| 5 | EJAK28 | Kia | diagnóstico | 2026-09-07 | NULL | 98300 | NULL | ruido en la suspensión |
+| 6 | EJAC90 | Toyota | frenos | 2026-09-08 | 2026-09-09 | 156900 | 86300 | pastillas traseras |
+| 7 | AE4417 | Suzuki | alineación | 2026-09-09 | 2026-09-09 | 187500 | 28000 | alineación y balanceo |
+| 8 | EJAM55 | Mazda | mantención | 2026-09-10 | 2026-09-11 | 61800 | 79900 | aceite, filtros y bujías |
+| 9 | EJAA31 | Chevrolet | embrague | 2026-09-14 | NULL | 176200 | 412000 | embrague patina |
+| 10 | EJAF74 | Hyundai | frenos | 2026-09-15 | NULL | 119600 | 97800 | líquido y pastillas delanteras |
+| 11 | AE7302 | Nissan | diagnóstico | 2026-09-16 | NULL | 243100 | NULL | luz de motor encendida |
+| 12 | EJAN16 | Kia | alineación | 2026-09-16 | 2026-09-16 | 72900 | 26000 | alineación |
 
 `SELECT *` trae todas las columnas. Sirve para mirar una tabla; en una consulta que va a un informe o
 a un programa conviene nombrar las columnas, para que el resultado no cambie si mañana alguien agrega
@@ -122,9 +122,9 @@ WHERE servicio = 'frenos';
 
 | patente | servicio | monto |
 |---|---|---|
-| HJPL17 | frenos | 118500 |
-| JBXW90 | frenos | 86300 |
-| KLWD74 | frenos | 97800 |
+| EJAB17 | frenos | 118500 |
+| EJAC90 | frenos | 86300 |
+| EJAF74 | frenos | 97800 |
 
 **Expresiones y alias.** Una columna del resultado puede ser un cálculo. `AS` le pone nombre; sin
 alias, la columna se llama como la expresión (`ROUND(monto * 1.19)`), incómodo de leer y de usar
@@ -138,9 +138,9 @@ WHERE servicio = 'frenos';
 
 | patente | monto | con_iva |
 |---|---|---|
-| HJPL17 | 118500 | 141015.0 |
-| JBXW90 | 86300 | 102697.0 |
-| KLWD74 | 97800 | 116382.0 |
+| EJAB17 | 118500 | 141015.0 |
+| EJAC90 | 86300 | 102697.0 |
+| EJAF74 | 97800 | 116382.0 |
 
 En SQLite `ROUND` devuelve un número real (`141015.0`); MySQL devuelve `141015`. El valor es el mismo.
 
@@ -154,9 +154,9 @@ WHERE con_iva > 140000;
 
 | patente | con_iva |
 |---|---|
-| HJPL17 | 141015.0 |
-| GW5821 | 462910.0 |
-| FHGS31 | 490280.0 |
+| EJAB17 | 141015.0 |
+| AE5821 | 462910.0 |
+| EJAA31 | 490280.0 |
 
 SQLite lo acepta: si un nombre del `WHERE` no es una columna, lo busca entre los alias. Es una
 extensión propia. MySQL responde `Unknown column 'con_iva' in 'where clause'` (error 1054), y lo mismo
@@ -170,9 +170,9 @@ WHERE monto * 1.19 > 140000;
 
 | patente | con_iva |
 |---|---|
-| HJPL17 | 141015.0 |
-| GW5821 | 462910.0 |
-| FHGS31 | 490280.0 |
+| EJAB17 | 141015.0 |
+| AE5821 | 462910.0 |
+| EJAA31 | 490280.0 |
 
 **`DISTINCT`.** ¿Qué marcas tienen autos con más de 150.000 km? Sin `DISTINCT`, Nissan sale dos
 veces, porque hay dos Nissan:
@@ -237,9 +237,9 @@ WHERE ingreso BETWEEN '2026-09-07' AND '2026-09-09';
 
 | id_ot | patente | ingreso |
 |---|---|---|
-| 5 | PRDK28 | 2026-09-07 |
-| 6 | JBXW90 | 2026-09-08 |
-| 7 | CZ4417 | 2026-09-09 |
+| 5 | EJAK28 | 2026-09-07 |
+| 6 | EJAC90 | 2026-09-08 |
+| 7 | AE4417 | 2026-09-09 |
 
 **`IN (lista)`** reemplaza una cadena de `OR` sobre la misma columna:
 
@@ -251,10 +251,10 @@ WHERE servicio IN ('embrague', 'alineación');
 
 | id_ot | patente | servicio |
 |---|---|---|
-| 3 | GW5821 | embrague |
-| 7 | CZ4417 | alineación |
-| 9 | FHGS31 | embrague |
-| 12 | SPYT16 | alineación |
+| 3 | AE5821 | embrague |
+| 7 | AE4417 | alineación |
+| 9 | EJAA31 | embrague |
+| 12 | EJAN16 | alineación |
 
 **`LIKE`** compara texto con un patrón. `%` es «cualquier texto, incluso vacío» y `_` es «exactamente
 un carácter».
@@ -264,7 +264,7 @@ un carácter».
 | `'pastillas%'` | «pastillas traseras» | «líquido y pastillas delanteras» |
 | `'%pastillas%'` | las dos anteriores | «kit de embrague» |
 | `'%delanteras'` | «líquido y pastillas delanteras» | «pastillas y discos delanteros» (termina en «os») |
-| `'____42'` | «KFTR42» (cuatro caracteres y luego 42) | «BV7302» |
+| `'____42'` | «EJAE42» (cuatro caracteres y luego 42) | «AE7302» |
 
 ```sql
 SELECT id_ot, patente, detalle
@@ -274,9 +274,9 @@ WHERE detalle LIKE '%pastillas%';
 
 | id_ot | patente | detalle |
 |---|---|---|
-| 2 | HJPL17 | pastillas y discos delanteros |
-| 6 | JBXW90 | pastillas traseras |
-| 10 | KLWD74 | líquido y pastillas delanteras |
+| 2 | EJAB17 | pastillas y discos delanteros |
+| 6 | EJAC90 | pastillas traseras |
+| 10 | EJAF74 | líquido y pastillas delanteras |
 
 Un `LIKE` sin `%` ni `_` es una igualdad: `LIKE 'pastillas'` solo calza con el texto «pastillas»
 exacto. **Mayúsculas:** en SQLite, `LIKE` no distingue mayúsculas en las letras sin tilde (`'A' LIKE
@@ -287,7 +287,7 @@ tildes.
 ### 4.3 `NULL` y la lógica de tres valores
 
 `NULL` no es un valor: es la marca de «no se sabe» o «no aplica». Por eso cualquier comparación con
-`NULL` da **desconocido**, ni verdadero ni falso. ¿Es la fecha de entrega de PRDK28 igual a `NULL`? No
+`NULL` da **desconocido**, ni verdadero ni falso. ¿Es la fecha de entrega de EJAK28 igual a `NULL`? No
 se sabe, porque no se sabe la fecha. Y como `WHERE` solo deja pasar lo verdadero:
 
 ```sql
@@ -305,10 +305,10 @@ SELECT id_ot, patente, servicio FROM orden_trabajo WHERE entrega IS NULL;
 
 | id_ot | patente | servicio |
 |---|---|---|
-| 5 | PRDK28 | diagnóstico |
-| 9 | FHGS31 | embrague |
-| 10 | KLWD74 | frenos |
-| 11 | BV7302 | diagnóstico |
+| 5 | EJAK28 | diagnóstico |
+| 9 | EJAA31 | embrague |
+| 10 | EJAF74 | frenos |
+| 11 | AE7302 | diagnóstico |
 
 **`NULL` se contagia.** Una cuenta con un `NULL` da `NULL`. Si se quiere un valor de reemplazo,
 `COALESCE(x, valor)` devuelve el primer argumento que no sea `NULL` (en MySQL también `IFNULL`):
@@ -389,16 +389,16 @@ ORDER BY servicio, monto DESC;
 
 | servicio | patente | monto |
 |---|---|---|
-| alineación | CZ4417 | 28000 |
-| alineación | SPYT16 | 26000 |
-| embrague | FHGS31 | 412000 |
-| embrague | GW5821 | 389000 |
-| frenos | HJPL17 | 118500 |
-| frenos | KLWD74 | 97800 |
-| frenos | JBXW90 | 86300 |
-| mantención | RTKM55 | 79900 |
-| mantención | LSVB63 | 72400 |
-| mantención | KFTR42 | 64900 |
+| alineación | AE4417 | 28000 |
+| alineación | EJAN16 | 26000 |
+| embrague | EJAA31 | 412000 |
+| embrague | AE5821 | 389000 |
+| frenos | EJAB17 | 118500 |
+| frenos | EJAF74 | 97800 |
+| frenos | EJAC90 | 86300 |
+| mantención | EJAM55 | 79900 |
+| mantención | EJAI63 | 72400 |
+| mantención | EJAE42 | 64900 |
 
 Los `NULL` van primero en orden ascendente, en SQLite y en MySQL (por eso se filtraron aquí).
 
@@ -411,9 +411,9 @@ SELECT patente, km FROM orden_trabajo ORDER BY km DESC LIMIT 3;
 
 | patente | km |
 |---|---|
-| BV7302 | 243100 |
-| GW5821 | 210700 |
-| CZ4417 | 187500 |
+| AE7302 | 243100 |
+| AE5821 | 210700 |
+| AE4417 | 187500 |
 
 ```sql
 SELECT patente, km FROM orden_trabajo ORDER BY km DESC LIMIT 3 OFFSET 3;
@@ -421,9 +421,9 @@ SELECT patente, km FROM orden_trabajo ORDER BY km DESC LIMIT 3 OFFSET 3;
 
 | patente | km |
 |---|---|
-| FHGS31 | 176200 |
-| JBXW90 | 156900 |
-| HJPL17 | 132400 |
+| EJAA31 | 176200 |
+| EJAC90 | 156900 |
+| EJAB17 | 132400 |
 
 **`LIMIT` no es estándar.** SQLite, MySQL y PostgreSQL lo entienden. El estándar SQL escribe
 `FETCH FIRST 3 ROWS ONLY` (con `OFFSET 3 ROWS` delante para saltar), que usan PostgreSQL y Oracle
@@ -453,9 +453,9 @@ WHERE id_ot <= 3;
 
 | patente | miles_entera | miles | miles_1 |
 |---|---|---|---|
-| KFTR42 | 85 | 85.2 | 85.2 |
-| HJPL17 | 132 | 132.4 | 132.4 |
-| GW5821 | 210 | 210.7 | 210.7 |
+| EJAE42 | 85 | 85.2 | 85.2 |
+| EJAB17 | 132 | 132.4 | 132.4 |
+| AE5821 | 210 | 210.7 | 210.7 |
 
 En MySQL, `/` siempre da decimales (`85200 / 1000` es `85.2000`) y la división entera se pide con
 `DIV`. Es la diferencia más traicionera entre los dos motores. Con enteros, en SQLite, `100 * 1170 / 3190`
@@ -472,9 +472,9 @@ WHERE id_ot IN (2, 7, 11);
 
 | auto | servicio_may | largo | inicio |
 |---|---|---|---|
-| Chevrolet HJPL17 | FRENOS | 29 | HJ |
-| Suzuki CZ4417 | ALINEACIóN | 21 | CZ |
-| Nissan BV7302 | DIAGNóSTICO | 22 | BV |
+| Chevrolet EJAB17 | FRENOS | 29 | EJ |
+| Suzuki AE4417 | ALINEACIóN | 21 | AE |
+| Nissan AE7302 | DIAGNóSTICO | 22 | AE |
 
 Mira la segunda columna: el `UPPER` de SQLite solo convierte letras sin tilde («ALINEACIóN»). No es un
 error de la tabla: SQLite, sin extensiones, no conoce las reglas de mayúsculas fuera del inglés.
@@ -491,10 +491,10 @@ WHERE servicio = 'embrague';
 
 | patente | ingreso_cl | dias | garantia_hasta |
 |---|---|---|---|
-| GW5821 | 02-09-2026 | 3.0 | 2026-10-02 |
-| FHGS31 | 14-09-2026 | NULL | 2026-10-14 |
+| AE5821 | 02-09-2026 | 3.0 | 2026-10-02 |
+| EJAA31 | 14-09-2026 | NULL | 2026-10-14 |
 
-`julianday` convierte una fecha en un número de días; la resta da los días entre dos fechas. FHGS31
+`julianday` convierte una fecha en un número de días; la resta da los días entre dos fechas. EJAA31
 no tiene entrega, y el `NULL` se contagió a la resta.
 
 **La tabla de equivalencias.**
@@ -610,10 +610,10 @@ ORDER BY dias_en_taller DESC, patente;
 
 | patente | servicio | ingreso | dias_en_taller |
 |---|---|---|---|
-| PRDK28 | diagnóstico | 2026-09-07 | 10.0 |
-| FHGS31 | embrague | 2026-09-14 | 3.0 |
-| KLWD74 | frenos | 2026-09-15 | 2.0 |
-| BV7302 | diagnóstico | 2026-09-16 | 1.0 |
+| EJAK28 | diagnóstico | 2026-09-07 | 10.0 |
+| EJAA31 | embrague | 2026-09-14 | 3.0 |
+| EJAF74 | frenos | 2026-09-15 | 2.0 |
+| AE7302 | diagnóstico | 2026-09-16 | 1.0 |
 
 **Pregunta 2 · ¿Cuánto se facturó, con IVA, en frenos y embragues ya entregados?** La suma de varias
 filas es tema de la unidad 10; por ahora basta con la lista ordenada por total.
@@ -628,9 +628,9 @@ ORDER BY total_con_iva DESC;
 
 | patente | servicio | monto | total_con_iva |
 |---|---|---|---|
-| GW5821 | embrague | 389000 | 462910.0 |
-| HJPL17 | frenos | 118500 | 141015.0 |
-| JBXW90 | frenos | 86300 | 102697.0 |
+| AE5821 | embrague | 389000 | 462910.0 |
+| EJAB17 | frenos | 118500 | 141015.0 |
+| EJAC90 | frenos | 86300 | 102697.0 |
 
 Aquí `AND` e `IN` no necesitan paréntesis: no hay `OR` suelto. Escrito con `OR` sí harían falta:
 `entrega IS NOT NULL AND (servicio = 'frenos' OR servicio = 'embrague')`.
@@ -652,23 +652,23 @@ ORDER BY dias DESC, patente;
 
 | patente | servicio | dias | plazo |
 |---|---|---|---|
-| GW5821 | embrague | 3.0 | más de un día |
-| HJPL17 | frenos | 1.0 | al día siguiente |
-| JBXW90 | frenos | 1.0 | al día siguiente |
-| RTKM55 | mantención | 1.0 | al día siguiente |
-| CZ4417 | alineación | 0.0 | mismo día |
-| KFTR42 | mantención | 0.0 | mismo día |
-| LSVB63 | mantención | 0.0 | mismo día |
-| SPYT16 | alineación | 0.0 | mismo día |
+| AE5821 | embrague | 3.0 | más de un día |
+| EJAB17 | frenos | 1.0 | al día siguiente |
+| EJAC90 | frenos | 1.0 | al día siguiente |
+| EJAM55 | mantención | 1.0 | al día siguiente |
+| AE4417 | alineación | 0.0 | mismo día |
+| EJAE42 | mantención | 0.0 | mismo día |
+| EJAI63 | mantención | 0.0 | mismo día |
+| EJAN16 | alineación | 0.0 | mismo día |
 
 **Cómo se lee.**
 
-- **Lo urgente es PRDK28.** Lleva 10 días en diagnóstico, sin presupuesto (`monto` en `NULL`): el
+- **Lo urgente es EJAK28.** Lleva 10 días en diagnóstico, sin presupuesto (`monto` en `NULL`): el
   cliente no sabe cuánto va a pagar. Hay que cerrar ese diagnóstico antes de recibir otro.
 - **Frenos y embragues entregados suman $706.622 con IVA** (462.910 + 141.015 + 102.697). El embrague
-  de GW5821 es el 66 % de eso: un solo trabajo grande pesa más que varios chicos.
+  de AE5821 es el 66 % de eso: un solo trabajo grande pesa más que varios chicos.
 - **Los plazos se cumplen.** De los 8 entregados, 4 salieron el mismo día y 3 al día siguiente; solo
-  el embrague de GW5821 tardó 3 días, razonable para un kit completo. El problema del taller no es la
+  el embrague de AE5821 tardó 3 días, razonable para un kit completo. El problema del taller no es la
   velocidad de los trabajos, sino el diagnóstico que quedó detenido.
 
 ---

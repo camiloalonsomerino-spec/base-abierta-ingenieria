@@ -81,7 +81,7 @@ un **dominio**: la nota final va de 1,0 a 7,0; el día de la semana es uno de si
 
 **Por qué distinguir los tipos.** Cada uno se guarda distinto (unidad 4): un compuesto se abre en
 columnas, un multivaluado necesita su propia tabla y un derivado no se guarda. Si el diagrama no los
-marca, el error aparece después, en una tabla con una columna `telefonos` que dice «9 7412 3380 / 9 2210
+marca, el error aparece después, en una tabla con una columna `telefonos` que dice «9 0000 0033 / 9 2210
 5547».
 
 **Por qué el derivado no se guarda.** La edad cambia sola cada año; la fecha de nacimiento, nunca. Si se
@@ -268,7 +268,7 @@ repite, es decir, otra entidad.
 
 | Error | Cómo evitarlo |
 |---|---|
-| Un atributo con varios valores dibujado como simple (`telefonos`, que luego será una columna con «9 7412 3380 / 9 2210 5547») | si puede tener varios valores, doble óvalo; la unidad 4 le da su tabla |
+| Un atributo con varios valores dibujado como simple (`telefonos`, que luego será una columna con «9 0000 0033 / 9 0000 0001») | si puede tener varios valores, doble óvalo; la unidad 4 le da su tabla |
 | Dibujar la clave de otra entidad como atributo (`id_cliente` dentro de `pedido`) | en el diagrama conceptual esa conexión es un rombo; la clave foránea aparece en la unidad 4 |
 | Relación sin verbo (`cliente_pedido`, `relacion1`) | un verbo que se lea de izquierda a derecha: `cliente` **hace** `pedido` |
 | Entidad sin clave | toda entidad necesita algo que la identifique; si no lo hay, una clave artificial (o es débil, unidad 3) |

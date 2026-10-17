@@ -549,23 +549,23 @@ ORDER BY t.nombre, f.telefono;
 </tr>
 <tr>
 <td>Héctor Uribe</td>
-<td>+56 9 5550 0301</td>
+<td>+56 9 0000 0019</td>
 </tr>
 <tr>
 <td>Ignacio Paredes</td>
-<td>+56 9 5550 0101</td>
+<td>+56 9 0000 0016</td>
 </tr>
 <tr>
 <td>Ignacio Paredes</td>
-<td>+56 9 5550 0102</td>
+<td>+56 9 0000 0017</td>
 </tr>
 <tr>
 <td>Marcela Toledo</td>
-<td>+56 9 5550 0401</td>
+<td>+56 9 0000 0020</td>
 </tr>
 <tr>
 <td>Rocío Gallardo</td>
-<td>+56 9 5550 0201</td>
+<td>+56 9 0000 0018</td>
 </tr>
 </tbody>
 </table></div>
@@ -685,18 +685,18 @@ ORDER BY s.nombre;
 </table></div>
 <p><strong>Paso 5 · Lo que la base rechaza.</strong> Cuatro intentos que el diagrama prohíbe y el esquema impide (con
 <code>PRAGMA foreign_keys = ON</code>):</p>
-<pre><code class="language-sql">INSERT INTO mascota VALUES ('99.999.999-9', 'Kira', 'perro', NULL);
+<pre><code class="language-sql">INSERT INTO mascota VALUES ('45.055.350-6', 'Kira', 'perro', NULL);
 </code></pre>
 <p>Respuesta: <code>FOREIGN KEY constraint failed</code>. No hay tutor con ese rut (R2).</p>
-<pre><code class="language-sql">INSERT INTO mascota VALUES ('15.630.218-K', 'Luna', 'gato', NULL);
+<pre><code class="language-sql">INSERT INTO mascota VALUES ('41.213.284-K', 'Luna', 'gato', NULL);
 </code></pre>
 <p>Respuesta: <code>UNIQUE constraint failed: mascota.rut_tutor, mascota.nombre</code>. Ignacio Paredes ya tiene una
 Luna (la clave de la débil).</p>
-<pre><code class="language-sql">UPDATE sede SET rut_director = '13.482.906-0' WHERE cod_sede = 'ALE';
+<pre><code class="language-sql">UPDATE sede SET rut_director = '40.808.856-9' WHERE cod_sede = 'ALE';
 </code></pre>
 <p>Respuesta: <code>UNIQUE constraint failed: sede.rut_director</code>. Daniela Ojeda ya dirige Centro (el <code>UNIQUE</code> de
 la 1:1).</p>
-<pre><code class="language-sql">UPDATE sede SET rut_director = '12.774.351-7' WHERE cod_sede = 'ALE';
+<pre><code class="language-sql">UPDATE sede SET rut_director = '40.606.642-8' WHERE cod_sede = 'ALE';
 </code></pre>
 <p>Respuesta: <code>FOREIGN KEY constraint failed</code>. Jorge Cárcamo es técnico: no está en <code>veterinario</code>. Con la
 clave foránea postergada, el error sale al confirmar la transacción.</p>

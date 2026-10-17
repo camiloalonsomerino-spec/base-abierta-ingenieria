@@ -25,7 +25,7 @@ CREATE TABLE detalle (
     PRIMARY KEY (id_pedido, id_producto)
 );
 
-INSERT INTO cliente VALUES (1, 'Daniela Pizarro', '9 5520 7714');
+INSERT INTO cliente VALUES (1, 'Daniela Pizarro', '9 0000 0013');
 INSERT INTO producto VALUES (1, 'torta tres leches'), (2, 'kuchen de nuez'), (3, 'berlines');
 INSERT INTO pedido VALUES (5012, 1, '2026-09-18');
 INSERT INTO detalle VALUES (5012, 1, 1, 18500), (5012, 2, 2, 9800), (5012, 3, 12, 900);

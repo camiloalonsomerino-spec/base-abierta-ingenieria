@@ -56,7 +56,7 @@ y se dibuja como una tabla.
 | Término formal | En la tabla | Ejemplo en la biblioteca de la sección 8 |
 |---|---|---|
 | relación | tabla | `socio` |
-| tupla | fila | `(1, '15.432.876-9', 'Rosa Paillalef', 'Valdivia')` |
+| tupla | fila | `(1, '41.112.177-1', 'Rosa Paillalef', 'Valdivia')` |
 | atributo | columna | `rut` |
 | dominio | conjunto de valores que puede tomar un atributo | años entre 1450 y 2026 para `anio` |
 | grado | número de atributos | `socio` tiene grado 4 |
@@ -327,19 +327,19 @@ En MySQL cambian dos cosas: `INTEGER PRIMARY KEY` se escribe `INT AUTO_INCREMENT
 
 | id_socio | rut | nombre | comuna |
 |---|---|---|---|
-| 1 | 15.432.876-9 | Rosa Paillalef | Valdivia |
-| 2 | 17.209.334-5 | Tomás Riquelme | Valdivia |
-| 3 | 12.884.051-6 | Marta Huenchullán | Corral |
-| 4 | 20.115.672-6 | Diego Altamirano | Valdivia |
+| 1 | 41.112.177-1 | Rosa Paillalef | Valdivia |
+| 2 | 41.718.819-3 | Tomás Riquelme | Valdivia |
+| 3 | 40.707.749-0 | Marta Huenchullán | Corral |
+| 4 | 43.033.210-4 | Diego Altamirano | Valdivia |
 
 | id_socio | telefono |
 |---|---|
-| 1 | +56 9 6123 4471 |
+| 1 | +56 9 0000 0022 |
 | 1 | +56 63 221 3390 |
-| 2 | +56 9 7745 0812 |
-| 3 | +56 9 5390 2268 |
-| 3 | +56 9 8812 0047 |
-| 4 | +56 9 9031 5524 |
+| 2 | +56 9 0000 0037 |
+| 3 | +56 9 0000 0010 |
+| 3 | +56 9 0000 0039 |
+| 4 | +56 9 0000 0043 |
 
 | isbn | titulo | anio |
 |---|---|---|
@@ -372,9 +372,9 @@ El ISBN de *Mareas de niebla* quedó mal: el correcto es 978-956-3315-40-9.
 -- @i1 un ejemplar de un libro que no está en el catálogo
 INSERT INTO ejemplar (isbn) VALUES ('978-956-9999-99-9');
 -- @i2 un socio con un RUT que ya existe
-INSERT INTO socio (rut, nombre) VALUES ('15.432.876-9', 'Rosa P. Paillalef');
+INSERT INTO socio (rut, nombre) VALUES ('41.112.177-1', 'Rosa P. Paillalef');
 -- @i3 un socio sin nombre
-INSERT INTO socio (rut, comuna) VALUES ('19.640.208-K', 'Paillaco');
+INSERT INTO socio (rut, comuna) VALUES ('42.628.782-K', 'Paillaco');
 -- @i4 un año mal digitado (2062 por 2026)
 INSERT INTO libro VALUES ('978-956-6102-77-1', 'Atlas del sur lluvioso', 2062);
 -- @i5 una devolución anterior a la salida
@@ -499,13 +499,13 @@ CREATE TABLE carro (
 
 | patente | duenio | comida | metros |
 |---|---|---|---|
-| KTRW-21 | Juana Sepúlveda | empanadas | 6 |
-| LPFX-73 | Luis Fuentealba | jugos | 4 |
-| JHZS-08 | Juana Sepúlveda | sopaipillas | 3 |
-| PBDC-45 | Héctor Vergara | ceviche | 5 |
-| RGKT-19 | Ana Cifuentes | completos | 6 |
-| LPFX-73 | Luis Fuentealba | jugos | 4 |
-| SVWL-62 | Ana Cifuentes | café | 3 |
+| EJAG-21 | Juana Sepúlveda | empanadas | 6 |
+| EJAH-73 | Luis Fuentealba | jugos | 4 |
+| EJAD-08 | Juana Sepúlveda | sopaipillas | 3 |
+| EJAJ-45 | Héctor Vergara | ceviche | 5 |
+| EJAL-19 | Ana Cifuentes | completos | 6 |
+| EJAH-73 | Luis Fuentealba | jugos | 4 |
+| EJAO-62 | Ana Cifuentes | café | 3 |
 
 (a) ¿Cuál es el grado y la cardinalidad de la tabla? (b) ¿Es una relación? Si no, ¿cuál sería su
 cardinalidad como relación? (c) Propón el dominio de cada atributo. (d) Cada carro tiene una patente y
@@ -547,23 +547,23 @@ CREATE TABLE hora (
 
 | id_hora | id_box | fecha | bloque | rut_paciente |
 |---|---|---|---|---|
-| 1 | 1 | 2026-11-04 | 3 | 16.723.094-6 |
+| 1 | 1 | 2026-11-04 | 3 | 41.415.498-0 |
 
 Para cada intento, di si la base lo acepta y, si lo rechaza, qué restricción actúa:
 
 ```sql
 -- @a otro box, mismo día y bloque
-INSERT INTO hora VALUES (2, 2, '2026-11-04', 3, '18.450.117-1');
+INSERT INTO hora VALUES (2, 2, '2026-11-04', 3, '42.123.247-4');
 -- @b el mismo box, día y bloque de la hora 1
-INSERT INTO hora VALUES (3, 1, '2026-11-04', 3, '13.902.556-3');
+INSERT INTO hora VALUES (3, 1, '2026-11-04', 3, '40.909.963-7');
 -- @c el bloque 17
-INSERT INTO hora VALUES (4, 3, '2026-11-04', 17, '21.088.430-0');
+INSERT INTO hora VALUES (4, 3, '2026-11-04', 17, '43.639.852-2');
 -- @d un box que no existe
-INSERT INTO hora VALUES (5, 4, '2026-11-05', 2, '14.567.302-K');
+INSERT INTO hora VALUES (5, 4, '2026-11-05', 2, '41.011.070-9');
 -- @e una hora sin paciente asignado
 INSERT INTO hora VALUES (6, 3, '2026-11-05', 2, NULL);
 -- @f repetir el id_hora 1
-INSERT INTO hora VALUES (1, 2, '2026-11-05', 5, '19.234.871-4');
+INSERT INTO hora VALUES (1, 2, '2026-11-05', 5, '42.426.568-3');
 -- @g un box en el piso 3
 INSERT INTO box VALUES (4, 3);
 ```
@@ -632,42 +632,42 @@ CREATE TABLE matricula (
 
 | rut | nombre | curso | horario |
 |---|---|---|---|
-| 16.590.834-1 | Carolina Muñoz | clase B | martes 18:00 |
-| 16.590.834-1 | Carolina Muñoz | mecánica básica | jueves 19:30 |
-| 10.876.543-7 | Pedro Araya | clase A2 | lunes 17:00 |
-| 17.765.209-1 | Valentina Rojas | clase B | martes 18:00 |
-| 11.223.098-K | Jorge Lillo | mecánica básica | jueves 19:30 |
-| 22.014.567-0 | Camila Soto | clase A2 | lunes 17:00 |
-| 17.765.209-1 | Valentina Rojas | clase C | sábado 11:00 |
-| 11.223.098-K | Jorge Lillo | clase C | sábado 11:00 |
+| 41.314.391-8 | Carolina Muñoz | clase B | martes 18:00 |
+| 41.314.391-8 | Carolina Muñoz | mecánica básica | jueves 19:30 |
+| 40.101.107-2 | Pedro Araya | clase A2 | lunes 17:00 |
+| 41.819.926-1 | Valentina Rojas | clase B | martes 18:00 |
+| 40.202.214-0 | Jorge Lillo | mecánica básica | jueves 19:30 |
+| 44.044.280-3 | Camila Soto | clase A2 | lunes 17:00 |
+| 41.819.926-1 | Valentina Rojas | clase C | sábado 11:00 |
+| 40.202.214-0 | Jorge Lillo | clase C | sábado 11:00 |
 
 (a) ¿Qué conjuntos mínimos de columnas no se repiten en **estos** datos? (b) ¿Cuáles de ellos son claves
 candidatas según las reglas? (c) Alguien declaró `PRIMARY KEY (nombre, curso)`: ¿qué pasa cuando se
-matricula en clase A2 otro Pedro Araya (RUT 19.234.871-4)? (d) Con las claves correctas, ¿qué pasa si
+matricula en clase A2 otro Pedro Araya (RUT 42.426.568-3)? (d) Con las claves correctas, ¿qué pasa si
 Carolina pide un segundo curso el martes a las 18:00?
 
 **5.7 · El RUT mal digitado (intermedio).** En una clínica veterinaria de Osorno, la recepcionista
-registró a Soledad Ulloa con el RUT 12.354.678-4; el correcto es 12.345.678-5 (los dos tienen dígito
+registró a Soledad Ulloa con el RUT 40.505.535-K; el correcto es 40.404.428-1 (los dos tienen dígito
 verificador válido, así que el sistema no avisó). Soledad tiene tres mascotas y cinco boletas.
 
 | id_mascota | nombre | rut_dueno |
 |---|---|---|
-| 1 | Canela | 12.354.678-4 |
-| 2 | Pelusa | 12.354.678-4 |
-| 3 | Toby | 12.354.678-4 |
+| 1 | Canela | 40.505.535-K |
+| 2 | Pelusa | 40.505.535-K |
+| 3 | Toby | 40.505.535-K |
 
 | id_boleta | rut_cliente | monto |
 |---|---|---|
-| 1 | 12.354.678-4 | 18500 |
-| 2 | 12.354.678-4 | 32900 |
-| 3 | 12.354.678-4 | 7400 |
-| 4 | 12.354.678-4 | 45200 |
-| 5 | 12.354.678-4 | 12800 |
+| 1 | 40.505.535-K | 18500 |
+| 2 | 40.505.535-K | 32900 |
+| 3 | 40.505.535-K | 7400 |
+| 4 | 40.505.535-K | 45200 |
+| 5 | 40.505.535-K | 12800 |
 
 El script `sql/u05_e07_veterinaria.sql` arma tres diseños con estos datos: (1) el RUT es la clave
 primaria de `cliente` y las foráneas no tienen acción; (2) igual, pero con `ON UPDATE CASCADE`; (3) una
 clave subrogada `id_cliente` y el RUT como `UNIQUE`. (a) Predice qué pasa con
-`UPDATE cliente_N SET rut = '12.345.678-5' WHERE rut = '12.354.678-4';` en cada diseño. (b) ¿Cuántas
+`UPDATE cliente_N SET rut = '40.404.428-1' WHERE rut = '40.505.535-K';` en cada diseño. (b) ¿Cuántas
 filas reescribe la base en el diseño 2 y cuántas en el 3? (c) ¿Cuál elegirías y por qué?
 
 **5.8 · El `CHECK` y el `NULL` (intermedio).** Un profesor carga las notas del control 2 en
@@ -808,13 +808,13 @@ CREATE TABLE venta (
 
 | rut | nombre | numero_stand | categorias |
 |---|---|---|---|
-| 16.723.094-6 | Daniela Cortés | 1 | joyas, cerámica |
-| 18.450.117-1 | Ignacio Pizarro | 2 | papayas, mermeladas |
+| 41.415.498-0 | Daniela Cortés | 1 | joyas, cerámica |
+| 42.123.247-4 | Ignacio Pizarro | 2 | papayas, mermeladas |
 
 | id_venta | rut | fecha | monto |
 |---|---|---|---|
-| 1 | 16.723.094-6 | 2026-12-18 | 24000 |
-| 2 | 18.450.117-1 | 2026-12-18 | 8500 |
+| 1 | 41.415.498-0 | 2026-12-18 | 24000 |
+| 2 | 42.123.247-4 | 2026-12-18 | 8500 |
 
 (a) Encuentra los seis errores y di qué permite cada uno (usa los intentos del script). (b) Escribe el
 esquema corregido y comprueba que rechaza lo que debe.
@@ -853,9 +853,9 @@ HAVING COUNT(*) > 1;
 
 | patente | duenio | comida | metros | veces |
 |---|---|---|---|---|
-| LPFX-73 | Luis Fuentealba | jugos | 4 | 2 |
+| EJAH-73 | Luis Fuentealba | jugos | 4 | 2 |
 
-(a) Grado 4 y cardinalidad 7 como tabla. (b) No es una relación: la fila del carro LPFX-73 está dos
+(a) Grado 4 y cardinalidad 7 como tabla. (b) No es una relación: la fila del carro EJAH-73 está dos
 veces. Como relación tendría cardinalidad 6. (c) `patente`: texto de cuatro letras, guion y dos dígitos
 (se puede cerrar con `CHECK (patente LIKE '____-__')`); `duenio`: nombres de personas, obligatorio;
 `comida`: una lista cerrada que fije la municipalidad; `metros`: enteros entre 1 y un máximo, por
@@ -1006,8 +1006,8 @@ Con estos datos de prueba:
 
 | id_cliente | rut | nombre | telefono |
 |---|---|---|---|
-| 1 | 18.450.117-1 | Francisca Oyarzún | +56 9 6650 1832 |
-| 2 | 13.902.556-3 | Ignacio Barrientos | +56 9 7218 4409 |
+| 1 | 42.123.247-4 | Francisca Oyarzún | +56 9 0000 0026 |
+| 2 | 40.909.963-7 | Ignacio Barrientos | +56 9 0000 0030 |
 
 | id_arriendo | id_cliente | codigo | inicio | fin |
 |---|---|---|---|---|
@@ -1021,7 +1021,7 @@ INSERT INTO bicicleta VALUES ('PV-040', 'tándem', 4500);
 -- @b una tarifa de cero pesos
 INSERT INTO bicicleta VALUES ('PV-041', 'urbana', 0);
 -- @c un RUT que ya existe
-INSERT INTO cliente (rut, nombre, telefono) VALUES ('18.450.117-1', 'F. Oyarzún', '+56 9 6650 1832');
+INSERT INTO cliente (rut, nombre, telefono) VALUES ('42.123.247-4', 'F. Oyarzún', '+56 9 0000 0026');
 -- @d arrendar una bicicleta que no existe
 INSERT INTO arriendo (id_cliente, codigo, inicio) VALUES (2, 'PV-099', '2026-12-29 09:30');
 -- @e un arriendo que termina antes de empezar
@@ -1061,9 +1061,9 @@ SELECT nombre, curso, COUNT(*) FROM matricula GROUP BY nombre, curso HAVING COUN
 
 | rut | COUNT(*) |
 |---|---|
-| 11.223.098-K | 2 |
-| 16.590.834-1 | 2 |
-| 17.765.209-1 | 2 |
+| 40.202.214-0 | 2 |
+| 41.314.391-8 | 2 |
+| 41.819.926-1 | 2 |
 
 La segunda consulta no devuelve filas: en estos datos (nombre, curso) no se repite. (b) Según las
 reglas, solo {rut, curso} y {rut, horario} son candidatas (la segunda sale de «nadie está en dos cursos a
@@ -1088,11 +1088,11 @@ CREATE TABLE matricula_bien (
 INSERT INTO matricula_mal SELECT * FROM matricula;
 INSERT INTO matricula_bien SELECT * FROM matricula;
 -- @mal llega otro Pedro Araya al curso clase A2
-INSERT INTO matricula_mal VALUES ('19.234.871-4', 'Pedro Araya', 'clase A2', 'lunes 17:00');
+INSERT INTO matricula_mal VALUES ('42.426.568-3', 'Pedro Araya', 'clase A2', 'lunes 17:00');
 -- @bien el mismo Pedro, con las claves que dicen las reglas
-INSERT INTO matricula_bien VALUES ('19.234.871-4', 'Pedro Araya', 'clase A2', 'lunes 17:00');
+INSERT INTO matricula_bien VALUES ('42.426.568-3', 'Pedro Araya', 'clase A2', 'lunes 17:00');
 -- @choque Carolina pide un segundo curso el martes a las 18:00
-INSERT INTO matricula_bien VALUES ('16.590.834-1', 'Carolina Muñoz', 'clase D', 'martes 18:00');
+INSERT INTO matricula_bien VALUES ('41.314.391-8', 'Carolina Muñoz', 'clase D', 'martes 18:00');
 ```
 
 | Intento | Qué se intenta | Respuesta de SQLite |
@@ -1109,15 +1109,15 @@ de cada curso en cada matrícula.)
 
 ```sql
 -- @d1 corregir el RUT en el diseño 1
-UPDATE cliente_1 SET rut = '12.345.678-5' WHERE rut = '12.354.678-4';
+UPDATE cliente_1 SET rut = '40.404.428-1' WHERE rut = '40.505.535-K';
 -- @d2 corregirlo en el diseño 2
-UPDATE cliente_2 SET rut = '12.345.678-5' WHERE rut = '12.354.678-4';
+UPDATE cliente_2 SET rut = '40.404.428-1' WHERE rut = '40.505.535-K';
 -- @d2c cuántas filas cambiaron en el diseño 2
-SELECT (SELECT COUNT(*) FROM cliente_2 WHERE rut = '12.345.678-5') AS clientes,
-       (SELECT COUNT(*) FROM mascota_2 WHERE rut_dueno = '12.345.678-5') AS mascotas,
-       (SELECT COUNT(*) FROM boleta_2 WHERE rut_cliente = '12.345.678-5') AS boletas;
+SELECT (SELECT COUNT(*) FROM cliente_2 WHERE rut = '40.404.428-1') AS clientes,
+       (SELECT COUNT(*) FROM mascota_2 WHERE rut_dueno = '40.404.428-1') AS mascotas,
+       (SELECT COUNT(*) FROM boleta_2 WHERE rut_cliente = '40.404.428-1') AS boletas;
 -- @d3 corregirlo en el diseño 3
-UPDATE cliente_3 SET rut = '12.345.678-5' WHERE rut = '12.354.678-4';
+UPDATE cliente_3 SET rut = '40.404.428-1' WHERE rut = '40.505.535-K';
 ```
 
 | Intento | Qué se intenta | Respuesta de SQLite |
@@ -1203,17 +1203,17 @@ CREATE TABLE boleta_3 (
 
 ```sql
 -- @a un 5,8
-INSERT INTO nota VALUES ('21.088.430-0', 'control 2', 5.8);
+INSERT INTO nota VALUES ('43.639.852-2', 'control 2', 5.8);
 -- @b una nota en blanco (NULL)
-INSERT INTO nota VALUES ('14.567.302-K', 'control 2', NULL);
+INSERT INTO nota VALUES ('41.011.070-9', 'control 2', NULL);
 -- @c un 7,3
-INSERT INTO nota VALUES ('19.234.871-4', 'control 2', 7.3);
+INSERT INTO nota VALUES ('42.426.568-3', 'control 2', 7.3);
 -- @d el texto '6,2' copiado de una planilla
-INSERT INTO nota VALUES ('10.876.543-7', 'control 2', '6,2');
+INSERT INTO nota VALUES ('40.101.107-2', 'control 2', '6,2');
 -- @e un 1,0
-INSERT INTO nota VALUES ('17.765.209-1', 'control 2', 1.0);
+INSERT INTO nota VALUES ('41.819.926-1', 'control 2', 1.0);
 -- @f un 4,5
-INSERT INTO nota VALUES ('22.014.567-0', 'control 2', 4.5);
+INSERT INTO nota VALUES ('44.044.280-3', 'control 2', 4.5);
 -- @resumen
 SELECT COUNT(*) AS filas, COUNT(nota) AS con_nota, ROUND(AVG(nota), 2) AS promedio FROM nota;
 
@@ -1222,7 +1222,7 @@ CREATE TABLE nota_floja (
     nota REAL CHECK (nota > 0)
 );
 -- @g el texto 'seis' con CHECK (nota > 0)
-INSERT INTO nota_floja VALUES ('11.223.098-K', 'seis');
+INSERT INTO nota_floja VALUES ('40.202.214-0', 'seis');
 -- @h
 SELECT rut, nota, typeof(nota) FROM nota_floja;
 
@@ -1233,11 +1233,11 @@ CREATE TABLE nota_estricta (
     PRIMARY KEY (rut, evaluacion)
 ) STRICT;
 -- @i 'seis' en la tabla STRICT
-INSERT INTO nota_estricta VALUES ('11.223.098-K', 'control 2', 'seis');
+INSERT INTO nota_estricta VALUES ('40.202.214-0', 'control 2', 'seis');
 -- @j NULL con NOT NULL
-INSERT INTO nota_estricta VALUES ('14.567.302-K', 'control 2', NULL);
+INSERT INTO nota_estricta VALUES ('41.011.070-9', 'control 2', NULL);
 -- @k el entero 6 en la tabla STRICT
-INSERT INTO nota_estricta VALUES ('16.590.834-1', 'control 2', 6);
+INSERT INTO nota_estricta VALUES ('41.314.391-8', 'control 2', 6);
 -- @l
 SELECT rut, nota, typeof(nota) FROM nota_estricta;
 ```
@@ -1261,11 +1261,11 @@ SELECT rut, nota, typeof(nota) FROM nota_estricta;
 
 | rut | nota | typeof(nota) |
 |---|---|---|
-| 11.223.098-K | seis | text |
+| 40.202.214-0 | seis | text |
 
 | rut | nota | typeof(nota) |
 |---|---|---|
-| 16.590.834-1 | 6.0 | real |
+| 41.314.391-8 | 6.0 | real |
 
 (a) Entran 5,8, la nota en blanco, 1,0 y 4,5; el 7,3 y el texto `'6,2'` se rechazan. El `'6,2'` se rechaza
 por accidente: con coma no parece número, queda como texto, y un texto es mayor que 7,0. (b) Quedan 4
@@ -1408,11 +1408,11 @@ INSERT INTO emprendedor (nombre, numero_stand) VALUES ('Sin RUT', 3);
 -- @m2 un stand sin metros
 INSERT INTO stand VALUES (4, NULL);
 -- @m3 Ignacio arrienda también el stand 3: solo cabe pisando el 2
-UPDATE emprendedor SET numero_stand = 3 WHERE rut = '18.450.117-1';
+UPDATE emprendedor SET numero_stand = 3 WHERE rut = '42.123.247-4';
 -- @m4 quién vende mermeladas (la columna de texto obliga a buscar con LIKE)
 SELECT nombre FROM emprendedor WHERE categorias LIKE '%mermelada%';
 -- @m5 Daniela se retira de la expo
-DELETE FROM emprendedor WHERE rut = '16.723.094-6';
+DELETE FROM emprendedor WHERE rut = '41.415.498-0';
 ```
 
 | Intento | Qué se intenta | Respuesta de SQLite |

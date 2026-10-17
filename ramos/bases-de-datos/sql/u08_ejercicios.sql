@@ -15,14 +15,14 @@ CREATE TABLE mascota (
     rut_dueno  VARCHAR(12) NOT NULL
 );
 INSERT INTO mascota (nombre, especie, fecha_nac, peso_kg, rut_dueno)
-VALUES ('Canela', 'perro', '2019-05-14', 12.5, '18.904.265-5');
+VALUES ('Canela', 'perro', '2019-05-14', 12.5, '42.224.354-2');
 SELECT * FROM mascota;
 
 -- @e1_falla_especie
-INSERT INTO mascota (nombre, especie, rut_dueno) VALUES ('Pirata', 'loro', '18.904.265-5');
+INSERT INTO mascota (nombre, especie, rut_dueno) VALUES ('Pirata', 'loro', '42.224.354-2');
 
 -- @e1_falla_peso
-INSERT INTO mascota (nombre, especie, peso_kg, rut_dueno) VALUES ('Mota', 'gato', 0, '18.904.265-5');
+INSERT INTO mascota (nombre, especie, peso_kg, rut_dueno) VALUES ('Mota', 'gato', 0, '42.224.354-2');
 
 -- @base_e2
 CREATE TABLE prueba (comuna VARCHAR(5));

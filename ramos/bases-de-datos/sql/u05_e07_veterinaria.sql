@@ -56,29 +56,29 @@ CREATE TABLE boleta_3 (
     FOREIGN KEY (id_cliente) REFERENCES cliente_3 (id_cliente)
 );
 
-INSERT INTO cliente_1 VALUES ('12.354.678-4', 'Soledad Ulloa');
-INSERT INTO cliente_2 VALUES ('12.354.678-4', 'Soledad Ulloa');
-INSERT INTO cliente_3 VALUES (1, '12.354.678-4', 'Soledad Ulloa');
-INSERT INTO mascota_1 VALUES (1, 'Canela', '12.354.678-4');
-INSERT INTO mascota_1 VALUES (2, 'Pelusa', '12.354.678-4');
-INSERT INTO mascota_1 VALUES (3, 'Toby', '12.354.678-4');
+INSERT INTO cliente_1 VALUES ('40.505.535-K', 'Soledad Ulloa');
+INSERT INTO cliente_2 VALUES ('40.505.535-K', 'Soledad Ulloa');
+INSERT INTO cliente_3 VALUES (1, '40.505.535-K', 'Soledad Ulloa');
+INSERT INTO mascota_1 VALUES (1, 'Canela', '40.505.535-K');
+INSERT INTO mascota_1 VALUES (2, 'Pelusa', '40.505.535-K');
+INSERT INTO mascota_1 VALUES (3, 'Toby', '40.505.535-K');
 INSERT INTO mascota_2 SELECT * FROM mascota_1;
 INSERT INTO mascota_3 SELECT id_mascota, nombre, 1 FROM mascota_1;
-INSERT INTO boleta_1 VALUES (1, '12.354.678-4', 18500);
-INSERT INTO boleta_1 VALUES (2, '12.354.678-4', 32900);
-INSERT INTO boleta_1 VALUES (3, '12.354.678-4', 7400);
-INSERT INTO boleta_1 VALUES (4, '12.354.678-4', 45200);
-INSERT INTO boleta_1 VALUES (5, '12.354.678-4', 12800);
+INSERT INTO boleta_1 VALUES (1, '40.505.535-K', 18500);
+INSERT INTO boleta_1 VALUES (2, '40.505.535-K', 32900);
+INSERT INTO boleta_1 VALUES (3, '40.505.535-K', 7400);
+INSERT INTO boleta_1 VALUES (4, '40.505.535-K', 45200);
+INSERT INTO boleta_1 VALUES (5, '40.505.535-K', 12800);
 INSERT INTO boleta_2 SELECT * FROM boleta_1;
 INSERT INTO boleta_3 SELECT id_boleta, 1, monto FROM boleta_1;
 
 -- @d1 corregir el RUT en el diseño 1
-UPDATE cliente_1 SET rut = '12.345.678-5' WHERE rut = '12.354.678-4';
+UPDATE cliente_1 SET rut = '40.404.428-1' WHERE rut = '40.505.535-K';
 -- @d2 corregirlo en el diseño 2
-UPDATE cliente_2 SET rut = '12.345.678-5' WHERE rut = '12.354.678-4';
+UPDATE cliente_2 SET rut = '40.404.428-1' WHERE rut = '40.505.535-K';
 -- @d2c cuántas filas cambiaron en el diseño 2
-SELECT (SELECT COUNT(*) FROM cliente_2 WHERE rut = '12.345.678-5') AS clientes,
-       (SELECT COUNT(*) FROM mascota_2 WHERE rut_dueno = '12.345.678-5') AS mascotas,
-       (SELECT COUNT(*) FROM boleta_2 WHERE rut_cliente = '12.345.678-5') AS boletas;
+SELECT (SELECT COUNT(*) FROM cliente_2 WHERE rut = '40.404.428-1') AS clientes,
+       (SELECT COUNT(*) FROM mascota_2 WHERE rut_dueno = '40.404.428-1') AS mascotas,
+       (SELECT COUNT(*) FROM boleta_2 WHERE rut_cliente = '40.404.428-1') AS boletas;
 -- @d3 corregirlo en el diseño 3
-UPDATE cliente_3 SET rut = '12.345.678-5' WHERE rut = '12.354.678-4';
+UPDATE cliente_3 SET rut = '40.404.428-1' WHERE rut = '40.505.535-K';

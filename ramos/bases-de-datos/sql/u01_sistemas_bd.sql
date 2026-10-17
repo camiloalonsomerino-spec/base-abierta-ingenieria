@@ -24,11 +24,11 @@ CREATE TABLE pago (
 INSERT INTO categoria VALUES ('sub-13', 14500), ('sub-15', 16500), ('adulto', 21000);
 
 INSERT INTO socio VALUES
-    (1, 'Antonia Rivas',  '9 7412 3380', 'sub-13'),
-    (2, 'Benjamín Soto',  '9 6655 2091', 'sub-15'),
-    (3, 'Catalina Mora',  '9 8120 4473', 'adulto'),
-    (4, 'Diego Paredes',  '9 5531 7804', 'sub-15'),
-    (5, 'Emilia Cáceres', '9 4478 1962', 'sub-13');
+    (1, 'Antonia Rivas',  '9 0000 0033', 'sub-13'),
+    (2, 'Benjamín Soto',  '9 0000 0028', 'sub-15'),
+    (3, 'Catalina Mora',  '9 0000 0038', 'adulto'),
+    (4, 'Diego Paredes',  '9 0000 0015', 'sub-15'),
+    (5, 'Emilia Cáceres', '9 0000 0008', 'sub-13');
 
 INSERT INTO pago VALUES
     (1, '2026-03-02', 14500), (2, '2026-03-03', 16500), (3, '2026-03-05', 21000),
@@ -44,7 +44,7 @@ JOIN categoria c ON c.nombre = s.categoria
 WHERE p.monto < c.cuota;
 
 -- Benjamín cambia de teléfono: se corrige en un solo lugar
-UPDATE socio SET telefono = '9 6655 8034' WHERE id_socio = 2;
+UPDATE socio SET telefono = '9 0000 0029' WHERE id_socio = 2;
 
 SELECT id_socio, nombre, telefono FROM socio WHERE id_socio = 2;
 
@@ -54,7 +54,7 @@ INSERT INTO pago VALUES (9, '2026-04-15', 14500);
 -- debe fallar
 INSERT INTO pago VALUES (3, '2026-04-20', -21000);
 -- debe fallar
-INSERT INTO socio VALUES (6, 'Martina Lagos', '9 3307 6618', 'sub-17');
+INSERT INTO socio VALUES (6, 'Martina Lagos', '9 0000 0003', 'sub-17');
 -- debe fallar
 INSERT INTO pago VALUES (1, '2026-04-01', 14500);
 

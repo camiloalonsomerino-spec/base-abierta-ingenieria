@@ -208,7 +208,7 @@ def segundo_camino(R, RC, ej, cas, m):
     assert v("SELECT 'líquido y pastillas delanteras' LIKE 'pastillas%'") == 0
     assert v("SELECT 'líquido y pastillas delanteras' LIKE '%delanteras'") == 1
     assert v("SELECT 'pastillas y discos delanteros' LIKE '%delanteras'") == 0
-    assert v("SELECT 'KFTR42' LIKE '____42'") == 1 and v("SELECT 'BV7302' LIKE '____42'") == 0
+    assert v("SELECT 'EJAE42' LIKE '____42'") == 1 and v("SELECT 'AE7302' LIKE '____42'") == 0
     assert v("SELECT 'A' LIKE 'a'") == 1 and v("SELECT 'Ñ' LIKE 'ñ'") == 0
     assert v("SELECT '08/10/2026' > '07/11/2026'") == 1
     assert v("SELECT 140.000") == 140 and v("SELECT 7 / 2") == 3

@@ -157,7 +157,7 @@ porque son los que entiende un SGBD.
 {
   "id_socio": 2,
   "nombre": "Benjamín Soto",
-  "telefono": "9 6655 2091",
+  "telefono": "9 0000 0028",
   "categoria": {"nombre": "sub-15", "cuota": 16500},
   "pagos": [
     {"fecha": "2026-03-03", "monto": 16500},
@@ -226,16 +226,16 @@ planilla con los pagos de marzo y abril de 2026:
 
 | fecha | socio | teléfono | categoría | cuota | pagado |
 |---|---|---|---|---|---|
-| 2026-03-02 | Antonia Rivas | 9 7412 3380 | sub-13 | 14500 | 14500 |
-| 2026-03-03 | Benjamín Soto | 9 6655 2091 | sub-15 | 16500 | 16500 |
-| 2026-03-05 | Catalina Mora | 9 8120 4473 | adulto | 21000 | 21000 |
-| 2026-03-09 | Diego Paredes | 9 5531 7804 | sub-15 | 16500 | 16500 |
-| 2026-03-10 | Emilia Cáceres | 9 4478 1962 | sub-13 | 14500 | 14500 |
-| 2026-04-01 | Antonia Rivas | 9 7412 3380 | sub-13 | 14500 | 14500 |
-| 2026-04-04 | Benjamín Soto | 9 6655 2019 | sub-15 | 16500 | 16500 |
-| 2026-04-06 | Catalina Mora | 9 8120 4473 | adulto | 21000 | 21000 |
-| 2026-04-08 | Diego Paredes | 9 5531 7804 | sub-15 | 16000 | 16000 |
-| 2026-04-12 | Emilia Caceres | 9 4478 1962 | sub-13 | 14500 | 14500 |
+| 2026-03-02 | Antonia Rivas | 9 0000 0033 | sub-13 | 14500 | 14500 |
+| 2026-03-03 | Benjamín Soto | 9 0000 0028 | sub-15 | 16500 | 16500 |
+| 2026-03-05 | Catalina Mora | 9 0000 0038 | adulto | 21000 | 21000 |
+| 2026-03-09 | Diego Paredes | 9 0000 0015 | sub-15 | 16500 | 16500 |
+| 2026-03-10 | Emilia Cáceres | 9 0000 0008 | sub-13 | 14500 | 14500 |
+| 2026-04-01 | Antonia Rivas | 9 0000 0033 | sub-13 | 14500 | 14500 |
+| 2026-04-04 | Benjamín Soto | 9 0000 0027 | sub-15 | 16500 | 16500 |
+| 2026-04-06 | Catalina Mora | 9 0000 0038 | adulto | 21000 | 21000 |
+| 2026-04-08 | Diego Paredes | 9 0000 0015 | sub-15 | 16000 | 16000 |
+| 2026-04-12 | Emilia Caceres | 9 0000 0008 | sub-13 | 14500 | 14500 |
 
 **Paso 1 · Contar lo repetido.** Son 10 filas por 6 columnas: 60 celdas. Para cada columna se pregunta
 *de quién es el dato*. El nombre, el teléfono y la categoría son del socio; la cuota es de la
@@ -255,7 +255,7 @@ pago.
 
 **Paso 2 · Buscar las contradicciones.** Donde hay copias, hay contradicciones:
 
-- Benjamín Soto tiene dos teléfonos (`9 6655 2091` y `9 6655 2019`). ¿Cuál es el bueno? La planilla no
+- Benjamín Soto tiene dos teléfonos (`9 0000 0028` y `9 0000 0027`). ¿Cuál es el bueno? La planilla no
   lo sabe.
 - Emilia aparece como «Cáceres» y como «Caceres». Un filtro por nombre la cuenta como dos personas.
 - La cuota sub-15 aparece como 16.500 y como 16.000. En abril se le cobraron \$500 de menos a Diego, y
@@ -307,11 +307,11 @@ CREATE TABLE pago (
 INSERT INTO categoria VALUES ('sub-13', 14500), ('sub-15', 16500), ('adulto', 21000);
 
 INSERT INTO socio VALUES
-    (1, 'Antonia Rivas',  '9 7412 3380', 'sub-13'),
-    (2, 'Benjamín Soto',  '9 6655 2091', 'sub-15'),
-    (3, 'Catalina Mora',  '9 8120 4473', 'adulto'),
-    (4, 'Diego Paredes',  '9 5531 7804', 'sub-15'),
-    (5, 'Emilia Cáceres', '9 4478 1962', 'sub-13');
+    (1, 'Antonia Rivas',  '9 0000 0033', 'sub-13'),
+    (2, 'Benjamín Soto',  '9 0000 0028', 'sub-15'),
+    (3, 'Catalina Mora',  '9 0000 0038', 'adulto'),
+    (4, 'Diego Paredes',  '9 0000 0015', 'sub-15'),
+    (5, 'Emilia Cáceres', '9 0000 0008', 'sub-13');
 
 INSERT INTO pago VALUES
     (1, '2026-03-02', 14500), (2, '2026-03-03', 16500), (3, '2026-03-05', 21000),
@@ -342,7 +342,7 @@ El error que la planilla escondía sale solo: a Diego le faltan \$500. Y si Benj
 se corrige en una fila:
 
 ```sql
-UPDATE socio SET telefono = '9 6655 8034' WHERE id_socio = 2;
+UPDATE socio SET telefono = '9 0000 0029' WHERE id_socio = 2;
 SELECT id_socio, nombre, telefono FROM socio WHERE id_socio = 2;
 ```
 
@@ -350,7 +350,7 @@ El `UPDATE` cambia 1 fila, y la consulta devuelve:
 
 | id_socio | nombre | telefono |
 |---|---|---|
-| 2 | Benjamín Soto | 9 6655 8034 |
+| 2 | Benjamín Soto | 9 0000 0029 |
 
 **Paso 7 · Lo que la base rechaza.** Cuatro errores que la planilla habría aceptado sin reclamar. SQLite
 responde con estos mensajes (corridos por el verificador):
@@ -359,7 +359,7 @@ responde con estos mensajes (corridos por el verificador):
 |---|---|---|
 | `INSERT INTO pago VALUES (9, '2026-04-15', 14500);` | un pago de un socio que no existe | `FOREIGN KEY constraint failed` |
 | `INSERT INTO pago VALUES (3, '2026-04-20', -21000);` | un monto negativo | `CHECK constraint failed: monto > 0` |
-| `INSERT INTO socio VALUES (6, 'Martina Lagos', '9 3307 6618', 'sub-17');` | una categoría que el club no tiene | `FOREIGN KEY constraint failed` |
+| `INSERT INTO socio VALUES (6, 'Martina Lagos', '9 0000 0003', 'sub-17');` | una categoría que el club no tiene | `FOREIGN KEY constraint failed` |
 | `INSERT INTO pago VALUES (1, '2026-04-01', 14500);` | el mismo pago dos veces | `UNIQUE constraint failed: pago.id_socio, pago.fecha` |
 
 ```sql
@@ -391,7 +391,7 @@ registra los pagos en la base; la planilla, si alguien la quiere, se arma con un
 |---|---|
 | Creer que una base es «una planilla más grande» | la diferencia no es el tamaño, sino que cada dato está una vez y que hay reglas que se cumplen solas |
 | Escribir en cada fila datos que son de otra cosa (el teléfono del socio en cada pago) | pregunta de quién es el dato; si es del socio, va en la tabla de socios |
-| Poner varios valores en una celda («9 7412 3380 / 9 2210 5547») | eso es un atributo multivaluado; va en una tabla aparte (unidades 2 y 4) |
+| Poner varios valores en una celda («9 0000 0033 / 9 0000 0001») | eso es un atributo multivaluado; va en una tabla aparte (unidades 2 y 4) |
 | Confiar en que la gente va a escribir bien (olvidar `NOT NULL`, `CHECK` o la clave foránea) | escribe cada regla del negocio en la definición de la tabla; el SGBD la revisa siempre |
 | Declarar una clave foránea en SQLite y no activar `PRAGMA foreign_keys = ON` | SQLite acepta la declaración pero no la revisa; actívalo en cada conexión |
 | Identificar a las personas por el nombre | usa un número o un código que no cambie; el nombre se repite y se escribe de varias formas |
@@ -437,7 +437,7 @@ planillas. Di qué problema de la sección 2 es cada situación:
 (a) Un delegado inscribió a un jugador nacido el 31-02-2008.
 (b) El teléfono del árbitro Ramírez está en la planilla del fixture, en la de pagos y en la de
 sanciones.
-(c) En la de pagos aparece como `9 8833 1207` y en la de sanciones como `9 8833 1270`.
+(c) En la de pagos aparece como `9 0000 0040` y en la de sanciones como `9 0000 0041`.
 (d) Para saber qué jugadores sancionados jugaron el domingo, alguien cruza a mano la planilla del
 tribunal con las actas de los partidos, que están en PDF.
 (e) El tesorero y la secretaria abren la misma planilla compartida, los dos guardan y se pierde lo que
@@ -461,14 +461,14 @@ sus atenciones de agosto (la lista de precios no cambió en el mes):
 
 | fecha | mascota | dueño | teléfono | servicio | precio |
 |---|---|---|---|---|---|
-| 2026-08-03 | Toby | Marcela Ojeda | 9 4410 2286 | vacuna antirrábica | 18900 |
-| 2026-08-03 | Luna | Marcela Ojeda | 9 4410 2286 | desparasitación | 9400 |
-| 2026-08-07 | Rocco | Andrés Vidal | 9 7302 5519 | consulta | 22500 |
-| 2026-08-12 | Toby | Marcela Ojeda | 9 4410 2286 | consulta | 22500 |
-| 2026-08-15 | Kira | Sofía Henríquez | 9 6158 3340 | vacuna antirrábica | 18900 |
-| 2026-08-19 | Rocco | Andrés Vidal | 9 7302 5591 | desparasitación | 9400 |
-| 2026-08-21 | Luna | Marcela Ojeda | 9 4410 2286 | vacuna antirrábica | 19800 |
-| 2026-08-26 | Kira | Sofía Henríquez | 9 6158 3340 | consulta | 22500 |
+| 2026-08-03 | Toby | Marcela Ojeda | 9 0000 0005 | vacuna antirrábica | 18900 |
+| 2026-08-03 | Luna | Marcela Ojeda | 9 0000 0005 | desparasitación | 9400 |
+| 2026-08-07 | Rocco | Andrés Vidal | 9 0000 0031 | consulta | 22500 |
+| 2026-08-12 | Toby | Marcela Ojeda | 9 0000 0005 | consulta | 22500 |
+| 2026-08-15 | Kira | Sofía Henríquez | 9 0000 0024 | vacuna antirrábica | 18900 |
+| 2026-08-19 | Rocco | Andrés Vidal | 9 0000 0032 | desparasitación | 9400 |
+| 2026-08-21 | Luna | Marcela Ojeda | 9 0000 0005 | vacuna antirrábica | 19800 |
+| 2026-08-26 | Kira | Sofía Henríquez | 9 0000 0024 | consulta | 22500 |
 
 (a) ¿Cuántas veces está escrito el teléfono de Marcela, y cuántas copias de más del teléfono hay en
 total? (b) Encuentra las dos inconsistencias. (c) Marcela cambia de número: ¿cuántas celdas hay que
@@ -504,7 +504,7 @@ documento:
 {
   "pedido": 5012,
   "fecha": "2026-09-18",
-  "cliente": {"nombre": "Daniela Pizarro", "telefono": "9 5520 7714"},
+  "cliente": {"nombre": "Daniela Pizarro", "telefono": "9 0000 0013"},
   "items": [
     {"producto": "torta tres leches", "cantidad": 1, "precio": 18500},
     {"producto": "kuchen de nuez", "cantidad": 2, "precio": 9800},
@@ -548,15 +548,15 @@ de las que hay, y muestra qué pasa con la tercera venta.
 
 | orden | fecha | cliente | teléfono | bicicleta | servicio | valor |
 |---|---|---|---|---|---|---|
-| 101 | 2026-07-02 | Felipe Cárcamo | 9 3381 0457 | ruta roja | cambio de cadena | 12900 |
-| 101 | 2026-07-02 | Felipe Cárcamo | 9 3381 0457 | ruta roja | ajuste de frenos | 7500 |
-| 102 | 2026-07-03 | Ignacia Muñoz | 9 7724 9163 | urbana azul | mantención completa | 34900 |
-| 103 | 2026-07-08 | Felipe Cárcamo | 9 3381 0457 | ruta roja | parche de cámara | 4500 |
-| 103 | 2026-07-08 | Felipe Cárcamo | 9 3381 0457 | ruta roja | ajuste de frenos | 7500 |
-| 104 | 2026-07-10 | Tomás Leiva | 9 5096 2238 | montaña negra | cambio de cadena | 12900 |
-| 104 | 2026-07-10 | Tomás Leiva | 9 5096 2238 | montaña negra | ajuste de frenos | 7500 |
-| 104 | 2026-07-10 | Tomás Leiva | 9 5096 2238 | montaña negra | parche de cámara | 4500 |
-| 105 | 2026-07-15 | Ignacia Muñoz | 9 7724 9163 | urbana azul | ajuste de frenos | 7500 |
+| 101 | 2026-07-02 | Felipe Cárcamo | 9 0000 0004 | ruta roja | cambio de cadena | 12900 |
+| 101 | 2026-07-02 | Felipe Cárcamo | 9 0000 0004 | ruta roja | ajuste de frenos | 7500 |
+| 102 | 2026-07-03 | Ignacia Muñoz | 9 0000 0035 | urbana azul | mantención completa | 34900 |
+| 103 | 2026-07-08 | Felipe Cárcamo | 9 0000 0004 | ruta roja | parche de cámara | 4500 |
+| 103 | 2026-07-08 | Felipe Cárcamo | 9 0000 0004 | ruta roja | ajuste de frenos | 7500 |
+| 104 | 2026-07-10 | Tomás Leiva | 9 0000 0009 | montaña negra | cambio de cadena | 12900 |
+| 104 | 2026-07-10 | Tomás Leiva | 9 0000 0009 | montaña negra | ajuste de frenos | 7500 |
+| 104 | 2026-07-10 | Tomás Leiva | 9 0000 0009 | montaña negra | parche de cámara | 4500 |
+| 105 | 2026-07-15 | Ignacia Muñoz | 9 0000 0035 | urbana azul | ajuste de frenos | 7500 |
 
 (a) ¿Qué «cosas» distintas describe la planilla? (b) Propón las tablas, con sus columnas, y di cuántas
 filas tendría cada una. (c) ¿Cuánto suma la orden 104? (d) Felipe cambia de teléfono: ¿cuántas celdas se
@@ -595,7 +595,7 @@ un lugar, reglas declaradas, una sola fuente, transacciones y vistas por usuario
 | (f) informe mensual | externo | otra vista sobre los mismos datos |
 
 **1.5.** (a) El teléfono de Marcela está escrito 4 veces. Hay 8 filas y 3 dueños: 5 copias de más del
-teléfono. (b) Andrés Vidal tiene dos teléfonos (`9 7302 5519` y `9 7302 5591`), y la vacuna antirrábica
+teléfono. (b) Andrés Vidal tiene dos teléfonos (`9 0000 0031` y `9 0000 0032`), y la vacuna antirrábica
 aparece a 18.900 y a 19.800 con la lista de precios sin cambios. (c) En la planilla, 4 celdas; en una
 base, 1. (d) 5 copias de más del teléfono y 5 del precio (8 filas, 3 servicios): 10 de las 48 celdas
 repiten algo que ya estaba escrito. (e) `dueno` (3 dueños, con su teléfono), `mascota` (4 mascotas, cada
@@ -656,7 +656,7 @@ CREATE TABLE detalle (
     PRIMARY KEY (id_pedido, id_producto)
 );
 
-INSERT INTO cliente VALUES (1, 'Daniela Pizarro', '9 5520 7714');
+INSERT INTO cliente VALUES (1, 'Daniela Pizarro', '9 0000 0013');
 INSERT INTO producto VALUES (1, 'torta tres leches'), (2, 'kuchen de nuez'), (3, 'berlines');
 INSERT INTO pedido VALUES (5012, 1, '2026-09-18');
 INSERT INTO detalle VALUES (5012, 1, 1, 18500), (5012, 2, 2, 9800), (5012, 3, 12, 900);

@@ -14,16 +14,16 @@ CREATE TABLE planilla (
     mensualidad   INTEGER NOT NULL,
     PRIMARY KEY (rut, curso)
 );
-INSERT INTO planilla VALUES ('23.456.781-0', 'Sofía Tapia', 'C1', 'inicial', 'lun y mié 17:00', 'temperada', 'Paz Rivera', '+56 9 5521 7740', 26500);
-INSERT INTO planilla VALUES ('23.987.654-4', 'Benjamín Rojas', 'C1', 'inicial', 'lun y mié 17:00', 'temperada', 'Paz Rivera', '+56 9 5521 7740', 26500);
-INSERT INTO planilla VALUES ('23.987.654-4', 'Benjamín Rojas', 'C2', 'inicial', 'mar y jue 18:00', 'olímpica', 'Iván Toro', '+56 9 6034 1187', 26500);
-INSERT INTO planilla VALUES ('24.110.392-7', 'Antonia Vega', 'C3', 'intermedio', 'lun y mié 18:30', 'temperada', 'Paz Rivera', '+56 9 5521 7740', 30500);
-INSERT INTO planilla VALUES ('22.876.013-7', 'Tomás Carvajal', 'C3', 'intermedio', 'lun y mié 18:30', 'temperada', 'Paz Rivera', '+56 9 5521 7740', 30500);
-INSERT INTO planilla VALUES ('22.876.013-7', 'Tomás Carvajal', 'C4', 'avanzado', 'sáb 10:00', 'olímpica', 'Rocío Godoy', '+56 9 7712 9065', 34500);
-INSERT INTO planilla VALUES ('23.345.109-6', 'Emilia Araya', 'C1', 'inicial', 'lun y mié 17:00', 'temperada', 'Paz Rivera', '+56 9 5521 7740', 26500);
-INSERT INTO planilla VALUES ('24.567.820-7', 'Gaspar Olivares', 'C4', 'avanzado', 'sáb 10:00', 'olímpica', 'Rocío Godoy', '+56 9 7712 9065', 34500);
-INSERT INTO planilla VALUES ('23.001.457-4', 'Josefa Muñoz', 'C1', 'inicial', 'lun y mié 17:00', 'temperada', 'Paz Rivera', '+56 9 5521 7740', 26500);
-INSERT INTO planilla VALUES ('23.001.457-4', 'Josefa Muñoz', 'C3', 'intermedio', 'lun y mié 18:30', 'temperada', 'Paz Rivera', '+56 9 5521 7740', 30500);
+INSERT INTO planilla VALUES ('44.448.708-9', 'Sofía Tapia', 'C1', 'inicial', 'lun y mié 17:00', 'temperada', 'Paz Rivera', '+56 9 0000 0014', 26500);
+INSERT INTO planilla VALUES ('44.549.815-7', 'Benjamín Rojas', 'C1', 'inicial', 'lun y mié 17:00', 'temperada', 'Paz Rivera', '+56 9 0000 0014', 26500);
+INSERT INTO planilla VALUES ('44.549.815-7', 'Benjamín Rojas', 'C2', 'inicial', 'mar y jue 18:00', 'olímpica', 'Iván Toro', '+56 9 0000 0021', 26500);
+INSERT INTO planilla VALUES ('44.650.922-5', 'Antonia Vega', 'C3', 'intermedio', 'lun y mié 18:30', 'temperada', 'Paz Rivera', '+56 9 0000 0014', 30500);
+INSERT INTO planilla VALUES ('44.145.387-6', 'Tomás Carvajal', 'C3', 'intermedio', 'lun y mié 18:30', 'temperada', 'Paz Rivera', '+56 9 0000 0014', 30500);
+INSERT INTO planilla VALUES ('44.145.387-6', 'Tomás Carvajal', 'C4', 'avanzado', 'sáb 10:00', 'olímpica', 'Rocío Godoy', '+56 9 0000 0034', 34500);
+INSERT INTO planilla VALUES ('44.347.601-6', 'Emilia Araya', 'C1', 'inicial', 'lun y mié 17:00', 'temperada', 'Paz Rivera', '+56 9 0000 0014', 26500);
+INSERT INTO planilla VALUES ('44.752.029-K', 'Gaspar Olivares', 'C4', 'avanzado', 'sáb 10:00', 'olímpica', 'Rocío Godoy', '+56 9 0000 0034', 34500);
+INSERT INTO planilla VALUES ('44.246.494-4', 'Josefa Muñoz', 'C1', 'inicial', 'lun y mié 17:00', 'temperada', 'Paz Rivera', '+56 9 0000 0014', 26500);
+INSERT INTO planilla VALUES ('44.246.494-4', 'Josefa Muñoz', 'C3', 'intermedio', 'lun y mié 18:30', 'temperada', 'Paz Rivera', '+56 9 0000 0014', 30500);
 
 -- @origen así la llevaba la secretaria: una fila por nadador y los cursos en una celda
 SELECT rut, nadador, GROUP_CONCAT(curso, ', ' ORDER BY curso) AS cursos
@@ -121,17 +121,17 @@ SELECT
 -- Las tres anomalías, ahora sobre la planilla
 -- @a_insercion un curso nuevo que todavía no tiene nadadores
 INSERT INTO planilla (curso, nivel, horario, piscina, profesor, fono_profesor, mensualidad)
-VALUES ('C5', 'avanzado', 'dom 09:00', 'olímpica', 'Rocío Godoy', '+56 9 7712 9065', 34500);
+VALUES ('C5', 'avanzado', 'dom 09:00', 'olímpica', 'Rocío Godoy', '+56 9 0000 0034', 34500);
 -- @a_insercion_bien en las tablas normalizadas entra sin problema
 INSERT INTO curso VALUES ('C5', 'avanzado', 'dom 09:00', 'olímpica', 'Rocío Godoy');
 -- @a_actualizacion Paz Rivera cambia de teléfono y alguien lo corrige solo en las filas del curso C1
-UPDATE planilla SET fono_profesor = '+56 9 8840 2215' WHERE curso = 'C1';
+UPDATE planilla SET fono_profesor = '+56 9 0000 0042' WHERE curso = 'C1';
 -- @a_actualizacion_ver
 SELECT profesor, COUNT(DISTINCT fono_profesor) AS telefonos
 FROM planilla
 GROUP BY profesor
 HAVING COUNT(DISTINCT fono_profesor) > 1;
 -- @a_borrado Benjamín deja el curso C2, el único de Iván Toro
-DELETE FROM planilla WHERE rut = '23.987.654-4' AND curso = 'C2';
+DELETE FROM planilla WHERE rut = '44.549.815-7' AND curso = 'C2';
 -- @a_borrado_ver
 SELECT COUNT(*) AS filas_con_ivan FROM planilla WHERE profesor = 'Iván Toro';

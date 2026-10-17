@@ -43,6 +43,13 @@ otros ramos; clientes y pedidos son **simulados** con semilla fija por
 | 9 a 11 | Ventas por tienda, margen por tipo de cliente, clientes sin pedidos, proveedor más barato, la semana 6 de producción |
 | 12 | Registrar un pedido como transacción e índices para las consultas frecuentes |
 
+## Datos de los ejemplos
+
+Todas las personas, RUT, teléfonos y patentes de los ejemplos son ficticios. Los RUT están en el rango
+de los 40 millones, que hoy no usan ni las personas (bajo 30 millones) ni las empresas (sobre 50
+millones); los teléfonos son `+56 9 0000 0xxx` y las patentes llevan vocales, que las patentes chilenas
+no usan. Cambiados el 16-10-2026: la versión 0.1 traía RUT y celulares con forma real.
+
 ## Bibliografía
 
 El programa del ramo no estaba disponible. Referencias habituales del área: Elmasri y Navathe,

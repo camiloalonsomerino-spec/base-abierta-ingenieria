@@ -112,7 +112,7 @@ y se dibuja como una tabla.</p>
 <tr>
 <td>tupla</td>
 <td>fila</td>
-<td><code>(1, '15.432.876-9', 'Rosa Paillalef', 'Valdivia')</code></td>
+<td><code>(1, '41.112.177-1', 'Rosa Paillalef', 'Valdivia')</code></td>
 </tr>
 <tr>
 <td>atributo</td>
@@ -493,25 +493,25 @@ CREATE TABLE prestamo (
 <tbody>
 <tr>
 <td>1</td>
-<td>15.432.876-9</td>
+<td>41.112.177-1</td>
 <td>Rosa Paillalef</td>
 <td>Valdivia</td>
 </tr>
 <tr>
 <td>2</td>
-<td>17.209.334-5</td>
+<td>41.718.819-3</td>
 <td>Tomás Riquelme</td>
 <td>Valdivia</td>
 </tr>
 <tr>
 <td>3</td>
-<td>12.884.051-6</td>
+<td>40.707.749-0</td>
 <td>Marta Huenchullán</td>
 <td>Corral</td>
 </tr>
 <tr>
 <td>4</td>
-<td>20.115.672-6</td>
+<td>43.033.210-4</td>
 <td>Diego Altamirano</td>
 <td>Valdivia</td>
 </tr>
@@ -527,7 +527,7 @@ CREATE TABLE prestamo (
 <tbody>
 <tr>
 <td>1</td>
-<td>+56 9 6123 4471</td>
+<td>+56 9 0000 0022</td>
 </tr>
 <tr>
 <td>1</td>
@@ -535,19 +535,19 @@ CREATE TABLE prestamo (
 </tr>
 <tr>
 <td>2</td>
-<td>+56 9 7745 0812</td>
+<td>+56 9 0000 0037</td>
 </tr>
 <tr>
 <td>3</td>
-<td>+56 9 5390 2268</td>
+<td>+56 9 0000 0010</td>
 </tr>
 <tr>
 <td>3</td>
-<td>+56 9 8812 0047</td>
+<td>+56 9 0000 0039</td>
 </tr>
 <tr>
 <td>4</td>
-<td>+56 9 9031 5524</td>
+<td>+56 9 0000 0043</td>
 </tr>
 </tbody>
 </table></div>
@@ -673,9 +673,9 @@ CREATE TABLE prestamo (
 <pre><code class="language-sql">-- @i1 un ejemplar de un libro que no está en el catálogo
 INSERT INTO ejemplar (isbn) VALUES ('978-956-9999-99-9');
 -- @i2 un socio con un RUT que ya existe
-INSERT INTO socio (rut, nombre) VALUES ('15.432.876-9', 'Rosa P. Paillalef');
+INSERT INTO socio (rut, nombre) VALUES ('41.112.177-1', 'Rosa P. Paillalef');
 -- @i3 un socio sin nombre
-INSERT INTO socio (rut, comuna) VALUES ('19.640.208-K', 'Paillaco');
+INSERT INTO socio (rut, comuna) VALUES ('42.628.782-K', 'Paillaco');
 -- @i4 un año mal digitado (2062 por 2026)
 INSERT INTO libro VALUES ('978-956-6102-77-1', 'Atlas del sur lluvioso', 2062);
 -- @i5 una devolución anterior a la salida
@@ -953,43 +953,43 @@ CREATE TABLE carro (
 </thead>
 <tbody>
 <tr>
-<td>KTRW-21</td>
+<td>EJAG-21</td>
 <td>Juana Sepúlveda</td>
 <td>empanadas</td>
 <td>6</td>
 </tr>
 <tr>
-<td>LPFX-73</td>
+<td>EJAH-73</td>
 <td>Luis Fuentealba</td>
 <td>jugos</td>
 <td>4</td>
 </tr>
 <tr>
-<td>JHZS-08</td>
+<td>EJAD-08</td>
 <td>Juana Sepúlveda</td>
 <td>sopaipillas</td>
 <td>3</td>
 </tr>
 <tr>
-<td>PBDC-45</td>
+<td>EJAJ-45</td>
 <td>Héctor Vergara</td>
 <td>ceviche</td>
 <td>5</td>
 </tr>
 <tr>
-<td>RGKT-19</td>
+<td>EJAL-19</td>
 <td>Ana Cifuentes</td>
 <td>completos</td>
 <td>6</td>
 </tr>
 <tr>
-<td>LPFX-73</td>
+<td>EJAH-73</td>
 <td>Luis Fuentealba</td>
 <td>jugos</td>
 <td>4</td>
 </tr>
 <tr>
-<td>SVWL-62</td>
+<td>EJAO-62</td>
 <td>Ana Cifuentes</td>
 <td>café</td>
 <td>3</td>
@@ -1061,23 +1061,23 @@ CREATE TABLE hora (
 <td>1</td>
 <td>2026-11-04</td>
 <td>3</td>
-<td>16.723.094-6</td>
+<td>41.415.498-0</td>
 </tr>
 </tbody>
 </table></div>
 <p>Para cada intento, di si la base lo acepta y, si lo rechaza, qué restricción actúa:</p>
 <pre><code class="language-sql">-- @a otro box, mismo día y bloque
-INSERT INTO hora VALUES (2, 2, '2026-11-04', 3, '18.450.117-1');
+INSERT INTO hora VALUES (2, 2, '2026-11-04', 3, '42.123.247-4');
 -- @b el mismo box, día y bloque de la hora 1
-INSERT INTO hora VALUES (3, 1, '2026-11-04', 3, '13.902.556-3');
+INSERT INTO hora VALUES (3, 1, '2026-11-04', 3, '40.909.963-7');
 -- @c el bloque 17
-INSERT INTO hora VALUES (4, 3, '2026-11-04', 17, '21.088.430-0');
+INSERT INTO hora VALUES (4, 3, '2026-11-04', 17, '43.639.852-2');
 -- @d un box que no existe
-INSERT INTO hora VALUES (5, 4, '2026-11-05', 2, '14.567.302-K');
+INSERT INTO hora VALUES (5, 4, '2026-11-05', 2, '41.011.070-9');
 -- @e una hora sin paciente asignado
 INSERT INTO hora VALUES (6, 3, '2026-11-05', 2, NULL);
 -- @f repetir el id_hora 1
-INSERT INTO hora VALUES (1, 2, '2026-11-05', 5, '19.234.871-4');
+INSERT INTO hora VALUES (1, 2, '2026-11-05', 5, '42.426.568-3');
 -- @g un box en el piso 3
 INSERT INTO box VALUES (4, 3);
 </code></pre>
@@ -1221,49 +1221,49 @@ CREATE TABLE matricula (
 </thead>
 <tbody>
 <tr>
-<td>16.590.834-1</td>
+<td>41.314.391-8</td>
 <td>Carolina Muñoz</td>
 <td>clase B</td>
 <td>martes 18:00</td>
 </tr>
 <tr>
-<td>16.590.834-1</td>
+<td>41.314.391-8</td>
 <td>Carolina Muñoz</td>
 <td>mecánica básica</td>
 <td>jueves 19:30</td>
 </tr>
 <tr>
-<td>10.876.543-7</td>
+<td>40.101.107-2</td>
 <td>Pedro Araya</td>
 <td>clase A2</td>
 <td>lunes 17:00</td>
 </tr>
 <tr>
-<td>17.765.209-1</td>
+<td>41.819.926-1</td>
 <td>Valentina Rojas</td>
 <td>clase B</td>
 <td>martes 18:00</td>
 </tr>
 <tr>
-<td>11.223.098-K</td>
+<td>40.202.214-0</td>
 <td>Jorge Lillo</td>
 <td>mecánica básica</td>
 <td>jueves 19:30</td>
 </tr>
 <tr>
-<td>22.014.567-0</td>
+<td>44.044.280-3</td>
 <td>Camila Soto</td>
 <td>clase A2</td>
 <td>lunes 17:00</td>
 </tr>
 <tr>
-<td>17.765.209-1</td>
+<td>41.819.926-1</td>
 <td>Valentina Rojas</td>
 <td>clase C</td>
 <td>sábado 11:00</td>
 </tr>
 <tr>
-<td>11.223.098-K</td>
+<td>40.202.214-0</td>
 <td>Jorge Lillo</td>
 <td>clase C</td>
 <td>sábado 11:00</td>
@@ -1272,10 +1272,10 @@ CREATE TABLE matricula (
 </table></div>
 <p>(a) ¿Qué conjuntos mínimos de columnas no se repiten en <strong>estos</strong> datos? (b) ¿Cuáles de ellos son claves
 candidatas según las reglas? (c) Alguien declaró <code>PRIMARY KEY (nombre, curso)</code>: ¿qué pasa cuando se
-matricula en clase A2 otro Pedro Araya (RUT 19.234.871-4)? (d) Con las claves correctas, ¿qué pasa si
+matricula en clase A2 otro Pedro Araya (RUT 42.426.568-3)? (d) Con las claves correctas, ¿qué pasa si
 Carolina pide un segundo curso el martes a las 18:00?</p>
 <p><strong>5.7 · El RUT mal digitado (intermedio).</strong> En una clínica veterinaria de Osorno, la recepcionista
-registró a Soledad Ulloa con el RUT 12.354.678-4; el correcto es 12.345.678-5 (los dos tienen dígito
+registró a Soledad Ulloa con el RUT 40.505.535-K; el correcto es 40.404.428-1 (los dos tienen dígito
 verificador válido, así que el sistema no avisó). Soledad tiene tres mascotas y cinco boletas.</p>
 <div class="tabla"><table>
 <thead>
@@ -1289,17 +1289,17 @@ verificador válido, así que el sistema no avisó). Soledad tiene tres mascotas
 <tr>
 <td>1</td>
 <td>Canela</td>
-<td>12.354.678-4</td>
+<td>40.505.535-K</td>
 </tr>
 <tr>
 <td>2</td>
 <td>Pelusa</td>
-<td>12.354.678-4</td>
+<td>40.505.535-K</td>
 </tr>
 <tr>
 <td>3</td>
 <td>Toby</td>
-<td>12.354.678-4</td>
+<td>40.505.535-K</td>
 </tr>
 </tbody>
 </table></div>
@@ -1314,27 +1314,27 @@ verificador válido, así que el sistema no avisó). Soledad tiene tres mascotas
 <tbody>
 <tr>
 <td>1</td>
-<td>12.354.678-4</td>
+<td>40.505.535-K</td>
 <td>18500</td>
 </tr>
 <tr>
 <td>2</td>
-<td>12.354.678-4</td>
+<td>40.505.535-K</td>
 <td>32900</td>
 </tr>
 <tr>
 <td>3</td>
-<td>12.354.678-4</td>
+<td>40.505.535-K</td>
 <td>7400</td>
 </tr>
 <tr>
 <td>4</td>
-<td>12.354.678-4</td>
+<td>40.505.535-K</td>
 <td>45200</td>
 </tr>
 <tr>
 <td>5</td>
-<td>12.354.678-4</td>
+<td>40.505.535-K</td>
 <td>12800</td>
 </tr>
 </tbody>
@@ -1342,7 +1342,7 @@ verificador válido, así que el sistema no avisó). Soledad tiene tres mascotas
 <p>El script <code>sql/u05_e07_veterinaria.sql</code> arma tres diseños con estos datos: (1) el RUT es la clave
 primaria de <code>cliente</code> y las foráneas no tienen acción; (2) igual, pero con <code>ON UPDATE CASCADE</code>; (3) una
 clave subrogada <code>id_cliente</code> y el RUT como <code>UNIQUE</code>. (a) Predice qué pasa con
-<code>UPDATE cliente_N SET rut = '12.345.678-5' WHERE rut = '12.354.678-4';</code> en cada diseño. (b) ¿Cuántas
+<code>UPDATE cliente_N SET rut = '40.404.428-1' WHERE rut = '40.505.535-K';</code> en cada diseño. (b) ¿Cuántas
 filas reescribe la base en el diseño 2 y cuántas en el 3? (c) ¿Cuál elegirías y por qué?</p>
 <p><strong>5.8 · El <code>CHECK</code> y el <code>NULL</code> (intermedio).</strong> Un profesor carga las notas del control 2 en
 (<code>sql/u05_e08_notas.sql</code>):</p>
@@ -1683,13 +1683,13 @@ CREATE TABLE venta (
 </thead>
 <tbody>
 <tr>
-<td>16.723.094-6</td>
+<td>41.415.498-0</td>
 <td>Daniela Cortés</td>
 <td>1</td>
 <td>joyas, cerámica</td>
 </tr>
 <tr>
-<td>18.450.117-1</td>
+<td>42.123.247-4</td>
 <td>Ignacio Pizarro</td>
 <td>2</td>
 <td>papayas, mermeladas</td>
@@ -1708,13 +1708,13 @@ CREATE TABLE venta (
 <tbody>
 <tr>
 <td>1</td>
-<td>16.723.094-6</td>
+<td>41.415.498-0</td>
 <td>2026-12-18</td>
 <td>24000</td>
 </tr>
 <tr>
 <td>2</td>
-<td>18.450.117-1</td>
+<td>42.123.247-4</td>
 <td>2026-12-18</td>
 <td>8500</td>
 </tr>
@@ -1785,7 +1785,7 @@ HAVING COUNT(*) &gt; 1;
 </thead>
 <tbody>
 <tr>
-<td>LPFX-73</td>
+<td>EJAH-73</td>
 <td>Luis Fuentealba</td>
 <td>jugos</td>
 <td>4</td>
@@ -1793,7 +1793,7 @@ HAVING COUNT(*) &gt; 1;
 </tr>
 </tbody>
 </table></div>
-<p>(a) Grado 4 y cardinalidad 7 como tabla. (b) No es una relación: la fila del carro LPFX-73 está dos
+<p>(a) Grado 4 y cardinalidad 7 como tabla. (b) No es una relación: la fila del carro EJAH-73 está dos
 veces. Como relación tendría cardinalidad 6. (c) <code>patente</code>: texto de cuatro letras, guion y dos dígitos
 (se puede cerrar con <code>CHECK (patente LIKE '____-__')</code>); <code>duenio</code>: nombres de personas, obligatorio;
 <code>comida</code>: una lista cerrada que fije la municipalidad; <code>metros</code>: enteros entre 1 y un máximo, por
@@ -2046,15 +2046,15 @@ CREATE TABLE arriendo (
 <tbody>
 <tr>
 <td>1</td>
-<td>18.450.117-1</td>
+<td>42.123.247-4</td>
 <td>Francisca Oyarzún</td>
-<td>+56 9 6650 1832</td>
+<td>+56 9 0000 0026</td>
 </tr>
 <tr>
 <td>2</td>
-<td>13.902.556-3</td>
+<td>40.909.963-7</td>
 <td>Ignacio Barrientos</td>
-<td>+56 9 7218 4409</td>
+<td>+56 9 0000 0030</td>
 </tr>
 </tbody>
 </table></div>
@@ -2084,7 +2084,7 @@ INSERT INTO bicicleta VALUES ('PV-040', 'tándem', 4500);
 -- @b una tarifa de cero pesos
 INSERT INTO bicicleta VALUES ('PV-041', 'urbana', 0);
 -- @c un RUT que ya existe
-INSERT INTO cliente (rut, nombre, telefono) VALUES ('18.450.117-1', 'F. Oyarzún', '+56 9 6650 1832');
+INSERT INTO cliente (rut, nombre, telefono) VALUES ('42.123.247-4', 'F. Oyarzún', '+56 9 0000 0026');
 -- @d arrendar una bicicleta que no existe
 INSERT INTO arriendo (id_cliente, codigo, inicio) VALUES (2, 'PV-099', '2026-12-29 09:30');
 -- @e un arriendo que termina antes de empezar
@@ -2162,15 +2162,15 @@ SELECT nombre, curso, COUNT(*) FROM matricula GROUP BY nombre, curso HAVING COUN
 </thead>
 <tbody>
 <tr>
-<td>11.223.098-K</td>
+<td>40.202.214-0</td>
 <td>2</td>
 </tr>
 <tr>
-<td>16.590.834-1</td>
+<td>41.314.391-8</td>
 <td>2</td>
 </tr>
 <tr>
-<td>17.765.209-1</td>
+<td>41.819.926-1</td>
 <td>2</td>
 </tr>
 </tbody>
@@ -2196,11 +2196,11 @@ CREATE TABLE matricula_bien (
 INSERT INTO matricula_mal SELECT * FROM matricula;
 INSERT INTO matricula_bien SELECT * FROM matricula;
 -- @mal llega otro Pedro Araya al curso clase A2
-INSERT INTO matricula_mal VALUES ('19.234.871-4', 'Pedro Araya', 'clase A2', 'lunes 17:00');
+INSERT INTO matricula_mal VALUES ('42.426.568-3', 'Pedro Araya', 'clase A2', 'lunes 17:00');
 -- @bien el mismo Pedro, con las claves que dicen las reglas
-INSERT INTO matricula_bien VALUES ('19.234.871-4', 'Pedro Araya', 'clase A2', 'lunes 17:00');
+INSERT INTO matricula_bien VALUES ('42.426.568-3', 'Pedro Araya', 'clase A2', 'lunes 17:00');
 -- @choque Carolina pide un segundo curso el martes a las 18:00
-INSERT INTO matricula_bien VALUES ('16.590.834-1', 'Carolina Muñoz', 'clase D', 'martes 18:00');
+INSERT INTO matricula_bien VALUES ('41.314.391-8', 'Carolina Muñoz', 'clase D', 'martes 18:00');
 </code></pre>
 <div class="tabla"><table>
 <thead>
@@ -2233,15 +2233,15 @@ rechaza justo lo que la regla prohíbe. (La unidad 6 va a mostrar que esta tabla
 de cada curso en cada matrícula.)</p>
 <p><strong>5.7.</strong> Los tres <code>UPDATE</code> del script:</p>
 <pre><code class="language-sql">-- @d1 corregir el RUT en el diseño 1
-UPDATE cliente_1 SET rut = '12.345.678-5' WHERE rut = '12.354.678-4';
+UPDATE cliente_1 SET rut = '40.404.428-1' WHERE rut = '40.505.535-K';
 -- @d2 corregirlo en el diseño 2
-UPDATE cliente_2 SET rut = '12.345.678-5' WHERE rut = '12.354.678-4';
+UPDATE cliente_2 SET rut = '40.404.428-1' WHERE rut = '40.505.535-K';
 -- @d2c cuántas filas cambiaron en el diseño 2
-SELECT (SELECT COUNT(*) FROM cliente_2 WHERE rut = '12.345.678-5') AS clientes,
-       (SELECT COUNT(*) FROM mascota_2 WHERE rut_dueno = '12.345.678-5') AS mascotas,
-       (SELECT COUNT(*) FROM boleta_2 WHERE rut_cliente = '12.345.678-5') AS boletas;
+SELECT (SELECT COUNT(*) FROM cliente_2 WHERE rut = '40.404.428-1') AS clientes,
+       (SELECT COUNT(*) FROM mascota_2 WHERE rut_dueno = '40.404.428-1') AS mascotas,
+       (SELECT COUNT(*) FROM boleta_2 WHERE rut_cliente = '40.404.428-1') AS boletas;
 -- @d3 corregirlo en el diseño 3
-UPDATE cliente_3 SET rut = '12.345.678-5' WHERE rut = '12.354.678-4';
+UPDATE cliente_3 SET rut = '40.404.428-1' WHERE rut = '40.505.535-K';
 </code></pre>
 <div class="tabla"><table>
 <thead>
@@ -2352,17 +2352,17 @@ CREATE TABLE boleta_3 (
 </code></pre>
 <p><strong>5.8.</strong> Los intentos y la consulta:</p>
 <pre><code class="language-sql">-- @a un 5,8
-INSERT INTO nota VALUES ('21.088.430-0', 'control 2', 5.8);
+INSERT INTO nota VALUES ('43.639.852-2', 'control 2', 5.8);
 -- @b una nota en blanco (NULL)
-INSERT INTO nota VALUES ('14.567.302-K', 'control 2', NULL);
+INSERT INTO nota VALUES ('41.011.070-9', 'control 2', NULL);
 -- @c un 7,3
-INSERT INTO nota VALUES ('19.234.871-4', 'control 2', 7.3);
+INSERT INTO nota VALUES ('42.426.568-3', 'control 2', 7.3);
 -- @d el texto '6,2' copiado de una planilla
-INSERT INTO nota VALUES ('10.876.543-7', 'control 2', '6,2');
+INSERT INTO nota VALUES ('40.101.107-2', 'control 2', '6,2');
 -- @e un 1,0
-INSERT INTO nota VALUES ('17.765.209-1', 'control 2', 1.0);
+INSERT INTO nota VALUES ('41.819.926-1', 'control 2', 1.0);
 -- @f un 4,5
-INSERT INTO nota VALUES ('22.014.567-0', 'control 2', 4.5);
+INSERT INTO nota VALUES ('44.044.280-3', 'control 2', 4.5);
 -- @resumen
 SELECT COUNT(*) AS filas, COUNT(nota) AS con_nota, ROUND(AVG(nota), 2) AS promedio FROM nota;
 
@@ -2371,7 +2371,7 @@ CREATE TABLE nota_floja (
     nota REAL CHECK (nota &gt; 0)
 );
 -- @g el texto 'seis' con CHECK (nota &gt; 0)
-INSERT INTO nota_floja VALUES ('11.223.098-K', 'seis');
+INSERT INTO nota_floja VALUES ('40.202.214-0', 'seis');
 -- @h
 SELECT rut, nota, typeof(nota) FROM nota_floja;
 
@@ -2382,11 +2382,11 @@ CREATE TABLE nota_estricta (
     PRIMARY KEY (rut, evaluacion)
 ) STRICT;
 -- @i 'seis' en la tabla STRICT
-INSERT INTO nota_estricta VALUES ('11.223.098-K', 'control 2', 'seis');
+INSERT INTO nota_estricta VALUES ('40.202.214-0', 'control 2', 'seis');
 -- @j NULL con NOT NULL
-INSERT INTO nota_estricta VALUES ('14.567.302-K', 'control 2', NULL);
+INSERT INTO nota_estricta VALUES ('41.011.070-9', 'control 2', NULL);
 -- @k el entero 6 en la tabla STRICT
-INSERT INTO nota_estricta VALUES ('16.590.834-1', 'control 2', 6);
+INSERT INTO nota_estricta VALUES ('41.314.391-8', 'control 2', 6);
 -- @l
 SELECT rut, nota, typeof(nota) FROM nota_estricta;
 </code></pre>
@@ -2477,7 +2477,7 @@ SELECT rut, nota, typeof(nota) FROM nota_estricta;
 </thead>
 <tbody>
 <tr>
-<td>11.223.098-K</td>
+<td>40.202.214-0</td>
 <td>seis</td>
 <td>text</td>
 </tr>
@@ -2493,7 +2493,7 @@ SELECT rut, nota, typeof(nota) FROM nota_estricta;
 </thead>
 <tbody>
 <tr>
-<td>16.590.834-1</td>
+<td>41.314.391-8</td>
 <td>6.0</td>
 <td>real</td>
 </tr>
@@ -2771,11 +2771,11 @@ INSERT INTO emprendedor (nombre, numero_stand) VALUES ('Sin RUT', 3);
 -- @m2 un stand sin metros
 INSERT INTO stand VALUES (4, NULL);
 -- @m3 Ignacio arrienda también el stand 3: solo cabe pisando el 2
-UPDATE emprendedor SET numero_stand = 3 WHERE rut = '18.450.117-1';
+UPDATE emprendedor SET numero_stand = 3 WHERE rut = '42.123.247-4';
 -- @m4 quién vende mermeladas (la columna de texto obliga a buscar con LIKE)
 SELECT nombre FROM emprendedor WHERE categorias LIKE '%mermelada%';
 -- @m5 Daniela se retira de la expo
-DELETE FROM emprendedor WHERE rut = '16.723.094-6';
+DELETE FROM emprendedor WHERE rut = '41.415.498-0';
 </code></pre>
 <div class="tabla"><table>
 <thead>

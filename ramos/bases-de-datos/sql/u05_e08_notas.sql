@@ -6,17 +6,17 @@ CREATE TABLE nota (
     PRIMARY KEY (rut, evaluacion)
 );
 -- @a un 5,8
-INSERT INTO nota VALUES ('21.088.430-0', 'control 2', 5.8);
+INSERT INTO nota VALUES ('43.639.852-2', 'control 2', 5.8);
 -- @b una nota en blanco (NULL)
-INSERT INTO nota VALUES ('14.567.302-K', 'control 2', NULL);
+INSERT INTO nota VALUES ('41.011.070-9', 'control 2', NULL);
 -- @c un 7,3
-INSERT INTO nota VALUES ('19.234.871-4', 'control 2', 7.3);
+INSERT INTO nota VALUES ('42.426.568-3', 'control 2', 7.3);
 -- @d el texto '6,2' copiado de una planilla
-INSERT INTO nota VALUES ('10.876.543-7', 'control 2', '6,2');
+INSERT INTO nota VALUES ('40.101.107-2', 'control 2', '6,2');
 -- @e un 1,0
-INSERT INTO nota VALUES ('17.765.209-1', 'control 2', 1.0);
+INSERT INTO nota VALUES ('41.819.926-1', 'control 2', 1.0);
 -- @f un 4,5
-INSERT INTO nota VALUES ('22.014.567-0', 'control 2', 4.5);
+INSERT INTO nota VALUES ('44.044.280-3', 'control 2', 4.5);
 -- @resumen
 SELECT COUNT(*) AS filas, COUNT(nota) AS con_nota, ROUND(AVG(nota), 2) AS promedio FROM nota;
 
@@ -25,7 +25,7 @@ CREATE TABLE nota_floja (
     nota REAL CHECK (nota > 0)
 );
 -- @g el texto 'seis' con CHECK (nota > 0)
-INSERT INTO nota_floja VALUES ('11.223.098-K', 'seis');
+INSERT INTO nota_floja VALUES ('40.202.214-0', 'seis');
 -- @h
 SELECT rut, nota, typeof(nota) FROM nota_floja;
 
@@ -36,10 +36,10 @@ CREATE TABLE nota_estricta (
     PRIMARY KEY (rut, evaluacion)
 ) STRICT;
 -- @i 'seis' en la tabla STRICT
-INSERT INTO nota_estricta VALUES ('11.223.098-K', 'control 2', 'seis');
+INSERT INTO nota_estricta VALUES ('40.202.214-0', 'control 2', 'seis');
 -- @j NULL con NOT NULL
-INSERT INTO nota_estricta VALUES ('14.567.302-K', 'control 2', NULL);
+INSERT INTO nota_estricta VALUES ('41.011.070-9', 'control 2', NULL);
 -- @k el entero 6 en la tabla STRICT
-INSERT INTO nota_estricta VALUES ('16.590.834-1', 'control 2', 6);
+INSERT INTO nota_estricta VALUES ('41.314.391-8', 'control 2', 6);
 -- @l
 SELECT rut, nota, typeof(nota) FROM nota_estricta;

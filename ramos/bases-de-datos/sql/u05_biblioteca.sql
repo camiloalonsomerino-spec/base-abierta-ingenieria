@@ -38,17 +38,17 @@ CREATE TABLE prestamo (
     FOREIGN KEY (id_socio) REFERENCES socio (id_socio) ON DELETE SET NULL
 );
 
-INSERT INTO socio VALUES (1, '15.432.876-9', 'Rosa Paillalef', 'Valdivia');
-INSERT INTO socio VALUES (2, '17.209.334-5', 'Tomás Riquelme', 'Valdivia');
-INSERT INTO socio VALUES (3, '12.884.051-6', 'Marta Huenchullán', 'Corral');
-INSERT INTO socio VALUES (4, '20.115.672-6', 'Diego Altamirano', 'Valdivia');
+INSERT INTO socio VALUES (1, '41.112.177-1', 'Rosa Paillalef', 'Valdivia');
+INSERT INTO socio VALUES (2, '41.718.819-3', 'Tomás Riquelme', 'Valdivia');
+INSERT INTO socio VALUES (3, '40.707.749-0', 'Marta Huenchullán', 'Corral');
+INSERT INTO socio VALUES (4, '43.033.210-4', 'Diego Altamirano', 'Valdivia');
 
-INSERT INTO telefono_socio VALUES (1, '+56 9 6123 4471');
+INSERT INTO telefono_socio VALUES (1, '+56 9 0000 0022');
 INSERT INTO telefono_socio VALUES (1, '+56 63 221 3390');
-INSERT INTO telefono_socio VALUES (2, '+56 9 7745 0812');
-INSERT INTO telefono_socio VALUES (3, '+56 9 5390 2268');
-INSERT INTO telefono_socio VALUES (3, '+56 9 8812 0047');
-INSERT INTO telefono_socio VALUES (4, '+56 9 9031 5524');
+INSERT INTO telefono_socio VALUES (2, '+56 9 0000 0037');
+INSERT INTO telefono_socio VALUES (3, '+56 9 0000 0010');
+INSERT INTO telefono_socio VALUES (3, '+56 9 0000 0039');
+INSERT INTO telefono_socio VALUES (4, '+56 9 0000 0043');
 
 INSERT INTO libro VALUES ('978-956-7401-12-3', 'Crónicas del Calle-Calle', 2019);
 INSERT INTO libro VALUES ('978-956-8820-05-7', 'Huertos de invierno', 2022);
@@ -70,9 +70,9 @@ INSERT INTO prestamo VALUES (6, 3, 4, '2026-10-06', NULL);
 -- @i1 un ejemplar de un libro que no está en el catálogo
 INSERT INTO ejemplar (isbn) VALUES ('978-956-9999-99-9');
 -- @i2 un socio con un RUT que ya existe
-INSERT INTO socio (rut, nombre) VALUES ('15.432.876-9', 'Rosa P. Paillalef');
+INSERT INTO socio (rut, nombre) VALUES ('41.112.177-1', 'Rosa P. Paillalef');
 -- @i3 un socio sin nombre
-INSERT INTO socio (rut, comuna) VALUES ('19.640.208-K', 'Paillaco');
+INSERT INTO socio (rut, comuna) VALUES ('42.628.782-K', 'Paillaco');
 -- @i4 un año mal digitado (2062 por 2026)
 INSERT INTO libro VALUES ('978-956-6102-77-1', 'Atlas del sur lluvioso', 2062);
 -- @i5 una devolución anterior a la salida

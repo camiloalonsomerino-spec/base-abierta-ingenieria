@@ -11,14 +11,14 @@ CREATE TABLE planilla (
     fono_arbitro VARCHAR(16) NOT NULL,
     PRIMARY KEY (fecha, cancha)
 );
-INSERT INTO planilla VALUES ('2026-08-01', 'Coloso', 'calle Coloso 1170', 'Cobre FC', 'Los Changos', 4, 2, 'Juan Contreras', '+56 9 3301 4478');
-INSERT INTO planilla VALUES ('2026-08-01', 'Las Algas', 'pasaje Las Algas 225', 'Atlético Caliche', 'Puerto Norte', 3, 3, 'Marisol Páez', '+56 9 4420 7716');
-INSERT INTO planilla VALUES ('2026-08-08', 'Coloso', 'calle Coloso 1170', 'Unión Salitre', 'La Portada FS', 1, 5, 'Diego Saavedra', '+56 9 5519 0362');
-INSERT INTO planilla VALUES ('2026-08-08', 'Las Algas', 'pasaje Las Algas 225', 'Los Changos', 'Atlético Caliche', 2, 0, 'Juan Contreras', '+56 9 3301 4478');
-INSERT INTO planilla VALUES ('2026-08-15', 'Coloso', 'calle Coloso 1170', 'Puerto Norte', 'Cobre FC', 2, 6, 'Marisol Páez', '+56 9 4420 7716');
-INSERT INTO planilla VALUES ('2026-08-15', 'Las Algas', 'pasaje Las Algas 225', 'La Portada FS', 'Los Changos', 3, 1, 'Diego Saavedra', '+56 9 5519 0362');
-INSERT INTO planilla VALUES ('2026-08-22', 'Coloso', 'calle Coloso 1170', 'Atlético Caliche', 'Unión Salitre', 4, 4, 'Juan Contreras', '+56 9 3301 4478');
-INSERT INTO planilla VALUES ('2026-08-22', 'Las Algas', 'pasaje Las Algas 225', 'Cobre FC', 'La Portada FS', 2, 3, 'Marisol Páez', '+56 9 4420 7716');
+INSERT INTO planilla VALUES ('2026-08-01', 'Coloso', 'calle Coloso 1170', 'Cobre FC', 'Los Changos', 4, 2, 'Juan Contreras', '+56 9 0000 0002');
+INSERT INTO planilla VALUES ('2026-08-01', 'Las Algas', 'pasaje Las Algas 225', 'Atlético Caliche', 'Puerto Norte', 3, 3, 'Marisol Páez', '+56 9 0000 0007');
+INSERT INTO planilla VALUES ('2026-08-08', 'Coloso', 'calle Coloso 1170', 'Unión Salitre', 'La Portada FS', 1, 5, 'Diego Saavedra', '+56 9 0000 0012');
+INSERT INTO planilla VALUES ('2026-08-08', 'Las Algas', 'pasaje Las Algas 225', 'Los Changos', 'Atlético Caliche', 2, 0, 'Juan Contreras', '+56 9 0000 0002');
+INSERT INTO planilla VALUES ('2026-08-15', 'Coloso', 'calle Coloso 1170', 'Puerto Norte', 'Cobre FC', 2, 6, 'Marisol Páez', '+56 9 0000 0007');
+INSERT INTO planilla VALUES ('2026-08-15', 'Las Algas', 'pasaje Las Algas 225', 'La Portada FS', 'Los Changos', 3, 1, 'Diego Saavedra', '+56 9 0000 0012');
+INSERT INTO planilla VALUES ('2026-08-22', 'Coloso', 'calle Coloso 1170', 'Atlético Caliche', 'Unión Salitre', 4, 4, 'Juan Contreras', '+56 9 0000 0002');
+INSERT INTO planilla VALUES ('2026-08-22', 'Las Algas', 'pasaje Las Algas 225', 'Cobre FC', 'La Portada FS', 2, 3, 'Marisol Páez', '+56 9 0000 0007');
 
 -- La pauta: tres tablas en tercera forma normal
 CREATE TABLE cancha (

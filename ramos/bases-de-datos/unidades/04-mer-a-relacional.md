@@ -380,11 +380,11 @@ ORDER BY t.nombre, f.telefono;
 | tutor | telefono |
 |---|---|
 | Héctor Uribe | +56 65 555 0302 |
-| Héctor Uribe | +56 9 5550 0301 |
-| Ignacio Paredes | +56 9 5550 0101 |
-| Ignacio Paredes | +56 9 5550 0102 |
-| Marcela Toledo | +56 9 5550 0401 |
-| Rocío Gallardo | +56 9 5550 0201 |
+| Héctor Uribe | +56 9 0000 0019 |
+| Ignacio Paredes | +56 9 0000 0016 |
+| Ignacio Paredes | +56 9 0000 0017 |
+| Marcela Toledo | +56 9 0000 0020 |
+| Rocío Gallardo | +56 9 0000 0018 |
 
 La 1:1 y la jerarquía: el director se busca en `veterinario` (su colegiatura) y en `personal` (su
 nombre).
@@ -441,27 +441,27 @@ ORDER BY s.nombre;
 `PRAGMA foreign_keys = ON`):
 
 ```sql
-INSERT INTO mascota VALUES ('99.999.999-9', 'Kira', 'perro', NULL);
+INSERT INTO mascota VALUES ('45.055.350-6', 'Kira', 'perro', NULL);
 ```
 
 Respuesta: `FOREIGN KEY constraint failed`. No hay tutor con ese rut (R2).
 
 ```sql
-INSERT INTO mascota VALUES ('15.630.218-K', 'Luna', 'gato', NULL);
+INSERT INTO mascota VALUES ('41.213.284-K', 'Luna', 'gato', NULL);
 ```
 
 Respuesta: `UNIQUE constraint failed: mascota.rut_tutor, mascota.nombre`. Ignacio Paredes ya tiene una
 Luna (la clave de la débil).
 
 ```sql
-UPDATE sede SET rut_director = '13.482.906-0' WHERE cod_sede = 'ALE';
+UPDATE sede SET rut_director = '40.808.856-9' WHERE cod_sede = 'ALE';
 ```
 
 Respuesta: `UNIQUE constraint failed: sede.rut_director`. Daniela Ojeda ya dirige Centro (el `UNIQUE` de
 la 1:1).
 
 ```sql
-UPDATE sede SET rut_director = '12.774.351-7' WHERE cod_sede = 'ALE';
+UPDATE sede SET rut_director = '40.606.642-8' WHERE cod_sede = 'ALE';
 ```
 
 Respuesta: `FOREIGN KEY constraint failed`. Jorge Cárcamo es técnico: no está en `veterinario`. Con la

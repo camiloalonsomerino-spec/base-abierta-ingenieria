@@ -222,13 +222,13 @@ ORDER BY nadador;
 
 | rut | nadador | cursos |
 |---|---|---|
-| 24.110.392-7 | Antonia Vega | C3 |
-| 23.987.654-4 | Benjamín Rojas | C1, C2 |
-| 23.345.109-6 | Emilia Araya | C1 |
-| 24.567.820-7 | Gaspar Olivares | C4 |
-| 23.001.457-4 | Josefa Muñoz | C1, C3 |
-| 23.456.781-0 | Sofía Tapia | C1 |
-| 22.876.013-7 | Tomás Carvajal | C3, C4 |
+| 44.650.922-5 | Antonia Vega | C3 |
+| 44.549.815-7 | Benjamín Rojas | C1, C2 |
+| 44.347.601-6 | Emilia Araya | C1 |
+| 44.752.029-K | Gaspar Olivares | C4 |
+| 44.246.494-4 | Josefa Muñoz | C1, C3 |
+| 44.448.708-9 | Sofía Tapia | C1 |
+| 44.145.387-6 | Tomás Carvajal | C3, C4 |
 
 La celda `cursos` no es atómica: no hay cómo pegarle a cada curso su horario. En 1FN se escribe una fila
 por (nadador, curso), con los datos del curso al lado. Así quedó la planilla (`sql/u06_natacion.sql`):
@@ -254,16 +254,16 @@ CREATE TABLE planilla (
 
 | rut | nadador | curso | nivel | horario | piscina | profesor | fono_profesor | mensualidad |
 |---|---|---|---|---|---|---|---|---|
-| 23.456.781-0 | Sofía Tapia | C1 | inicial | lun y mié 17:00 | temperada | Paz Rivera | +56 9 5521 7740 | 26500 |
-| 23.987.654-4 | Benjamín Rojas | C1 | inicial | lun y mié 17:00 | temperada | Paz Rivera | +56 9 5521 7740 | 26500 |
-| 23.987.654-4 | Benjamín Rojas | C2 | inicial | mar y jue 18:00 | olímpica | Iván Toro | +56 9 6034 1187 | 26500 |
-| 24.110.392-7 | Antonia Vega | C3 | intermedio | lun y mié 18:30 | temperada | Paz Rivera | +56 9 5521 7740 | 30500 |
-| 22.876.013-7 | Tomás Carvajal | C3 | intermedio | lun y mié 18:30 | temperada | Paz Rivera | +56 9 5521 7740 | 30500 |
-| 22.876.013-7 | Tomás Carvajal | C4 | avanzado | sáb 10:00 | olímpica | Rocío Godoy | +56 9 7712 9065 | 34500 |
-| 23.345.109-6 | Emilia Araya | C1 | inicial | lun y mié 17:00 | temperada | Paz Rivera | +56 9 5521 7740 | 26500 |
-| 24.567.820-7 | Gaspar Olivares | C4 | avanzado | sáb 10:00 | olímpica | Rocío Godoy | +56 9 7712 9065 | 34500 |
-| 23.001.457-4 | Josefa Muñoz | C1 | inicial | lun y mié 17:00 | temperada | Paz Rivera | +56 9 5521 7740 | 26500 |
-| 23.001.457-4 | Josefa Muñoz | C3 | intermedio | lun y mié 18:30 | temperada | Paz Rivera | +56 9 5521 7740 | 30500 |
+| 44.448.708-9 | Sofía Tapia | C1 | inicial | lun y mié 17:00 | temperada | Paz Rivera | +56 9 0000 0014 | 26500 |
+| 44.549.815-7 | Benjamín Rojas | C1 | inicial | lun y mié 17:00 | temperada | Paz Rivera | +56 9 0000 0014 | 26500 |
+| 44.549.815-7 | Benjamín Rojas | C2 | inicial | mar y jue 18:00 | olímpica | Iván Toro | +56 9 0000 0021 | 26500 |
+| 44.650.922-5 | Antonia Vega | C3 | intermedio | lun y mié 18:30 | temperada | Paz Rivera | +56 9 0000 0014 | 30500 |
+| 44.145.387-6 | Tomás Carvajal | C3 | intermedio | lun y mié 18:30 | temperada | Paz Rivera | +56 9 0000 0014 | 30500 |
+| 44.145.387-6 | Tomás Carvajal | C4 | avanzado | sáb 10:00 | olímpica | Rocío Godoy | +56 9 0000 0034 | 34500 |
+| 44.347.601-6 | Emilia Araya | C1 | inicial | lun y mié 17:00 | temperada | Paz Rivera | +56 9 0000 0014 | 26500 |
+| 44.752.029-K | Gaspar Olivares | C4 | avanzado | sáb 10:00 | olímpica | Rocío Godoy | +56 9 0000 0034 | 34500 |
+| 44.246.494-4 | Josefa Muñoz | C1 | inicial | lun y mié 17:00 | temperada | Paz Rivera | +56 9 0000 0014 | 26500 |
+| 44.246.494-4 | Josefa Muñoz | C3 | intermedio | lun y mié 18:30 | temperada | Paz Rivera | +56 9 0000 0014 | 30500 |
 
 **Paso 2 · Las dependencias.** De las reglas: `rut → nadador`; `curso → nivel, horario, piscina,
 profesor`; `profesor → fono_profesor`; `nivel → mensualidad`. Los datos no contradicen ninguna (máximo 1
@@ -306,9 +306,9 @@ ORDER BY veces DESC;
 
 | profesor | fono_profesor | veces |
 |---|---|---|
-| Paz Rivera | +56 9 5521 7740 | 7 |
-| Rocío Godoy | +56 9 7712 9065 | 2 |
-| Iván Toro | +56 9 6034 1187 | 1 |
+| Paz Rivera | +56 9 0000 0014 | 7 |
+| Rocío Godoy | +56 9 0000 0034 | 2 |
+| Iván Toro | +56 9 0000 0021 | 1 |
 
 **Paso 4 · Segunda forma normal.** Cada dependencia parcial se lleva a su propia tabla con su lado
 izquierdo como clave, y la clave original se queda con lo que depende de ella entera (acá, nada más que
@@ -432,18 +432,18 @@ no 9.
 -- Las tres anomalías, ahora sobre la planilla
 -- @a_insercion un curso nuevo que todavía no tiene nadadores
 INSERT INTO planilla (curso, nivel, horario, piscina, profesor, fono_profesor, mensualidad)
-VALUES ('C5', 'avanzado', 'dom 09:00', 'olímpica', 'Rocío Godoy', '+56 9 7712 9065', 34500);
+VALUES ('C5', 'avanzado', 'dom 09:00', 'olímpica', 'Rocío Godoy', '+56 9 0000 0034', 34500);
 -- @a_insercion_bien en las tablas normalizadas entra sin problema
 INSERT INTO curso VALUES ('C5', 'avanzado', 'dom 09:00', 'olímpica', 'Rocío Godoy');
 -- @a_actualizacion Paz Rivera cambia de teléfono y alguien lo corrige solo en las filas del curso C1
-UPDATE planilla SET fono_profesor = '+56 9 8840 2215' WHERE curso = 'C1';
+UPDATE planilla SET fono_profesor = '+56 9 0000 0042' WHERE curso = 'C1';
 -- @a_actualizacion_ver
 SELECT profesor, COUNT(DISTINCT fono_profesor) AS telefonos
 FROM planilla
 GROUP BY profesor
 HAVING COUNT(DISTINCT fono_profesor) > 1;
 -- @a_borrado Benjamín deja el curso C2, el único de Iván Toro
-DELETE FROM planilla WHERE rut = '23.987.654-4' AND curso = 'C2';
+DELETE FROM planilla WHERE rut = '44.549.815-7' AND curso = 'C2';
 -- @a_borrado_ver
 SELECT COUNT(*) AS filas_con_ivan FROM planilla WHERE profesor = 'Iván Toro';
 ```
@@ -522,14 +522,14 @@ CREATE TABLE reserva (
 
 | id_reserva | fecha | hora | cancha | superficie | precio_hora | rut_cliente | cliente | fono |
 |---|---|---|---|---|---|---|---|---|
-| 1 | 2026-11-06 | 19:00 | 1 | césped | 14000 | 19.876.301-2 | Ignacia Fuentes | +56 9 4410 2287 |
-| 2 | 2026-11-06 | 19:00 | 2 | cemento | 11000 | 20.345.998-K | Matías León | +56 9 5503 8812 |
-| 3 | 2026-11-06 | 20:00 | 1 | césped | 14000 | 21.456.770-9 | Catalina Reyes | +56 9 6627 1043 |
-| 4 | 2026-11-07 | 10:00 | 2 | cemento | 11000 | 19.876.301-2 | Ignacia Fuentes | +56 9 4410 2287 |
-| 5 | 2026-11-07 | 11:00 | 3 | césped | 16500 | 20.345.998-K | Matías León | +56 9 5503 8812 |
-| 6 | 2026-11-07 | 12:00 | 2 | cemento | 11000 | 19.876.301-2 | Ignacia Fuentes | +56 9 4410 2287 |
-| 7 | 2026-11-08 | 18:00 | 2 | cemento | 11000 | 18.234.509-1 | Andrés Silva | +56 9 7731 5590 |
-| 8 | 2026-11-08 | 19:00 | 1 | césped | 14000 | 21.456.770-9 | Catalina Reyes | +56 9 6627 1043 |
+| 1 | 2026-11-06 | 19:00 | 1 | césped | 14000 | 42.830.996-0 | Ignacia Fuentes | +56 9 0000 0006 |
+| 2 | 2026-11-06 | 19:00 | 2 | cemento | 11000 | 43.336.531-3 | Matías León | +56 9 0000 0011 |
+| 3 | 2026-11-06 | 20:00 | 1 | césped | 14000 | 43.842.066-5 | Catalina Reyes | +56 9 0000 0025 |
+| 4 | 2026-11-07 | 10:00 | 2 | cemento | 11000 | 42.830.996-0 | Ignacia Fuentes | +56 9 0000 0006 |
+| 5 | 2026-11-07 | 11:00 | 3 | césped | 16500 | 43.336.531-3 | Matías León | +56 9 0000 0011 |
+| 6 | 2026-11-07 | 12:00 | 2 | cemento | 11000 | 42.830.996-0 | Ignacia Fuentes | +56 9 0000 0006 |
+| 7 | 2026-11-08 | 18:00 | 2 | cemento | 11000 | 41.921.033-1 | Andrés Silva | +56 9 0000 0036 |
+| 8 | 2026-11-08 | 19:00 | 1 | césped | 14000 | 43.842.066-5 | Catalina Reyes | +56 9 0000 0025 |
 
 (a) Da un ejemplo de cada anomalía con estas filas. (b) Si sube el precio de la cancha 2, ¿cuántas filas
 hay que corregir? (c) ¿Qué cliente desaparece si se anula su única reserva? (d) La clave es `id_reserva`,
@@ -632,14 +632,14 @@ CREATE TABLE planilla (
 
 | fecha | cancha | direccion | local | visita | goles_local | goles_visita | arbitro | fono_arbitro |
 |---|---|---|---|---|---|---|---|---|
-| 2026-08-01 | Coloso | calle Coloso 1170 | Cobre FC | Los Changos | 4 | 2 | Juan Contreras | +56 9 3301 4478 |
-| 2026-08-01 | Las Algas | pasaje Las Algas 225 | Atlético Caliche | Puerto Norte | 3 | 3 | Marisol Páez | +56 9 4420 7716 |
-| 2026-08-08 | Coloso | calle Coloso 1170 | Unión Salitre | La Portada FS | 1 | 5 | Diego Saavedra | +56 9 5519 0362 |
-| 2026-08-08 | Las Algas | pasaje Las Algas 225 | Los Changos | Atlético Caliche | 2 | 0 | Juan Contreras | +56 9 3301 4478 |
-| 2026-08-15 | Coloso | calle Coloso 1170 | Puerto Norte | Cobre FC | 2 | 6 | Marisol Páez | +56 9 4420 7716 |
-| 2026-08-15 | Las Algas | pasaje Las Algas 225 | La Portada FS | Los Changos | 3 | 1 | Diego Saavedra | +56 9 5519 0362 |
-| 2026-08-22 | Coloso | calle Coloso 1170 | Atlético Caliche | Unión Salitre | 4 | 4 | Juan Contreras | +56 9 3301 4478 |
-| 2026-08-22 | Las Algas | pasaje Las Algas 225 | Cobre FC | La Portada FS | 2 | 3 | Marisol Páez | +56 9 4420 7716 |
+| 2026-08-01 | Coloso | calle Coloso 1170 | Cobre FC | Los Changos | 4 | 2 | Juan Contreras | +56 9 0000 0002 |
+| 2026-08-01 | Las Algas | pasaje Las Algas 225 | Atlético Caliche | Puerto Norte | 3 | 3 | Marisol Páez | +56 9 0000 0007 |
+| 2026-08-08 | Coloso | calle Coloso 1170 | Unión Salitre | La Portada FS | 1 | 5 | Diego Saavedra | +56 9 0000 0012 |
+| 2026-08-08 | Las Algas | pasaje Las Algas 225 | Los Changos | Atlético Caliche | 2 | 0 | Juan Contreras | +56 9 0000 0002 |
+| 2026-08-15 | Coloso | calle Coloso 1170 | Puerto Norte | Cobre FC | 2 | 6 | Marisol Páez | +56 9 0000 0007 |
+| 2026-08-15 | Las Algas | pasaje Las Algas 225 | La Portada FS | Los Changos | 3 | 1 | Diego Saavedra | +56 9 0000 0012 |
+| 2026-08-22 | Coloso | calle Coloso 1170 | Atlético Caliche | Unión Salitre | 4 | 4 | Juan Contreras | +56 9 0000 0002 |
+| 2026-08-22 | Las Algas | pasaje Las Algas 225 | Cobre FC | La Portada FS | 2 | 3 | Marisol Páez | +56 9 0000 0007 |
 
 (a) Escribe las dependencias y encuentra las tres claves candidatas. (b) ¿Por qué no está en 2FN?
 (c) Llévala a 3FN, escribe el SQL y comprueba con el join que no se pierde nada. (d) ¿Cómo se declaran en
@@ -773,7 +773,7 @@ INSERT INTO reserva (cancha, superficie, precio_hora) VALUES (4, 'cemento', 1250
 
 | rut_cliente | cliente | reservas |
 |---|---|---|
-| 18.234.509-1 | Andrés Silva | 1 |
+| 41.921.033-1 | Andrés Silva | 1 |
 
 | Intento | Qué se intenta | Respuesta de SQLite |
 |---|---|---|

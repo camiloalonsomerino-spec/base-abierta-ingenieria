@@ -30,8 +30,8 @@ CREATE TABLE venta (
     monto          INTEGER NOT NULL CHECK (monto > 0),
     FOREIGN KEY (id_emprendedor) REFERENCES emprendedor (id_emprendedor) ON DELETE RESTRICT
 );
-INSERT INTO emprendedor (id_emprendedor, rut, nombre) VALUES (1, '16.723.094-6', 'Daniela Cortés');
-INSERT INTO emprendedor (id_emprendedor, rut, nombre) VALUES (2, '18.450.117-1', 'Ignacio Pizarro');
+INSERT INTO emprendedor (id_emprendedor, rut, nombre) VALUES (1, '41.415.498-0', 'Daniela Cortés');
+INSERT INTO emprendedor (id_emprendedor, rut, nombre) VALUES (2, '42.123.247-4', 'Ignacio Pizarro');
 INSERT INTO stand VALUES (1, 9, 1);
 INSERT INTO stand VALUES (2, 6, 2);
 INSERT INTO stand VALUES (3, 6, NULL);

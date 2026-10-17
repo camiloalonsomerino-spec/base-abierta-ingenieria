@@ -103,42 +103,42 @@ CREATE TABLE provee (
 
 -- @datos vet_datos
 BEGIN;
-INSERT INTO sede VALUES ('CEN', 'Centro', 'Urmeneta 512', '13.482.906-0');
-INSERT INTO sede VALUES ('ALE', 'Alerce', 'Av. Los Notros 1840', '16.937.214-4');
-INSERT INTO personal VALUES ('13.482.906-0', 'Daniela Ojeda', '2018-03-05', 'CEN');
-INSERT INTO personal VALUES ('16.937.214-4', 'Matías Barría', '2021-08-16', 'ALE');
-INSERT INTO personal VALUES ('19.205.873-2', 'Fernanda Mansilla', '2023-01-09', 'CEN');
-INSERT INTO personal VALUES ('12.774.351-7', 'Jorge Cárcamo', '2017-05-11', 'CEN');
-INSERT INTO personal VALUES ('18.360.429-5', 'Valentina Soto', '2022-10-03', 'ALE');
-INSERT INTO personal VALUES ('20.118.645-5', 'Paula Alvarado', '2025-02-19', 'ALE');
-INSERT INTO veterinario VALUES ('13.482.906-0', 'MV-2231');
-INSERT INTO veterinario VALUES ('16.937.214-4', 'MV-3017');
-INSERT INTO veterinario VALUES ('19.205.873-2', 'MV-3842');
-INSERT INTO tecnico VALUES ('12.774.351-7', 'mañana');
-INSERT INTO tecnico VALUES ('18.360.429-5', 'tarde');
-INSERT INTO tutor VALUES ('15.630.218-K', 'Ignacio Paredes', 'Los Aromos', 245, 'Puerto Montt');
-INSERT INTO tutor VALUES ('17.049.582-9', 'Rocío Gallardo', 'Pedro Montt', 1302, 'Puerto Montt');
-INSERT INTO tutor VALUES ('11.893.760-0', 'Héctor Uribe', 'Chinquihue', 88, 'Puerto Montt');
-INSERT INTO tutor VALUES ('19.876.031-5', 'Marcela Toledo', 'Bernardo Philippi', 77, 'Puerto Varas');
-INSERT INTO telefono_tutor VALUES ('15.630.218-K', '+56 9 5550 0101');
-INSERT INTO telefono_tutor VALUES ('15.630.218-K', '+56 9 5550 0102');
-INSERT INTO telefono_tutor VALUES ('17.049.582-9', '+56 9 5550 0201');
-INSERT INTO telefono_tutor VALUES ('11.893.760-0', '+56 9 5550 0301');
-INSERT INTO telefono_tutor VALUES ('11.893.760-0', '+56 65 555 0302');
-INSERT INTO telefono_tutor VALUES ('19.876.031-5', '+56 9 5550 0401');
-INSERT INTO mascota VALUES ('15.630.218-K', 'Luna', 'perro', '2020-06-14');
-INSERT INTO mascota VALUES ('15.630.218-K', 'Michi', 'gato', '2022-11-02');
-INSERT INTO mascota VALUES ('17.049.582-9', 'Luna', 'gato', '2019-09-30');
-INSERT INTO mascota VALUES ('11.893.760-0', 'Toby', 'perro', '2016-04-21');
-INSERT INTO mascota VALUES ('11.893.760-0', 'Pelusa', 'conejo', '2024-01-08');
-INSERT INTO mascota VALUES ('19.876.031-5', 'Rocky', 'perro', NULL);
-INSERT INTO atencion VALUES (1, '2026-03-02', 'vacunación anual', '15.630.218-K', 'Luna', '13.482.906-0');
-INSERT INTO atencion VALUES (2, '2026-03-02', 'control', '15.630.218-K', 'Michi', '13.482.906-0');
-INSERT INTO atencion VALUES (3, '2026-03-09', 'vacunación', '17.049.582-9', 'Luna', '16.937.214-4');
-INSERT INTO atencion VALUES (4, '2026-03-15', 'cojera', '11.893.760-0', 'Toby', '19.205.873-2');
-INSERT INTO atencion VALUES (5, '2026-04-06', 'control de cojera', '11.893.760-0', 'Toby', '19.205.873-2');
-INSERT INTO atencion VALUES (6, '2026-04-20', 'vacunación', '19.876.031-5', 'Rocky', '16.937.214-4');
-INSERT INTO atencion VALUES (7, '2026-05-04', 'control', '15.630.218-K', 'Luna', '13.482.906-0');
+INSERT INTO sede VALUES ('CEN', 'Centro', 'Urmeneta 512', '40.808.856-9');
+INSERT INTO sede VALUES ('ALE', 'Alerce', 'Av. Los Notros 1840', '41.516.605-2');
+INSERT INTO personal VALUES ('40.808.856-9', 'Daniela Ojeda', '2018-03-05', 'CEN');
+INSERT INTO personal VALUES ('41.516.605-2', 'Matías Barría', '2021-08-16', 'ALE');
+INSERT INTO personal VALUES ('42.325.461-0', 'Fernanda Mansilla', '2023-01-09', 'CEN');
+INSERT INTO personal VALUES ('40.606.642-8', 'Jorge Cárcamo', '2017-05-11', 'CEN');
+INSERT INTO personal VALUES ('42.022.140-1', 'Valentina Soto', '2022-10-03', 'ALE');
+INSERT INTO personal VALUES ('43.134.317-7', 'Paula Alvarado', '2025-02-19', 'ALE');
+INSERT INTO veterinario VALUES ('40.808.856-9', 'MV-2231');
+INSERT INTO veterinario VALUES ('41.516.605-2', 'MV-3017');
+INSERT INTO veterinario VALUES ('42.325.461-0', 'MV-3842');
+INSERT INTO tecnico VALUES ('40.606.642-8', 'mañana');
+INSERT INTO tecnico VALUES ('42.022.140-1', 'tarde');
+INSERT INTO tutor VALUES ('41.213.284-K', 'Ignacio Paredes', 'Los Aromos', 245, 'Puerto Montt');
+INSERT INTO tutor VALUES ('41.617.712-0', 'Rocío Gallardo', 'Pedro Montt', 1302, 'Puerto Montt');
+INSERT INTO tutor VALUES ('40.303.321-9', 'Héctor Uribe', 'Chinquihue', 88, 'Puerto Montt');
+INSERT INTO tutor VALUES ('42.729.889-2', 'Marcela Toledo', 'Bernardo Philippi', 77, 'Puerto Varas');
+INSERT INTO telefono_tutor VALUES ('41.213.284-K', '+56 9 0000 0016');
+INSERT INTO telefono_tutor VALUES ('41.213.284-K', '+56 9 0000 0017');
+INSERT INTO telefono_tutor VALUES ('41.617.712-0', '+56 9 0000 0018');
+INSERT INTO telefono_tutor VALUES ('40.303.321-9', '+56 9 0000 0019');
+INSERT INTO telefono_tutor VALUES ('40.303.321-9', '+56 65 555 0302');
+INSERT INTO telefono_tutor VALUES ('42.729.889-2', '+56 9 0000 0020');
+INSERT INTO mascota VALUES ('41.213.284-K', 'Luna', 'perro', '2020-06-14');
+INSERT INTO mascota VALUES ('41.213.284-K', 'Michi', 'gato', '2022-11-02');
+INSERT INTO mascota VALUES ('41.617.712-0', 'Luna', 'gato', '2019-09-30');
+INSERT INTO mascota VALUES ('40.303.321-9', 'Toby', 'perro', '2016-04-21');
+INSERT INTO mascota VALUES ('40.303.321-9', 'Pelusa', 'conejo', '2024-01-08');
+INSERT INTO mascota VALUES ('42.729.889-2', 'Rocky', 'perro', NULL);
+INSERT INTO atencion VALUES (1, '2026-03-02', 'vacunación anual', '41.213.284-K', 'Luna', '40.808.856-9');
+INSERT INTO atencion VALUES (2, '2026-03-02', 'control', '41.213.284-K', 'Michi', '40.808.856-9');
+INSERT INTO atencion VALUES (3, '2026-03-09', 'vacunación', '41.617.712-0', 'Luna', '41.516.605-2');
+INSERT INTO atencion VALUES (4, '2026-03-15', 'cojera', '40.303.321-9', 'Toby', '42.325.461-0');
+INSERT INTO atencion VALUES (5, '2026-04-06', 'control de cojera', '40.303.321-9', 'Toby', '42.325.461-0');
+INSERT INTO atencion VALUES (6, '2026-04-20', 'vacunación', '42.729.889-2', 'Rocky', '41.516.605-2');
+INSERT INTO atencion VALUES (7, '2026-05-04', 'control', '41.213.284-K', 'Luna', '40.808.856-9');
 INSERT INTO vacuna VALUES ('ANR', 'antirrábica');
 INSERT INTO vacuna VALUES ('OCT', 'óctuple canina');
 INSERT INTO vacuna VALUES ('TRF', 'triple felina');
@@ -147,13 +147,13 @@ INSERT INTO aplica VALUES (1, 'OCT', 'L-2648');
 INSERT INTO aplica VALUES (3, 'TRF', 'L-3105');
 INSERT INTO aplica VALUES (6, 'ANR', 'L-2611');
 INSERT INTO aplica VALUES (6, 'OCT', 'L-2702');
-INSERT INTO laboratorio VALUES ('76.402.118-5', 'Andes Vet');
-INSERT INTO laboratorio VALUES ('77.915.640-0', 'BioSur');
-INSERT INTO provee VALUES ('76.402.118-5', 'ANR', 'CEN', 8900);
-INSERT INTO provee VALUES ('77.915.640-0', 'ANR', 'ALE', 9300);
-INSERT INTO provee VALUES ('76.402.118-5', 'OCT', 'CEN', 14500);
-INSERT INTO provee VALUES ('76.402.118-5', 'OCT', 'ALE', 14900);
-INSERT INTO provee VALUES ('77.915.640-0', 'TRF', 'CEN', 12700);
+INSERT INTO laboratorio VALUES ('44.853.136-8', 'Andes Vet');
+INSERT INTO laboratorio VALUES ('44.954.243-6', 'BioSur');
+INSERT INTO provee VALUES ('44.853.136-8', 'ANR', 'CEN', 8900);
+INSERT INTO provee VALUES ('44.954.243-6', 'ANR', 'ALE', 9300);
+INSERT INTO provee VALUES ('44.853.136-8', 'OCT', 'CEN', 14500);
+INSERT INTO provee VALUES ('44.853.136-8', 'OCT', 'ALE', 14900);
+INSERT INTO provee VALUES ('44.954.243-6', 'TRF', 'CEN', 12700);
 COMMIT;
 
 -- @consulta v1_mascotas
@@ -191,16 +191,16 @@ WHERE p.cod_vacuna = 'ANR'
 ORDER BY s.nombre;
 
 -- @error v_err_tutor_inexistente
-INSERT INTO mascota VALUES ('99.999.999-9', 'Kira', 'perro', NULL);
+INSERT INTO mascota VALUES ('45.055.350-6', 'Kira', 'perro', NULL);
 
 -- @error v_err_luna_repetida
-INSERT INTO mascota VALUES ('15.630.218-K', 'Luna', 'gato', NULL);
+INSERT INTO mascota VALUES ('41.213.284-K', 'Luna', 'gato', NULL);
 
 -- @error v_err_director_repetido
-UPDATE sede SET rut_director = '13.482.906-0' WHERE cod_sede = 'ALE';
+UPDATE sede SET rut_director = '40.808.856-9' WHERE cod_sede = 'ALE';
 
 -- @error v_err_tecnico_dirige
-UPDATE sede SET rut_director = '12.774.351-7' WHERE cod_sede = 'ALE';
+UPDATE sede SET rut_director = '40.606.642-8' WHERE cod_sede = 'ALE';
 
 -- La misma jerarquía con la estrategia C: una sola tabla con discriminador.
 
@@ -218,12 +218,12 @@ CREATE TABLE personal_una_tabla (
 );
 
 -- @datos v_una_tabla_datos
-INSERT INTO personal_una_tabla VALUES ('13.482.906-0', 'Daniela Ojeda', '2018-03-05', 'veterinario', 'MV-2231', NULL, 'CEN');
-INSERT INTO personal_una_tabla VALUES ('16.937.214-4', 'Matías Barría', '2021-08-16', 'veterinario', 'MV-3017', NULL, 'ALE');
-INSERT INTO personal_una_tabla VALUES ('19.205.873-2', 'Fernanda Mansilla', '2023-01-09', 'veterinario', 'MV-3842', NULL, 'CEN');
-INSERT INTO personal_una_tabla VALUES ('12.774.351-7', 'Jorge Cárcamo', '2017-05-11', 'tecnico', NULL, 'mañana', 'CEN');
-INSERT INTO personal_una_tabla VALUES ('18.360.429-5', 'Valentina Soto', '2022-10-03', 'tecnico', NULL, 'tarde', 'ALE');
-INSERT INTO personal_una_tabla VALUES ('20.118.645-5', 'Paula Alvarado', '2025-02-19', NULL, NULL, NULL, 'ALE');
+INSERT INTO personal_una_tabla VALUES ('40.808.856-9', 'Daniela Ojeda', '2018-03-05', 'veterinario', 'MV-2231', NULL, 'CEN');
+INSERT INTO personal_una_tabla VALUES ('41.516.605-2', 'Matías Barría', '2021-08-16', 'veterinario', 'MV-3017', NULL, 'ALE');
+INSERT INTO personal_una_tabla VALUES ('42.325.461-0', 'Fernanda Mansilla', '2023-01-09', 'veterinario', 'MV-3842', NULL, 'CEN');
+INSERT INTO personal_una_tabla VALUES ('40.606.642-8', 'Jorge Cárcamo', '2017-05-11', 'tecnico', NULL, 'mañana', 'CEN');
+INSERT INTO personal_una_tabla VALUES ('42.022.140-1', 'Valentina Soto', '2022-10-03', 'tecnico', NULL, 'tarde', 'ALE');
+INSERT INTO personal_una_tabla VALUES ('43.134.317-7', 'Paula Alvarado', '2025-02-19', NULL, NULL, NULL, 'ALE');
 
 -- @consulta v6_nulos_una_tabla
 SELECT COUNT(*) - COUNT(tipo) AS sin_tipo,
